@@ -5,6 +5,7 @@ const session = require('express-session');
 const fs = require('fs');
 const iconv = require('iconv-lite'); 
 const bcrypt = require('bcrypt');
+const { Op } = require('sequelize'); // Ez kell a kereséshez (LIKE, stb.)
 
 // Modellek importálása
 const { sequelize, User, Pilot, GrandPrix, Result, PilotCurrent, ContactMessage } = require('./models');
@@ -47,7 +48,7 @@ function fixMojibake(text) {
     return fixed;
 }
 
-// --- AUTOMATIKUS SEEDER ---
+// --- AUTOMATIKUS SEEDER (ADATBETÖLTŐ) ---
 async function seedDatabaseIfNeeded() {
     try {
         const count = await Pilot.count();
@@ -55,6 +56,7 @@ async function seedDatabaseIfNeeded() {
 
         console.log('♻️  Adatbázis üres. Automatikus feltöltés indítása...');
 
+        // 1. Admin
         const adminExists = await User.findOne({ where: { email: 'admin@f1tech.hu' } });
         if (!adminExists) {
             const hashedPassword = await bcrypt.hash('admin', 10);
@@ -62,6 +64,7 @@ async function seedDatabaseIfNeeded() {
             console.log('👤 Admin létrehozva.');
         }
 
+        // 2. PilotsCurrent
         const currentPilotsData = [
             { pilot_id: 1001, name: 'Max Verstappen', nationality: 'holland', team: 'Red Bull Racing' },
             { pilot_id: 1002, name: 'Yuki Tsunoda', nationality: 'japán', team: 'Red Bull Racing' },
@@ -85,7 +88,9 @@ async function seedDatabaseIfNeeded() {
             { pilot_id: 1020, name: 'Liam Lawson', nationality: 'új-zélandi', team: 'Racing Bulls' },
         ];
         await PilotCurrent.bulkCreate(currentPilotsData, { ignoreDuplicates: true });
+        console.log('🏎️  PilotsCurrent betöltve.');
 
+        // 3. TXT Fájlok
         const pilotLines = readEncodedFile('pilota.txt');
         for (let i = 1; i < pilotLines.length; i++) {
             const data = pilotLines[i].split('\t');
@@ -96,6 +101,7 @@ async function seedDatabaseIfNeeded() {
                 });
             }
         }
+        console.log('📄 Pilots TXT betöltve.');
 
         const gpLines = readEncodedFile('gp.txt');
         for (let i = 1; i < gpLines.length; i++) {
@@ -107,6 +113,7 @@ async function seedDatabaseIfNeeded() {
                 if (pd) await GrandPrix.create({ race_date: pd, name: data[1].trim(), location: data[2].trim() });
             }
         }
+        console.log('🏁 Grand Prix TXT betöltve.');
 
         const resultLines = readEncodedFile('eredmeny.txt');
         for (let i = 1; i < resultLines.length; i++) {
@@ -122,29 +129,36 @@ async function seedDatabaseIfNeeded() {
                 }
             }
         }
-        console.log('✅ Adatok betöltve.');
-    } catch (error) { console.error('❌ Hiba:', error); }
+        console.log('🏆 Results TXT betöltve.');
+    } catch (error) { console.error('❌ Hiba a betöltésnél:', error); }
 }
 
 // ==========================================
 // ÚTVONALAK (ROUTES)
 // ==========================================
 
-// 1. Főoldal (Dashboard)
+// 1. FŐOLDAL (DASHBOARD)
 app.get('/', async (req, res) => {
     res.send(`
-        <div style="font-family: sans-serif; padding: 40px; text-align: center;">
-            <h1>🏎️ F1 Node.js Rendszer</h1>
-            <p style="color: green; font-weight: bold;">✅ Szerver aktív.</p>
-            <hr>
-            <div style="margin-top: 30px;">
-                <a href="/register" style="display: inline-block; padding: 15px 30px; background: #e10600; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px;">
+        <div style="font-family: sans-serif; padding: 40px; text-align: center; background-color: #f4f4f4; min-height: 100vh;">
+            <h1 style="color: #333;">🏎️ F1 Node.js Rendszer</h1>
+            <p style="color: green; font-weight: bold;">✅ Szerver aktív. Adatbázis csatlakoztatva.</p>
+            <hr style="width: 50%; margin: 20px auto;">
+            
+            <div style="margin-top: 30px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="/register" style="padding: 15px 30px; background: #e10600; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
                     📝 Regisztráció
                 </a>
-                <a href="/admin/contact-messages" style="display: inline-block; padding: 15px 30px; background: #333; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px;">
+                <a href="/database" style="padding: 15px 30px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                    🏆 Bajnokok Csarnoka
+                </a>
+            </div>
+            
+            <div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="/admin/contact-messages" style="padding: 15px 30px; background: #333; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
                     ✉️ Admin / Üzenetek
                 </a>
-                <a href="/admin/registered-users" style="display: inline-block; padding: 15px 30px; background: #333; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px;">
+                <a href="/admin/registered-users" style="padding: 15px 30px; background: #333; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
                     👥 Admin / Felhasználók
                 </a>
             </div>
@@ -152,7 +166,7 @@ app.get('/', async (req, res) => {
     `);
 });
 
-// 2. AUTHENTIKÁCIÓ (Regisztráció)
+// 2. AUTH: REGISZTRÁCIÓ
 app.get('/register', (req, res) => {
     res.render('auth/register', { errors: {}, oldInput: {} });
 });
@@ -161,15 +175,13 @@ app.post('/register', async (req, res) => {
     const { name, email, password, password_confirmation } = req.body;
     let errors = {};
 
-    // Validáció
-    if (!name || name.trim() === '') errors.name = 'A név megadása kötelező.';
-    if (!email || !email.includes('@')) errors.email = 'Érvényes email cím szükséges.';
-    if (!password || password.length < 8) errors.password = 'A jelszó legalább 8 karakter legyen.';
+    if (!name || name.trim() === '') errors.name = 'A név kötelező.';
+    if (!email || !email.includes('@')) errors.email = 'Érvényes email szükséges.';
+    if (!password || password.length < 8) errors.password = 'Min. 8 karakter.';
     if (password !== password_confirmation) errors.password = 'A jelszavak nem egyeznek.';
 
-    // Email ellenőrzés DB-ben
     const existingUser = await User.findOne({ where: { email: email } });
-    if (existingUser) errors.email = 'Ez az email cím már foglalt.';
+    if (existingUser) errors.email = 'Ez az email már foglalt.';
 
     if (Object.keys(errors).length > 0) {
         return res.render('auth/register', { errors: errors, oldInput: req.body });
@@ -177,30 +189,56 @@ app.post('/register', async (req, res) => {
 
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
-        await User.create({
-            name: name,
-            email: email,
-            password: hashedPassword,
-            is_admin: false
-        });
-        
-        // Sikeres regisztráció -> irány a Login (egyelőre főoldal, mert nincs login oldal)
+        await User.create({ name, email, password: hashedPassword });
         res.redirect('/?registered=true');
-    } catch (error) {
-        console.error(error);
-        res.render('auth/register', { 
-            errors: { general: 'Hiba történt a regisztráció során.' }, 
-            oldInput: req.body 
-        });
+    } catch (e) {
+        res.render('auth/register', { errors: { general: 'Hiba történt.' }, oldInput: req.body });
     }
 });
 
-// Login placeholder (hogy ne legyen 404 a linkre kattintva)
-app.get('/login', (req, res) => {
-    res.send('<h1>Login oldal</h1><p>(Még nincs implementálva, de a Regisztráció kész!)</p><a href="/">Vissza</a>');
+// 3. ADATBÁZIS / BAJNOKOK CSARNOKA (Szűréssel)
+app.get('/database', async (req, res) => {
+    try {
+        const { search, nationality, year, location } = req.query;
+
+        // Pilóták szűrése
+        const pilotWhere = {};
+        if (search) pilotWhere.name = { [Op.like]: `%${search}%` };
+        if (nationality) pilotWhere.nationality = nationality;
+
+        const pilots = await Pilot.findAll({ 
+            where: pilotWhere,
+            order: [['name', 'ASC']]
+        });
+
+        // Futamok szűrése
+        const gpWhere = {};
+        if (location) gpWhere.location = { [Op.like]: `%${location}%` };
+        if (year) gpWhere.race_date = { [Op.startsWith]: year }; 
+
+        const grandPrix = await GrandPrix.findAll({
+            where: gpWhere,
+            order: [['race_date', 'ASC']]
+        });
+
+        // Dropdown adatok
+        const allPilots = await Pilot.findAll({ attributes: ['nationality'] });
+        const nationalities = [...new Set(allPilots.map(p => p.nationality).filter(n => n))].sort();
+
+        const allGPs = await GrandPrix.findAll({ attributes: ['race_date'] });
+        const years = [...new Set(allGPs.map(gp => new Date(gp.race_date).getFullYear()))].sort((a, b) => b - a);
+
+        res.render('database', {
+            pilots, grandPrix, nationalities, years, query: req.query
+        });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Hiba történt az adatok betöltésekor.');
+    }
 });
 
-// 3. ADMIN: Üzenetek
+// 4. ADMIN FUNKCIÓK
 app.get('/admin/contact-messages', async (req, res) => {
     try {
         const messages = await ContactMessage.findAll({ order: [['created_at', 'DESC']] });
@@ -209,25 +247,20 @@ app.get('/admin/contact-messages', async (req, res) => {
             read: messages.filter(m => m.is_read).length,
             unread: messages.filter(m => !m.is_read).length
         };
-        res.render('admin/contact_messages', { messages: messages, stats: stats });
-    } catch (error) { res.status(500).send('Hiba.'); }
+        res.render('admin/contact_messages', { messages, stats, activePage: 'messages' });
+    } catch (e) { res.status(500).send('Hiba.'); }
 });
 
 app.post('/admin/contact-messages/:id/mark-read', async (req, res) => {
-    try {
-        await ContactMessage.update({ is_read: true }, { where: { id: req.params.id } });
-        res.redirect('/admin/contact-messages');
-    } catch (error) { res.status(500).send('Hiba.'); }
+    await ContactMessage.update({ is_read: true }, { where: { id: req.params.id } });
+    res.redirect('/admin/contact-messages');
 });
 
 app.post('/admin/contact-messages/:id/delete', async (req, res) => {
-    try {
-        await ContactMessage.destroy({ where: { id: req.params.id } });
-        res.redirect('/admin/contact-messages');
-    } catch (error) { res.status(500).send('Hiba.'); }
+    await ContactMessage.destroy({ where: { id: req.params.id } });
+    res.redirect('/admin/contact-messages');
 });
 
-// 4. ADMIN: Felhasználók
 app.get('/admin/registered-users', async (req, res) => {
     try {
         const users = await User.findAll({ order: [['created_at', 'DESC']] });
@@ -237,16 +270,18 @@ app.get('/admin/registered-users', async (req, res) => {
             verified: users.filter(u => u.email_verified_at !== null).length,
             today: users.filter(u => new Date(u.created_at) >= today).length
         };
-        res.render('admin/registered_users', { users: users, stats: stats });
-    } catch (error) { res.status(500).send('Hiba.'); }
+        res.render('admin/registered_users', { users, stats, activePage: 'users' });
+    } catch (e) { res.status(500).send('Hiba.'); }
 });
+
+app.get('/login', (req, res) => res.send('Login oldal (Work in progress) <a href="/">Vissza</a>'));
 
 // --- SZERVER INDÍTÁSA ---
 const PORT = 3000;
 async function startServer() {
     try {
         await sequelize.authenticate();
-        console.log('✅ Adatbázis OK.');
+        console.log('✅ Adatbázis kapcsolat OK.');
         await sequelize.sync({ alter: true });
         await seedDatabaseIfNeeded();
         app.listen(PORT, () => { console.log(`🚀 SZERVER FUT: http://localhost:${PORT}`); });
