@@ -1,0 +1,2260 @@
+datum	pilotaaz	helyezes	hiba	csapat	tipus	motor
+1958.10.19	369	6		Temple Buell	Maserati 	Maserati 
+1954.07.17	460	11		Sir Jeremy Boles	Connaught 	Lea 
+1950.09.03	42	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.10.28	248		gyújtás	Scuderia Ferrari	Ferrari 	Ferrari 
+1951.07.29	721	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.05.30	167		tengely	Ludson Morris	Kurtis 	Offenhauser 
+1957.05.30	645	9		Phillips	Phillips	Offenhauser 
+1959.08.02	597	6		Scuderia Centro Sud	Cooper 	Maserati 
+1960.05.30	43		gyújtás	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.05.30	683	9		JC Agajanian	Kurtis 	Offenhauser 
+1950.05.21	625	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.05.19	83		karambol	Vandervell Products Ltd	Vanwall	Vanwall 
+1955.05.22	83	9		Daimler Benz AG	Mercedes 	Mercedes 
+1952.05.18	382	2		Ecurie Espadon	Ferrari 	Ferrari 
+1959.05.31	19	4		Team Lotus	Lotus 	Climax 
+1957.09.08	1	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1960.06.06	743		futómû	Team Lotus	Lotus 	Climax 
+1954.08.01	759	8		Ecurie Rosier	Ferrari 	Ferrari 
+1958.07.06	452		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1956.06.03	83	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.01.22	45	6		Alberto Uria	Maserati 	Maserati 
+1960.05.29	115		kizárták	Reventlow Automobiles Inc	Scarab	Scarab 
+1956.05.30	445	1		Watson	Watson	Offenhauser 
+1960.02.07	150	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.08.05	238		túlhajtás	Scuderia Centro Sud	Maserati 	Maserati 
+1954.01.17	448		pályaelhagyás	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.06.05	655		nem rajtolt el	Scuderia Ferrari	Ferrari 	Ferrari 
+1952.06.22	606		karambol	Equipe Gordini	Gordini 	Gordini 
+1954.09.05	248		kuplung	Officine Alfieri Maserati	Maserati 	Maserati 
+1959.08.02	238	7		Owen Racing Organisation	BRM 	BRM 
+1957.05.19	238		kiállás	Officine Alfieri Maserati	Maserati 	Maserati 
+1957.05.30	96		gázadagoló	Kurtis Kraft	Kurtis 	Offenhauser 
+1950.05.13	742	10			Maserati 	Maserati 
+1951.07.29	550		motor	Enrico Plate	Maserati 	Maserati 
+1958.08.24	452		karambol	Temple Buell	Maserati 	Maserati 
+1951.09.16	53		futómû		Ferrari 	Ferrari 
+1952.07.06	714	12		Scuderia Marzotto	Ferrari 	Ferrari
+1959.07.18	700		kicsúszás	Owen Racing Organisation	BRM 	BRM 
+1952.09.07	465		kizárták		HWM	Alta 
+1950.05.30	20	2		Lou Moore	Deidt	Offenhauser 
+1950.09.03	1		kiesett	Alfa Romeo SpA	Alfa 	Alfa 
+1954.07.17	355	15		Gould's Garage (Bristol)	Cooper 	Bristol 
+1951.05.30	683		tûz	Carl Marchese	Marchese	Offenhauser 
+1958.06.15	178		túlhajtás	Cooper Car Company	Cooper 	Climax 
+1954.07.04	379		nem rajtolt el	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.07.05	118	12		Ecurie Belge	Connaught 	Lea 
+1953.07.18	721	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1951.07.01	42	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.09.16	729	3		Alfa Romeo SpA	Alfa 	Alfa 
+1960.07.16	222	4		Cooper Car Company	Cooper 	Climax 
+1958.10.19	54		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1957.07.20	178		kuplung	Rob Walker Racing Team	Cooper 	Climax 
+1954.07.04	1	1		Daimler Benz AG	Mercedes 	Mercedes 
+1954.09.05	316		futómû	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.07.17	786		karambol	Rob Walker Racing Team	Connaught 	Lea 
+1956.08.05	545		motor	Equipe Gordini	Gordini 	Gordini 
+1952.05.18	240		gyújtás	Alfred Dattner	Simca-Gordini 	Gordini
+1953.09.13	448	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.22	448		gázadagoló	Vandervell Products Ltd	Vanwall	Vanwall 
+1954.06.20	532		motor	Equipe Gordini	Gordini 	Gordini 
+1956.08.05	499		kiállás	Gilby Engineering Ltd	Maserati 	Maserati 
+1957.07.20	448	3		Scuderia Ferrari	Lancia 	Lancia 
+1958.05.26	275	6		Team Lotus	Lotus 	Climax 
+1960.05.29	381		kizárták	JB Naylor	JBW	Maserati 
+1955.01.16	287	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.05.30	555	21		Roger Wolcott	Kurtis 	Offenhauser 
+1955.05.22	325		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.10.28	59		motor		Talbot-Lago 	Talbot 
+1952.09.07	483		kizárták	Ecurie Francorchamps	Ferrari 	Ferrari 
+1956.01.22	599		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.18	606		törés	Owen Racing Organisation	BRM 	BRM 
+1953.05.30	412	12		Lee Elkins	Kurtis 	Offenhauser 
+1954.07.17	692		motor		Connaught 	Lea 
+1950.05.13	118	11		Ecurie Belge	Talbot-Lago 	Talbot 
+1957.01.13	448		kuplung	Scuderia Ferrari	Lancia 	Lancia 
+1952.09.07	735	15		Ecurie Richmond	Cooper 	Bristol 
+1958.07.19	178	6		Cooper Car Company	Cooper 	Climax 
+1958.10.19	83	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1952.05.30	693		differenciálmû	Lee Elkins	Kurtis 	Offenhauser 
+1952.07.06	364		kuplung		Alta 	Alta 
+1959.09.13	238	7		Owen Racing Organisation	BRM 	BRM 
+1954.08.01	153		motor	Hans Klenk-Meteor	Klenk-Meteor	BMW 
+1952.08.03	32		olajnyomás	WS Aston	Aston	Butterworth 
+1959.05.10	695		karambol	John Fisher	Lotus 	Climax 
+1955.01.16	779		karambol	Daimler Benz AG	Mercedes 	Mercedes 
+1952.08.03	579		nem rajtolt el		AFM	BMW 
+1958.06.15	140		motor	Francesco Godia-Sales	Maserati 	Maserati 
+1950.06.18	315	9			Alta 	Alta
+1954.07.04	248	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.07.18	467		karambol	Ecurie Ecosse	Cooper 	Bristol 
+1958.08.03	336		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1960.06.19	278	6		Equipe Nationale Belge	Cooper 	Climax 
+1956.08.05	654		kiesett	Scuderia Ferrari	Lancia 	Lancia 
+1960.11.20	381		motor	JB Naylor	JBW	Maserati 
+1956.07.14	325	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.05.31	683	12		Kuzma	Kuzma	Offenhauser 
+1954.08.01	83		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.05.30	421	3		Ed Walsh	Kurtis 	Offenhauser 
+1958.07.06	275		motor	Team Lotus	Lotus 	Climax 
+1954.07.17	193		kiesett	Scuderia Ambrosiana	Ferrari 	Ferrari 
+1958.05.18	157		kizárták		Maserati 	Maserati 
+1959.05.30	411	7		Leader Cards Inc	Kurtis 	Offenhauser 
+1950.05.30	139	14		Jack Hinkle	Kurtis 	Offenhauser 
+1959.05.30	622		gyújtás	Kuzma	Kuzma	Offenhauser 
+1953.05.30	577	8		HA Chapman	Stevens	Offenhauser 
+1953.05.30	33		karambol	Federal Auto Associates	Kurtis 	Offenhauser 
+1953.07.05	1	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1960.07.03	19	7		Team Lotus	Lotus 	Climax 
+1952.07.19	675		törés	Escuderia Bandeirantes	Maserati 	Maserati
+1951.07.29	438		sebességváltó		Talbot-Lago 	Talbot 
+1957.07.20	83		kiesett	Vandervell Products Ltd	Vanwall	Vanwall 
+1957.08.18	394	5		Vandervell Products Ltd	Vanwall	Vanwall 
+1953.08.02	560		kiesett	Ecurie Espadon	Ferrari 	Ferrari 
+1957.07.07	599	3		Scuderia Ferrari	Lancia 	Lancia 
+1951.05.27	472	14		Ecurie Belgique	Talbot-Lago 	Talbot 
+1952.07.19	335		törés	Ecurie Espadon	Ferrari 	Ferrari
+1953.07.18	419	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.05.30	686		karambol	Lesovsky	Lesovsky	Offenhauser 
+1952.06.22	83		motor	ERA Ltd	ERA 	Bristol 
+1953.05.30	683		benzinfolyás	JC Agajanian	Kurtis 	Offenhauser 
+1954.08.22	779		benzinbefecskendezõ	Daimler Benz AG	Mercedes 	Mercedes 
+1951.10.28	721	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.07.01	42		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.09.05	379	9		Officine Alfieri Maserati	Maserati 	Maserati 
+1957.07.20	121	8		Gilby Engineering Ltd	Maserati 	Maserati 
+1959.07.05	606		dugattyú	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.07.03	597	10		Scuderia Centro Sud	Cooper 	Maserati 
+1953.05.30	144	11		Jean Marcenac	Kurtis 	Novi 
+1955.07.16	197		karambol		Connaught 	Alta 
+1952.09.07	655	7		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.30	698		olajfolyás	Kurtis Kraft	Kurtis 	Offenhauser 
+1956.05.13	238		karambol	Vandervell Products Ltd	Vanwall	Vanwall 
+1953.08.23	111		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1954.08.01	587		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1958.08.03	295		kiállás	Rob Walker Racing Team	Cooper 	Climax 
+1953.01.18	448	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.07.17	606		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1952.09.07	675	11		Escuderia Bandeirantes	Maserati 	Maserati
+1952.07.19	550	19		Enrico Plate	Maserati 	Plate 
+1959.08.02	111	4		Rob Walker Racing Team	Cooper 	Climax 
+1950.07.02	438	5			Talbot-Lago 	Talbot 
+1959.05.31	606	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.07.02	463	6			Talbot-Lago 	Talbot 
+1954.01.17	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.09.04	553		olajfolyás	Scuderia Castellotti	Cooper 	Castellotti 
+1959.07.18	452		gyújtás	David Brown Corporation	Aston 	Aston 
+1960.05.30	800	1		Watson	Watson	Offenhauser 
+1956.08.05	526		nem rajtolt el	Luigi Piotti	Maserati 	Maserati 
+1952.08.03	466		kiállás	Ecurie Espadon	Ferrari 	Ferrari
+1953.08.02	767		kiállás	Connaught Engineering	Connaught 	Lea 
+1956.07.14	606	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.07.05	42	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.07.20	316	2		Scuderia Ferrari	Lancia 	Lancia 
+1956.08.05	316		kiesett	Scuderia Ferrari	Lancia 	Lancia 
+1956.09.02	606		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.10.19	396		karambol	Rob Walker Racing Team	Cooper 	Climax 
+1955.06.05	83	2		Daimler Benz AG	Mercedes 	Mercedes 
+1952.09.07	550		kizárták	Enrico Plate	Maserati 	Plate 
+1960.02.07	553	13			Maserati 	Maserati 
+1952.09.07	599		kizárták	HW Motors	HWM	Alta 
+1956.07.14	784	4		Connaught Engineering	Connaught 	Alta 
+1960.09.04	339		olajteknõ	Equipe Prideaux / Dick Gibson	Cooper 	Climax 
+1957.05.19	355		karambol		Maserati 	Maserati 
+1958.08.03	448		kuplung	Scuderia Ferrari	Ferrari 	Ferrari 
+1951.10.28	767		motor	Ecurie Siam	Maserati 	Osca
+1960.05.30	56		motor	Watson	Watson	Offenhauser 
+1955.06.19	794	8		Equipe Gordini	Gordini 	Gordini 
+1958.07.06	599	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.09.13	550		motor		Maserati 	Maserati 
+1955.01.16	83		benzinhiány	Daimler Benz AG	Mercedes 	Mercedes 
+1957.05.19	448		kiesett	Scuderia Ferrari	Lancia 	Lancia 
+1950.06.04	759	3		Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1953.05.30	191		karambol	Rotary Engineering	Kurtis 	Offenhauser 
+1959.08.02	222		kuplung	Cooper Car Company	Cooper 	Climax 
+1956.07.01	248		törés	Luigi Piotti	Maserati 	Maserati 
+1951.07.01	29	1		Alfa Romeo SpA	Alfa 	Alfa 
+1951.07.01	111		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1954.10.24	140	6		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.05.30	750	22		Sampson Manufacturing	Rae	Offenhauser 
+1954.07.17	779	7		Daimler Benz AG	Mercedes 	Mercedes 
+1956.05.13	595		karambol	Equipe Gordini	Gordini 	Gordini 
+1955.05.22	283	7		Equipe Gordini	Gordini 	Gordini 
+1952.07.06	701	9		HW Motors	HWM	Alta 
+1952.08.03	111		karambol	Equipe Gordini	Gordini 	Gordini 
+1958.07.19	731		túlhajtás	Team Lotus	Lotus 	Climax 
+1959.12.12	130		kuplung	Team Lotus	Lotus 	Climax 
+1960.09.04	345		sebességváltó	Scuderia Centro Sud	Cooper 	Maserati 
+1951.05.30	681	5		John McDaniel	Schroeder	Offenhauser 
+1954.01.17	316		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1960.11.20	83	1		Rob Walker Racing Team	Lotus 	Climax 
+1952.05.30	681		sebességváltó	Rotary Engineering	Stevens	Offenhauser 
+1954.08.22	238		olajpumpa	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.09.11	300	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.05.21	238		karambol	Horschell Racing Corporation	Cooper 	JAP
+1958.08.03	731		olajfolyás	Team Lotus	Lotus 	Climax 
+1956.05.13	325	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1957.08.04	316	4		Scuderia Ferrari	Lancia 	Lancia 
+1958.10.19	111		motor	Rob Walker Racing Team	Cooper 	Climax 
+1958.10.19	499	7		Cooper Car Company	Cooper 	Climax 
+1960.02.07	369	12		Camoradi International	Behra-Porsche	Porsche 
+1950.06.04	1		motor	Alfa Romeo SpA	Alfa 	Alfa 
+1954.06.20	379	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.13	606	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.05.30	323	3		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.07.19	655	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	711		kicsúszás	Kuzma	Kuzma	Offenhauser 
+1960.05.29	19	9		Team Lotus	Lotus 	Climax 
+1959.05.30	711	10		Kuzma	Kuzma	Offenhauser 
+1955.05.22	111	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.30	65		olajfolyás	Verlin Brown	Kurtis 	Offenhauser 
+1955.05.30	421		futómû	Kurtis Kraft	Kurtis 	Offenhauser 
+1955.05.30	231		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.09.13	83	1		Rob Walker Racing Team	Cooper 	Climax 
+1957.09.08	765	11		Ottoronio Volonterio	Maserati 	Maserati 
+1951.07.01	29	11		Alfa Romeo SpA	Alfa 	Alfa 
+1959.05.10	111	3		Rob Walker Racing Team	Cooper 	Climax 
+1952.05.18	759		karambol	Ecurie Rosier	Ferrari 	Ferrari 
+1952.05.30	336	1		JC Agajanian	Kuzma	Offenhauser 
+1950.09.03	546		olajnyomás	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.07.14	794		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1959.08.23	369	2		Cooper Car Company	Cooper 	Climax 
+1950.06.04	767	4		Enrico Plate	Maserati 	Maserati 
+1954.10.24	599		karambol	G A Vandervell	Vanwall 	Vanwall 
+1956.05.30	323		olajfolyás	Kurtis Kraft	Kurtis 	Offenhauser 
+1956.01.22	1		benzinpumpa	Scuderia Ferrari	Lancia 	Lancia 
+1953.09.13	701		motor	HW Motors	HWM	Alta 
+1959.09.13	275	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.06.19	118	11		Equipe Nationale Belge	Ferrari 	Ferrari 
+1953.06.07	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.07.01	794	8		Equipe Gordini	Gordini 	Gordini 
+1957.09.08	150	3		Scuderia Ferrari	Lancia 	Lancia 
+1951.06.17	655		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.11.20	115	10		Reventlow Automobiles Inc	Scarab	Scarab 
+1958.05.18	238	5		Owen Racing Organisation	BRM 	BRM 
+1954.09.05	759	8		Officine Alfieri Maserati	Maserati 	Maserati 
+1959.05.31	731	7		Team Lotus	Lotus 	Climax 
+1958.05.30	508	7		Phillips	Phillips	Offenhauser 
+1960.11.20	700		futómû	Cooper Car Company	Cooper 	Climax 
+1957.05.30	188	8		Kurtis Kraft	Kurtis 	Offenhauser 
+1957.07.20	238		vízpumpa	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.09.07	354		kizárták	Ecurie Espadon	Ferrari 	Ferrari
+1956.05.30	10		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1951.07.01	721	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.05.31	220	15		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.07.19	83		motor	ERA Ltd	ERA 	Bristol 
+1959.08.23	455	10		Scuderia Centro Sud	Cooper 	Maserati 
+1959.08.23	238	5		Owen Racing Organisation	BRM 	BRM 
+1951.05.27	1	1		Alfa Romeo SpA	Alfa 	Alfa 
+1960.05.30	102	2		Watson	Watson	Offenhauser 
+1951.07.14	450		nem teljesítette a távot		Alta 	Alta
+1952.05.30	412		vezérmûtengely	Ludson Morris	Kurtis 	Offenhauser 
+1952.07.19	162	16		Connaught Engineering	Connaught 	Lea 
+1959.08.02	369		motor	Cooper Car Company	Cooper 	Climax 
+1959.08.23	185		motor	Owen Racing Organisation	BRM 	BRM 
+1957.01.13	654	5		Scuderia Ferrari	Lancia 	Lancia 
+1952.05.30	31	17		Howard Keck	Kurtis 	Offenhauser 
+1958.05.18	150		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.02.07	36		túlhajtás		Maserati 	Maserati 
+1958.05.30	56	4		Epperly	Epperly	Offenhauser 
+1955.06.19	316	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.06.21	118		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1957.05.30	387		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1954.09.05	606		motor	Equipe Gordini	Gordini 	Gordini 
+1960.06.06	111		sebességváltó	Scuderia Centro Sud	Cooper 	Maserati 
+1952.05.18	735	5		Ecurie Richmond	Cooper 	Bristol 
+1960.02.07	130		feladta	Team Lotus	Lotus 	Climax 
+1953.08.23	248	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.12.12	764		törés	Automobili OSCA	Cooper 	Osca
+1959.09.13	19		törés	Team Lotus	Lotus 	Climax 
+1951.05.27	655	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.06.03	1		futómû	Scuderia Ferrari	Lancia 	Lancia 
+1955.06.19	46		kerék	Stirling Moss Ltd	Maserati 	Maserati 
+1957.08.04	1	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.07.19	185		sebességváltó	Joakim Bonnier Racing Team	Maserati 	Maserati 
+1955.01.16	779	4		Daimler Benz AG	Mercedes 	Mercedes 
+1960.06.19	54		sebességváltó	Yeoman Credit Racing Team	Cooper 	Climax 
+1952.05.30	705	14		HA Chapman	Stevens	Offenhauser 
+1960.05.30	55	16		Meskowski	Meskowski	Offenhauser 
+1956.09.02	584		defekt	Scuderia Ferrari	Lancia 	Lancia 
+1955.01.16	606		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.09.02	599	2		Scuderia Ferrari	Lancia 	Lancia 
+1953.07.18	523		féltengely	Rob Walker Racing Team	Connaught 	Lea 
+1956.08.05	355		olajnyomás	Gould's Garage (Bristol)	Maserati 	Maserati 
+1958.07.19	130		túlhajtás	Team Lotus	Lotus 	Climax 
+1955.01.16	238	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1951.07.01	248	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.06.21	721		gázadagoló	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.09.11	606	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1952.07.19	738	20		Ecurie Richmond	Cooper 	Bristol 
+1954.07.04	701		motor	HW Motors	HWM	Alta 
+1954.07.04	234		sebességváltó	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.06.07	83	9		Connaught Engineering	Connaught 	Lea 
+1952.08.03	752	7			Veritas 	BMW 
+1957.08.18	140		motor	Francesco Godia-Sales	Maserati 	Maserati 
+1955.05.30	649		futómû	Trevis	Trevis	Offenhauser 
+1951.07.29	729		gyújtás	Alfa Romeo SpA	Alfa 	Alfa 
+1957.08.04	54	9		Vandervell Products Ltd	Vanwall	Vanwall 
+1954.10.24	550		kiesett	Baron de Graffenried	Maserati 	Maserati 
+1959.05.31	238		motor	Owen Racing Organisation	BRM 	BRM 
+1950.09.03	169		hûtés		ERA 	ERA
+1952.05.18	715		benzinfolyás		Veritas 	Veritas 
+1959.05.30	360	13		Dunn	Dunn	Offenhauser 
+1958.09.07	111		sebességváltó	Rob Walker Racing Team	Cooper 	Climax 
+1953.08.02	550	5			Maserati 	Maserati 
+1960.05.30	360		kuplung	Ewing	Ewing	Offenhauser 
+1954.05.31	706		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1956.05.30	758		motor	Kurtis Kraft	Kurtis 	Offenhauser 
+1960.08.14	731		sebességváltó	Owen Racing Organisation	BRM 	BRM 
+1959.05.30	495		tûz	Watson	Watson	Offenhauser 
+1960.06.06	607	7		Yeoman Credit Racing Team	Cooper 	Climax 
+1950.09.03	550	6			Maserati 	Maserati 
+1960.05.30	336		tengely	Watson	Watson	Offenhauser 
+1959.07.05	700	6		Owen Racing Organisation	BRM 	BRM 
+1953.09.13	546	10			Osca 	Osca
+1959.12.12	222	1		Cooper Car Company	Cooper 	Climax 
+1953.09.13	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.05.30	718		kompresszor	Lewis Welch	Kurtis 	Novi 
+1953.07.18	735		túlhajtás	RJ Chase	Cooper 	Bristol 
+1953.01.18	606	6		Equipe Gordini	Gordini 	Gordini 
+1952.06.22	655		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.05.31	231	10		Stevens	Stevens	Offenhauser 
+1954.05.31	412		kiesett	Schroeder	Schroeder	Offenhauser 
+1952.09.07	298		motor	Escuderia Bandeirantes	Maserati 	Maserati
+1957.08.18	499		karambol	Cooper Car Company	Cooper 	Climax 
+1957.08.04	355		nem azonosított		Maserati 	Maserati 
+1953.08.02	111		differenciálmû	Equipe Gordini	Gordini 	Gordini 
+1953.09.13	735	12		RJ Chase	Cooper 	Bristol 
+1955.01.16	432		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.05.30	639	14		John MacDaniel	Schroeder	Offenhauser 
+1954.07.17	234	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.05.30	131		leállás	Lee Elkins	Turner	Offenhauser 
+1952.07.06	111	5		Equipe Gordini	Simca-Gordini 	Gordini
+1956.09.02	316		kormány	Scuderia Ferrari	Lancia 	Lancia 
+1950.09.03	405		motor		Ferrari 	Jaguar
+1953.06.07	300		futómû	Equipe Gordini	Gordini 	Gordini 
+1952.07.06	382	11		Ecurie Espadon	Ferrari 	Ferrari 
+1957.09.08	83	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1951.07.29	655	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.08.02	38		kiesett		AFM	BMW 
+1960.06.19	743	5		Team Lotus	Lotus 	Climax 
+1957.05.30	186	13		Kurtis Kraft	Kurtis 	Offenhauser 
+1957.09.08	526		motor		Maserati 	Maserati 
+1952.09.07	759	10		Ecurie Rosier	Ferrari 	Ferrari 
+1956.08.05	36		motor	Scuderia Centro Sud	Ferrari 	Ferrari 
+1959.07.05	19		kerék	Team Lotus	Lotus 	Climax 
+1960.05.29	117		sebességváltó	Yeoman Credit Racing Team	Cooper 	Climax 
+1951.07.29	1	2		Alfa Romeo SpA	Alfa 	Alfa 
+1958.05.30	758		benzinpumpa	Lesovsky	Lesovsky	Offenhauser 
+1960.07.16	731		karambol	Owen Racing Organisation	BRM 	BRM 
+1953.06.21	457		futómû		Veritas 	Veritas 
+1953.07.05	759	8		Ecurie Rosier	Ferrari 	Ferrari 
+1957.05.19	700		sebességváltó	Owen Racing Organisation	BRM 	BRM 
+1951.05.30	709		futómû	Lou Moore	Lesovsky	Offenhauser 
+1950.05.30	413	7		JC Agajanian	Kurtis 	Offenhauser 
+1956.05.30	65	17		Kurtis Kraft	Kurtis 	Offenhauser 
+1958.07.19	121		sebességváltó	BC Ecclestone	Connaught 	Alta 
+1960.05.30	649		kuplung	Kurtis Kraft	Kurtis 	Offenhauser 
+1960.09.04	150	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.08.18	355		karambol		Maserati 	Maserati 
+1951.07.14	248	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.05.30	20	15		Ray Crawford	Kurtis 	Offenhauser 
+1954.06.20	284		motor	Ecurie Francorchamps	Ferrari 	Ferrari 
+1950.07.02	583	8		Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1956.09.02	111		kiállás	Vandervell Products Ltd	Vanwall	Vanwall 
+1953.06.21	419		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	622	10		Kurtis Kraft	Kurtis 	Novi 
+1959.07.18	784		sebességváltó	High Efficiency Motors	Cooper 	Climax 
+1960.07.03	607	4		Yeoman Credit Racing Team	Cooper 	Climax 
+1951.09.16	546		gyújtás	Ecurie Rosier	Talbot-Lago 	Talbot 
+1960.07.03	222	3		Cooper Car Company	Cooper 	Climax 
+1955.06.19	584	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.08.02	195	11			Cooper 	Bristol 
+1953.06.07	780		nem rajtolt el	Equipe Gordini	Gordini 	Gordini 
+1951.06.17	587	6		Ecurie Belgique	Talbot-Lago 	Talbot 
+1950.05.21	42	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.08.22	606		kuplung	Equipe Gordini	Gordini 	Gordini 
+1954.05.31	445		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.09.13	162		nem teljesítette a távot	Connaught Engineering	Connaught 	Lea 
+1958.05.18	106		kizárták	BC Ecclestone	Connaught 	Alta 
+1959.09.13	731		motor	Team Lotus	Lotus 	Climax 
+1955.07.16	238		gázadagoló	Vandervell Products Ltd	Vanwall	Vanwall 
+1959.07.18	760		kizárták	United Racing Stable	Cooper 	Climax 
+1959.07.18	756		sebességváltó	Scuderia Centro Sud	Cooper 	Maserati 
+1953.06.07	499		motor	Connaught Engineering	Connaught 	Lea 
+1957.01.13	185	7		Scuderia Centro Sud	Maserati 	Maserati 
+1950.05.30	471		kompresszor	Cummins Engines	Kurtis 	Cummins 
+1957.07.20	129		motor	Owen Racing Organisation	BRM 	BRM 
+1956.07.14	374	11			Cooper 	Bristol 
+1960.05.30	645	8		Meskowski	Meskowski	Offenhauser 
+1958.08.03	83		gyújtás	Vandervell Products Ltd	Vanwall	Vanwall 
+1950.07.02	720		nem rajtolt el	Ecurie Leutitia	Talbot-Lago 	Talbot 
+1952.05.18	238		motor	Enrico Plate	Maserati 	Plate 
+1959.05.30	276	16		Leader Cards Inc	Kurtis 	Offenhauser 
+1960.07.03	518		futómû	Scuderia Ferrari	Ferrari 	Ferrari 
+1951.05.30	706		tengely	LE Parks	Pawl	Offenhauser 
+1958.06.15	499	8		Cooper Car Company	Cooper 	Climax 
+1956.01.22	448	3		Owen Racing Organisation	Maserati 	Maserati 
+1954.05.31	347		kiesett	Bromme	Bromme	Offenhauser 
+1950.06.04	625		kiállás	Scuderia Ferrari	Ferrari 	Ferrari
+1955.05.22	267		kizárták		HWM	Alta 
+1959.05.31	83		sebességváltó	Rob Walker Racing Team	Cooper 	Climax 
+1959.05.30	55		gyújtás	Leader Cards Inc	Kurtis 	Offenhauser 
+1960.05.29	597		kizárták	Scuderia Centro Sud	Cooper 	Climax 
+1956.05.30	191		olajfolyás	Kurtis Kraft	Kurtis 	Offenhauser 
+1960.08.14	369		sebességváltó	Scuderia Centro Sud	Cooper 	Maserati 
+1956.07.14	654	2		Scuderia Ferrari	Lancia 	Lancia 
+1957.05.19	756		kizárták	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.09.11	448		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1956.05.30	164	14		Kurtis Kraft	Kurtis 	Offenhauser 
+1958.05.26	54		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1960.08.14	455		sebességváltó	Scuderia Centro Sud	Cooper 	Maserati 
+1958.08.03	150	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.01.16	228		futómû	Equipe Gordini	Gordini 	Gordini 
+1960.06.06	19	2		Team Lotus	Lotus 	Climax 
+1953.06.21	759	8		Ecurie Rosier	Ferrari 	Ferrari 
+1959.09.13	309	11		Scuderia Centro Sud	Cooper 	Maserati 
+1952.07.06	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.22	765		motor	Daimler Benz AG	Mercedes 	Mercedes 
+1957.05.30	204		benzinpumpa	Kuzma	Kuzma	Offenhauser 
+1955.06.05	606	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.30	508	3		Phillips	Phillips	Offenhauser 
+1954.07.17	195		nem rajtolt el	Ecurie Richmond	Cooper 	Bristol 
+1953.06.07	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.07.05	419	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.07.02	720	5			Talbot-Lago 	Talbot 
+1954.01.17	228	5		Equipe Gordini	Gordini 	Gordini 
+1958.01.19	1	4		Scuderia Sud Americana	Maserati 	Maserati 
+1955.06.19	111		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1958.07.06	83	2		Vandervell Products Ltd	Vanwall	Vanwall 
+1958.08.24	178	7		Cooper Car Company	Cooper 	Climax 
+1956.01.22	53	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1955.01.16	316	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.05.30	456		kiesett	Indianapolis Race Cars	Maserati 	Offenhauser 
+1952.07.19	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.17	248	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.13	583	4		Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1955.05.30	508		futómû	Phillips	Phillips	Offenhauser 
+1953.05.30	191	16		MA Walker	Kurtis 	Offenhauser 
+1956.01.22	721		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.08.24	606	4		Owen Racing Organisation	BRM 	BRM 
+1958.09.07	518	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.07.16	794		motor	Equipe Gordini	Gordini 	Gordini 
+1952.05.30	102		olajnyomás	Federal Auto Associates	Kurtis 	Offenhauser 
+1953.05.30	65	16		MA Walker	Kurtis 	Offenhauser 
+1958.06.15	54	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1956.05.30	495	5		Kurtis Kraft	Kurtis 	Offenhauser 
+1960.06.06	178	1		Cooper Car Company	Cooper 	Climax 
+1960.06.06	547		karambol	Owen Racing Organisation	BRM 	BRM 
+1951.05.30	456	6		Lindsey Hopkins	Moore	Offenhauser 
+1953.05.30	31	1		Howard Keck	Kurtis 	Offenhauser 
+1958.05.18	355		kizárták	Scuderia Centro Sud	Maserati 	Maserati 
+1957.08.18	54		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1960.07.03	115		motor	Reventlow Automobiles Inc	Scarab	Scarab 
+1955.06.05	316	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1951.10.28	1	1		Alfa Romeo SpA	Alfa 	Alfa 
+1959.07.05	83		pályaelhagyás	British Racing Partnership	BRM 	BRM 
+1954.08.01	1	1		Daimler Benz AG	Mercedes 	Mercedes 
+1954.10.24	1	3		Daimler Benz AG	Mercedes 	Mercedes 
+1953.01.18	1		futómû	Officine Alfieri Maserati	Maserati 	Maserati 
+1950.05.21	29		karambol	Alfa Romeo SpA	Alfa 	Alfa 
+1958.10.19	700		vezérmûtengely	Owen Racing Organisation	BRM 	BRM 
+1958.06.15	111	7		Scuderia Centro Sud	Maserati 	Maserati 
+1954.10.24	111		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.05.31	191		kiesett	Schroeder	Kurtis 	Offenhauser 
+1953.05.30	105	6		Chapman Root	Kurtis 	Offenhauser 
+1957.09.08	54	7		Vandervell Products Ltd	Vanwall	Vanwall 
+1956.09.02	606		gyújtás	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.08.01	767		kormány	Prince Bira	Maserati 	Maserati 
+1951.07.01	193	4		G A Vanderwell	Ferrari 	Ferrari 
+1958.05.30	259	9		Kurtis Kraft	Kurtis 	Offenhauser 
+1953.09.13	583	15		HW Motors	HWM	Alta 
+1950.05.21	248		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.07.16	701	8		Stirling Moss Ltd	Maserati 	Maserati 
+1957.05.30	259		kerék	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.12.12	102		kuplung	Leader Cards Inc	Kurtis 	Offenhauser 
+1960.11.20	518	6		Yeoman Credit Racing Team	Cooper 	Climax 
+1954.07.17	721	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.05.18	111		motor	Ecurie Rosier	Ferrari 	Ferrari
+1957.07.07	394		kormány	Vandervell Products Ltd	Vanwall	Vanwall 
+1954.10.24	779	5		Daimler Benz AG	Mercedes 	Mercedes 
+1959.07.18	619		kizárták	Gilby Engineering Ltd	Cooper 	Climax 
+1955.01.16	756	4		Daimler Benz AG	Mercedes 	Mercedes 
+1957.05.30	360		karambol	Dunn	Dunn	Offenhauser 
+1956.09.02	784	5		Connaught Engineering	Connaught 	Alta 
+1953.07.18	1	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1957.07.07	88	7		Cooper Car Company	Cooper 	Climax 
+1960.07.03	226	2		Yeoman Credit Racing Team	Cooper 	Climax 
+1959.08.02	756		karambol	British Racing Partnership	BRM 	BRM 
+1952.09.07	382		motor	Ecurie Espadon	Ferrari 	Ferrari 
+1952.07.06	550		kiesett	Enrico Plate	Maserati 	Plate 
+1958.07.19	448	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.05.31	518	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.09.16	475	9		Osca Automobili	Osca 	Osca
+1952.05.30	709	8		Federal Auto Associates	Kurtis 	Offenhauser 
+1951.05.30	430		motor	CG Tuffanelli	Deidt	Offenhauser 
+1956.07.01	654		sebességváltó	Scuderia Ferrari	Lancia 	Lancia 
+1955.07.16	503	9		Vandervell Products Ltd	Vanwall	Vanwall 
+1954.10.24	248		törés	Scuderia Lancia	Lancia 	Lancia 
+1950.05.13	696		olajnyomás	Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1956.07.01	595	9		Equipe Gordini	Gordini 	Gordini 
+1959.05.30	186		motor	Leader Cards Inc	Kurtis 	Offenhauser 
+1959.07.05	111	11		Rob Walker Racing Team	Cooper 	Climax 
+1955.05.30	164		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1956.08.05	584		gyújtás	Scuderia Ferrari	Lancia 	Lancia 
+1952.05.30	456	19		Lindesy Hopkins	Lesovsky	Offenhauser 
+1956.09.02	129		torziós rúd	Connaught Engineering	Connaught 	Alta 
+1951.05.30	766		karambol	Howard Keck	Deidt	Offenhauser 
+1958.09.07	448	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.07.05	309		olajfolyás	Scuderia Centro Sud	Cooper 	Maserati 
+1951.09.16	193		motor	British Racing Motors Ltd	BRM 	BRM 
+1953.09.13	499		gázadagoló	Connaught Engineering	Connaught 	Lea 
+1950.05.21	767	5		Enrico Plate	Maserati 	Maserati 
+1954.01.17	1	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.30	677		karambol	Kurtis Kraft	Kurtis 	Novi 
+1953.05.30	227		kiesett	3L Racing Team	Kurtis 	Offenhauser 
+1955.09.11	283		motor	Equipe Gordini	Gordini 	Gordini 
+1957.07.07	316	2		Scuderia Ferrari	Lancia 	Lancia 
+1953.07.05	234	9		Officine Alfieri Maserati	Maserati 	Maserati 
+1959.07.18	538		kizárták	Ace Garage (Rotherdam)	Cooper 	Climax 
+1953.06.21	248	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.03	382	3		Ecurie Espadon	Ferrari 	Ferrari 
+1951.09.16	583	8			Talbot-Lago 	Talbot 
+1957.07.07	1	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.07.06	1	4			Maserati 	Maserati 
+1960.06.06	150	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.05.30	163		gyújtás	Ed Walsh	Kurtis 	Offenhauser 
+1955.05.30	792		motor	Kurtis Kraft	Kurtis 	Offenhauser 
+1951.10.28	653		motor	Scuderia Milano	Maserati 	Maserati 
+1953.08.02	505	14		Dora Greifzu	BMW 	BMW 
+1950.05.13	419	1		Alfa Romeo SpA	Alfa 	Alfa 
+1957.08.18	526		motor		Maserati 	Maserati 
+1958.09.07	736		karambol	Scuderia Centro Sud	Maserati 	Maserati 
+1954.05.31	421	11		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.07.06	767		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1951.05.30	623	3		Jack Hinkle	Kurtis 	Offenhauser 
+1950.05.13	550		motor		Maserati 	Maserati 
+1955.07.16	1	2		Daimler Benz AG	Mercedes 	Mercedes 
+1959.12.12	527		olajfolyás	Camoradi International	Tec-Mec 	Maserati 
+1959.05.30	445		karambol	Watson	Watson	Offenhauser 
+1956.06.03	140		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.07.14	448		olajfolyás	Owen Racing Organisation	BRM 	BRM 
+1950.09.03	42		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.17	701	8		HW Motors	HWM	Alta 
+1953.01.18	735	9		RJ Chase	Cooper 	Bristol 
+1950.05.30	163	1		Kurtis Kraft	Kurtis 	Offenhauser 
+1959.08.02	547	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	677		gázadagoló	Kurtis Kraft	Kurtis 	Novi 
+1953.09.13	503		nem teljesítette a távot		Cooper 	Bristol 
+1951.07.14	546		törés	Ecurie Rosier	Talbot-Lago 	Talbot 
+1950.05.30	353		kiesett	Richard Palmer	Adams	Offenhauser 
+1956.06.03	325	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.08.05	140	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1959.05.30	33	11		Kuzma	Kuzma	Offenhauser 
+1950.09.03	759	4		Ecurie Rosier	Talbot-Lago 	Talbot 
+1952.05.30	800	2		Grancor Auto	Kurtis 	Offenhauser 
+1952.05.18	419		kiesett	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.05.29	130		motorfelfüggesztés	Team Lotus	Lotus 	Climax 
+1953.09.13	379	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1955.07.16	765		sebességváltó	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.07.17	197	13			Connaught 	Lea 
+1955.06.19	779		kicsúszás	Daimler Benz AG	Mercedes 	Mercedes 
+1958.08.03	275	10		Team Lotus	Lotus 	Climax 
+1960.07.03	695	8		Yeoman Credit Racing Team	Cooper 	Climax 
+1953.08.02	741		kiesett		Veritas 	Veritas 
+1952.05.30	191		olajpumpa	Hart Fullerton	Kurtis 	Offenhauser 
+1955.07.16	499		sebességváltó	Gilby Engineering Ltd	Maserati 	Maserati 
+1958.08.03	756		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1956.05.30	639	19		Kuzma	Kuzma	Offenhauser 
+1956.07.14	499		benzinnyomás	Gilby Engineering Ltd	Maserati 	Maserati 
+1951.05.27	546	7		Enrico Plate	Maserati 	Maserati 
+1960.05.30	711		kuplung	Kurtis Kraft	Kurtis 	Offenhauser 
+1951.05.30	191	4		George Leitenberger	Sherman	Offenhauser 
+1959.07.18	222	3		Cooper Car Company	Cooper 	Climax 
+1951.05.27	470		karambol	Ecurie Rosier	Talbot-Lago 	Talbot 
+1960.05.29	334		futómû	Team Lotus	Lotus 	Climax 
+1952.05.30	163	10		Jim Robbins	Kurtis 	Offenhauser 
+1952.05.30	623	20		Coast Grain Co	Lesovsky	Offenhauser 
+1958.07.06	736	9		Scuderia Centro Sud	Maserati 	Maserati 
+1956.08.05	587		karambol	Equipe Gordini	Gordini 	Gordini 
+1952.07.06	448		gyújtás	AHM Bryde	Cooper 	Bristol 
+1953.07.05	546	15			Osca 	Osca
+1959.07.18	185		gázadagoló	Owen Racing Organisation	BRM 	BRM 
+1950.06.18	720		motor	Ecurie Leutitia	Talbot-Lago 	Talbot 
+1957.05.30	33	10		Lesovsky	Lesovsky	Offenhauser 
+1952.07.06	238		sebességváltó	Enrico Plate	Maserati 	Plate 
+1952.09.07	606		motor	Equipe Gordini	Gordini 	Gordini 
+1958.05.18	599	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.01.17	165		olajnyomás	Equipe Gordini	Gordini 	Gordini 
+1960.11.20	222	3		Cooper Car Company	Cooper 	Climax 
+1960.06.19	731		motor	Owen Racing Organisation	BRM 	BRM 
+1950.05.30	640	6		Lou Moore	Moore	Offenhauser 
+1960.06.06	117		motor	Yeoman Credit Racing Team	Cooper 	Climax 
+1957.07.07	417		futómû	Owen Racing Organisation	BRM 	BRM 
+1952.07.19	371	9		Connaught Engineering	Connaught 	Lea 
+1956.09.02	595		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1958.05.30	43		tûz	Kuzma	Kuzma	Offenhauser 
+1957.01.13	83	8		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.06.20	300		tûz		Maserati 	Maserati 
+1953.08.02	42	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.05.30	33	14		Kurtis Kraft	Kurtis 	Offenhauser 
+1951.05.27	550	5		Alfa Romeo SpA	Alfa 	Alfa 
+1958.05.26	355		kizárták	Horace Gould	Maserati 	Maserati 
+1955.01.16	248		benzinfolyás	Scuderia Lancia	Lancia 	Lancia 
+1959.05.10	178	1		Cooper Car Company	Cooper 	Climax 
+1953.08.02	1	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1952.07.19	599		gyújtás	HW Motors	HWM	Alta 
+1953.09.13	228		motor	OSCA Automobili	Osca 	Osca
+1953.05.30	412		olajfolyás	Louis and Bruce Bromme	Bromme	Offenhauser 
+1953.08.23	546		nem rajtolt el		Osca 	Osca
+1952.08.17	624		nem teljesítette a távot	HW Motors	HWM	Alta 
+1958.08.24	83	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1955.07.16	46		kiesett	Rob Walker Racing Team	Connaught 	Alta 
+1956.07.01	599	1		Scuderia Ferrari	Lancia 	Lancia 
+1960.11.20	597		gyújtás	Scuderia Centro Sud	Cooper 	Maserati 
+1955.05.22	546	6		Scuderia Lancia	Lancia 	Lancia 
+1950.05.30	698		kiesett	Indianapolis Race Cars	Kurtis 	Offenhauser 
+1959.08.02	731		olajteknõ	Team Lotus	Lotus 	Climax 
+1954.10.24	379		törés	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.07.18	374		kiállás		Cooper 	Bristol 
+1960.05.29	369		kizárták	Scuderia Centro Sud	Cooper 	Maserati 
+1959.05.30	164		motor	Kuzma	Kuzma	Offenhauser 
+1959.05.30	196	5		Epperly	Epperly	Offenhauser 
+1956.07.01	448	10		Vandervell Products Ltd	Vanwall	Vanwall 
+1957.08.04	363		kormány		Cooper 	Climax 
+1951.05.27	364		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1953.07.18	701		kuplung	HW Motors	HWM	Alta 
+1959.07.05	462		kizárták	Scuderia Centro Sud	Maserati 	Maserati 
+1960.07.16	19	3		Team Lotus	Lotus 	Climax 
+1953.07.18	364	9		Atlantic Stable	Cooper 	Alta 
+1959.05.30	105	14		Leader Cards Inc	Kurtis 	Offenhauser 
+1950.07.02	423		motor	Scuderia Ambrosiana	Maserati 	Maserati 
+1958.07.19	606		defekt	Owen Racing Organisation	BRM 	BRM 
+1960.05.30	574	5		Lesovsky	Lesovsky	Offenhauser 
+1955.05.30	639		benzinpumpa	Kuzma	Kuzma	Offenhauser 
+1954.08.01	503		visszalépés	Owen Racing Organisation	Maserati 	Maserati 
+1958.08.03	606		kiállás	Owen Racing Organisation	BRM 	BRM 
+1960.07.03	743	5		Team Lotus	Lotus 	Climax 
+1960.06.19	115		motor	Reventlow Automobiles Inc	Scarab	Scarab 
+1956.09.02	499	11		Gilby Engineering Ltd	Maserati 	Maserati 
+1959.05.30	102	1		Watson	Watson	Offenhauser 
+1955.01.16	111	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.01.18	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.12.12	368		túlhajtás	Connaught Cars / Paul Emery	Connaught 	Alta 
+1950.05.21	364		motor		Ferrari 	Ferrari 
+1956.05.30	421	2		Kurtis Kraft	Kurtis 	Offenhauser 
+1958.05.18	85		kizárták	Andre Testut	Maserati 	Maserati 
+1950.05.13	438	8			Talbot-Lago 	Talbot 
+1954.01.17	238	6			Maserati 	Maserati 
+1956.05.30	186	13		Kurtis Kraft	Kurtis 	Offenhauser 
+1958.08.24	111	8		Rob Walker Racing Team	Cooper 	Climax 
+1954.07.04	606	6		Equipe Gordini	Gordini 	Gordini 
+1952.07.19	735	22		Ecurie Richmond	Cooper 	Bristol 
+1953.09.13	784		nem teljesítette a távot	Connaught Engineering	Connaught 	Lea 
+1955.05.30	296		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1951.07.01	627		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1952.08.03	118	10		HW Motors	HWM	Alta 
+1953.08.23	448	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.01.16	419	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.08.18	695		differenciálmû		Maserati 	Maserati 
+1951.07.29	111		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1954.07.04	532		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1951.07.01	759		sebességváltó	Ecurie Rosier	Talbot-Lago 	Talbot 
+1955.05.22	300		sebességváltó	Officine Alfieri Maserati	Maserati 	Maserati 
+1960.06.19	130		karambol	Team Lotus	Lotus 	Climax 
+1959.05.10	606		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1951.07.29	173		karambol	Alfa Romeo SpA	Alfa 	Alfa 
+1956.07.14	111		benzinfolyás	Vandervell Products Ltd	Vanwall	Vanwall 
+1956.07.01	238		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1954.08.01	606	10		Equipe Gordini	Gordini 	Gordini 
+1954.07.17	248		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.06.21	1		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.08.03	796	11			Veritas 	Veritas 
+1959.07.18	117	10		British Racing Partnership	Cooper 	Borgward
+1953.08.02	606		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1954.08.22	1	1		Daimler Benz AG	Mercedes 	Mercedes 
+1959.07.18	575		kizárták	David Fry	Fry	Climax 
+1952.09.07	503	9		Scuderia Franera	Cooper 	Bristol 
+1953.06.21	448	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.07.05	238	7		Owen Racing Organisation	BRM 	BRM 
+1955.09.11	779		sebességváltó	Daimler Benz AG	Mercedes 	Mercedes 
+1953.08.23	780		nem azonosított	Equipe Gordini	Gordini 	Gordini 
+1953.08.23	1		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.05.30	323		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1950.07.02	1	1		Alfa Romeo SpA	Alfa 	Alfa 
+1956.08.05	595		kiállás	Equipe Gordini	Gordini 	Gordini 
+1951.10.28	595	9		Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1956.07.14	700		motor	Owen Racing Organisation	BRM 	BRM 
+1958.05.18	185		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1950.05.30	677	9		Paul Russo	Nichels	Offenhauser 
+1952.08.17	503		kerék	Scuderia Franera	Frazer-Nash 	Bristol 
+1957.07.20	355		karambol		Maserati 	Maserati 
+1950.09.03	173		motor		Maserati 	Maserati 
+1959.05.30	323	6		Epperly	Epperly	Offenhauser 
+1955.06.19	595		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1950.05.13	315		futómû		Alta 	Alta
+1958.01.19	355	9		Horace Gould	Maserati 	Maserati 
+1954.01.17	234		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1950.05.21	111		karambol	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1957.01.13	1	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1959.07.18	381		futómû	JB Naylor	JBW	Maserati 
+1953.08.02	729	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.08.23	550		vezérmûtengely		Maserati 	Maserati 
+1958.05.18	578		kizárták	Ken Kavanagh	Maserati 	Maserati 
+1960.02.07	721	10		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.03	613		gyújtás	BMW	BMW 	BMW 
+1952.07.06	759		motor	Ecurie Rosier	Ferrari 	Ferrari 
+1959.05.30	192		karambol	Leader Cards Inc	Kurtis 	Offenhauser 
+1960.05.29	36		kizárták	Scuderia Castellotti	Cooper 	Castellotti 
+1956.07.14	599		olajnyomás	Scuderia Ferrari	Lancia 	Lancia 
+1953.06.07	1		sebességváltó	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.09.07	765	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.03	655	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.08.24	54		karambol	Vandervell Products Ltd	Vanwall	Vanwall 
+1955.05.30	707		motor	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.09.13	41		motor	HW Motors	HWM	Alta 
+1954.10.24	767	9		Prince Bira	Maserati 	Maserati 
+1951.09.16	595		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1958.05.18	140		kizárták	Francesco Godia-Sales	Maserati 	Maserati 
+1953.05.30	191		kiesett	John Zink	Kurtis 	Offenhauser 
+1952.05.18	419		gyújtás	Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.30	33	16		Joe Langley	Langley	Offenhauser 
+1952.06.22	457	13			Veritas 	Veritas 
+1952.05.18	606	3		Equipe Gordini	Gordini 	Gordini 
+1955.01.16	606	6		Officine Alfieri Maserati	Maserati 	Maserati 
+1959.05.31	127	10		Ecurie Maarsbergen	Porsche 	Porsche 
+1956.05.13	83	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1955.05.30	411	11		Kuzma	Kuzma	Offenhauser 
+1958.08.24	185		rosszullét	Joakim Bonnier Racing Team	Maserati 	Maserati 
+1960.11.20	111	15		Scuderia Centro Sud	Cooper 	Maserati 
+1954.10.24	300	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1960.05.30	323		motor	Epperly	Epperly	Offenhauser 
+1953.09.13	316	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.05.30	800	5		Epperly	Epperly	Offenhauser 
+1952.07.06	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.07.16	779	3		Daimler Benz AG	Mercedes 	Mercedes 
+1954.07.04	283		motor	Equipe Gordini	Gordini 	Gordini 
+1953.05.30	683		kiesett	John Zink	Kurtis 	Offenhauser 
+1952.08.17	606		karburátor	Equipe Gordini	Gordini 	Gordini 
+1953.05.30	163		motor	JS Belond	Kurtis 	Offenhauser 
+1953.07.05	248	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.09.11	111	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.08.04	238	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.05.30	766	3		Howard Keck	Deidt	Offenhauser 
+1952.09.07	408		kizárták	Enrico Plate	Maserati 	Plate 
+1958.09.07	83		sebességváltó	Vandervell Products Ltd	Vanwall	Vanwall 
+1951.07.14	364	9		G A Vanderwell	Ferrari 	Ferrari 
+1954.05.31	704		kiesett	Schroeder	Schroeder	Offenhauser 
+1956.07.14	599	2		Scuderia Ferrari	Lancia 	Lancia 
+1960.08.14	54	5		Yeoman Credit Racing Team	Cooper 	Climax 
+1959.07.05	518	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.13	688		motor	Scuderia Ambrosiana	Maserati 	Maserati 
+1951.07.01	546	6		Ecurie Rosier	Talbot-Lago 	Talbot 
+1953.06.07	701		gázadagoló	HW Motors	HWM	Alta 
+1959.07.18	178	1		Cooper Car Company	Cooper 	Climax 
+1960.08.14	607		nem azonosított	Yeoman Credit Racing Team	Cooper 	Climax 
+1951.10.28	583		túlhajtás		Talbot-Lago 	Talbot 
+1959.05.10	85		kizárták	Monte Carlo Autosport	Maserati 	Maserati 
+1952.09.07	176		kizárták		Cisitalia 	BPM
+1954.05.31	163		motor	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.08.23	547	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.02.07	19	6		Team Lotus	Lotus 	Climax 
+1958.08.24	150	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.09.07	606		sebességváltó	Owen Racing Organisation	BRM 	BRM 
+1953.06.07	721		sebességváltó	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.05.30	574	4		Kuzma	Kuzma	Offenhauser 
+1952.09.07	729	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1951.05.30	698		kuplung	Grancor Auto	Kurtis 	Offenhauser 
+1955.05.30	105	9		Kurtis Kraft	Kurtis 	Offenhauser 
+1955.06.05	584		sebességváltó	Scuderia Lancia	Lancia 	Lancia 
+1958.05.30	163	12		Kurtis Kraft	Kurtis 	Offenhauser 
+1954.05.31	511	19		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.07.19	118	14		Ecurie Belge	Simca-Gordini 	Gordini
+1958.07.06	731		motor	Team Lotus	Lotus 	Climax 
+1960.09.04	791	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.05.30	580		futómû	Kurtis Kraft	Kurtis 	Offenhauser 
+1955.09.11	432	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1952.07.06	382		motor	Ecurie Espadon	Ferrari 	Ferrari 
+1954.05.31	102		kiesett	Pawl	Pawl	Offenhauser 
+1957.05.30	296		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1955.06.19	83	2		Daimler Benz AG	Mercedes 	Mercedes 
+1951.07.01	1	1		Alfa Romeo SpA	Alfa 	Alfa 
+1953.01.18	729		futómû	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.05.18	431		kizárták	OSCA Automobili	Osca	Osca
+1956.09.02	550	7		Scuderia Centro Sud	Maserati 	Maserati 
+1952.07.19	344	12			Alta 	Alta 
+1952.08.03	465		sebességváltó		HWM	Alta 
+1954.05.31	126	19		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.05.30	227		olajfolyás	Vincent Granatelli	Bromme	Offenhauser 
+1951.05.30	139	3		Jack Hinkle	Kurtis 	Offenhauser 
+1958.08.03	599		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.09.11	41	9		Stirling Moss Ltd	Maserati 	Maserati 
+1951.07.29	595	7		Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1954.05.31	191	11		Kurtis Kraft	Kurtis 	Offenhauser 
+1953.06.21	532	10		HW Motors	HWM	Alta 
+1957.05.30	164		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.08.02	506		kiesett		AFM	BMW 
+1956.05.30	693	6		Kuzma	Kuzma	Offenhauser 
+1952.06.22	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.06.06	185		motor	Owen Racing Organisation	BRM 	BRM 
+1959.07.18	83	2		British Racing Partnership	BRM 	BRM 
+1960.11.20	54		kicsúszás	Yeoman Credit Racing Team	Cooper 	Climax 
+1958.07.19	111	8		Rob Walker Racing Team	Cooper 	Climax 
+1953.05.30	801	17		Eugene Casaroll	Kurtis 	Offenhauser 
+1959.12.12	732		motor		Maserati 	Maserati 
+1952.08.03	644		nem rajtolt el		BMW 	BMW 
+1960.05.30	192	11		Epperly	Epperly	Offenhauser 
+1953.08.23	701		motor	HW Motors	HWM	Alta 
+1950.06.04	550	6			Maserati 	Maserati 
+1959.05.10	565		kizárták	Team Lotus	Lotus 	Climax 
+1960.07.03	547		motor	Owen Racing Organisation	BRM 	BRM 
+1955.07.16	584	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.05.30	196	3		Epperly	Epperly	Offenhauser 
+1956.09.02	765	9		Equipe Gordini	Gordini 	Gordini 
+1952.09.07	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.09.04	295	9			Cooper 	Climax 
+1954.09.05	1	1		Daimler Benz AG	Mercedes 	Mercedes 
+1954.05.31	96	17		Pankratz	Pankratz	Offenhauser 
+1957.05.19	765		kizárták	Scuderia Centro Sud	Maserati 	Maserati 
+1952.05.30	42		kerék	Enzo Ferrari	Ferrari 	Ferrari 
+1953.09.13	759	16		Ecurie Rosier	Ferrari 	Ferrari 
+1960.05.29	83	1		Rob Walker Racing Team	Lotus 	Climax 
+1953.08.02	721		nem rajtolt el	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.09.05	287	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.13	423	9		Scuderia Ambrosiana	Maserati 	Maserati 
+1958.10.19	394		karambol	Vandervell Products Ltd	Vanwall	Vanwall 
+1950.05.30	289	19		Charles Pritchard	Kurtis 	Offenhauser 
+1960.07.03	369	9		Scuderia Centro Sud	Cooper 	Maserati 
+1954.05.31	188		kicsúszás	Kurtis Kraft	Kurtis 	Offenhauser 
+1956.09.02	185		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.05.18	765		kiesett	Scuderia Ferrari	Ferrari 	Ferrari 
+1950.06.18	337	10			Maserati 	Maserati 
+1955.05.30	81		olajfolyás	Stevens	Stevens	Offenhauser 
+1960.05.29	734		kizárták	Reventlow Automobiles Inc	Scarab	Scarab 
+1951.07.14	322		olajfolyás		Maserati 	Maserati
+1952.06.22	767	10		Equipe Gordini	Simca-Gordini 	Gordini
+1953.07.18	448	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.07.02	595	4		Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1954.07.17	599		motor	G A Vandervell	Vanwall 	Vanwall 
+1950.05.13	46		kiesett		ERA 	ERA
+1957.07.20	599	4		Scuderia Ferrari	Lancia 	Lancia 
+1953.01.18	419		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.11.20	607	14		Yeoman Credit Racing Team	Cooper 	Climax 
+1953.08.02	162	13		Connaught Engineering	Connaught 	Lea 
+1958.10.19	518	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.07.19	452	9		Scuderia Centro Sud	Maserati 	Maserati 
+1957.05.30	574	12		Kuzma	Kuzma	Offenhauser 
+1954.07.17	370		karambol	Equipe Gordini	Gordini 	Gordini 
+1959.05.10	185		törés	Owen Racing Organisation	BRM 	BRM 
+1953.07.18	759	10		Ecurie Rosier	Ferrari 	Ferrari 
+1956.05.13	599	2		Scuderia Ferrari	Lancia 	Lancia 
+1953.01.18	71	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1951.10.28	42	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.17	483		motor	Ecurie Francorchamps	Ferrari 	Ferrari 
+1956.05.13	1	4		Scuderia Ferrari	Lancia 	Lancia 
+1958.06.15	226	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.01.16	443		futómû	Equipe Gordini	Gordini 	Gordini 
+1951.09.16	118		olajpumpa	Ecurie Belge	Talbot-Lago 	Talbot 
+1953.05.30	413	17		Eugene Casaroll	Kurtis 	Offenhauser 
+1957.05.19	238		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1957.08.04	287		motor	Dr Ing Porsche KG	Porsche 	Porsche 
+1959.05.31	111	8		Rob Walker Racing Team	Cooper 	Climax 
+1955.05.30	713	12		Kurtis Kraft	Kurtis 	Offenhauser 
+1951.09.16	601		rossz licenc	British Racing Motors Ltd	BRM 	BRM 
+1950.07.02	294		motor		Talbot-Lago 	Talbot 
+1950.09.03	472		kiesett		Talbot-Lago 	Talbot 
+1950.09.03	438	5			Talbot-Lago 	Talbot 
+1958.05.26	185	10		Joakim Bonnier Racing Team	Maserati 	Maserati 
+1952.08.17	301	7		HW Motors	HWM	Alta 
+1951.07.14	742	8			ERA 	ERA
+1958.05.30	645		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1960.07.16	619		túlhajtás	Gilby Engineering Co Ltd	Cooper 	Maserati 
+1955.05.30	96		motor	Pankratz	Pankratz	Offenhauser 
+1958.01.19	606	5		Ken Kavanagh	Maserati 	Maserati 
+1956.07.14	287		sebességváltó	Scuderia Guastalla	Maserati 	Maserati 
+1956.01.22	316	1		Scuderia Ferrari	Lancia 	Lancia 
+1954.05.31	800		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1952.09.07	721	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1955.01.16	238		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.05.30	102		karambol	Kuzma	Kuzma	Offenhauser 
+1959.07.18	369	7		Cooper Car Company	Cooper 	Climax 
+1953.07.05	729		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.05.30	164	11		Kurtis Kraft	Kurtis 	Offenhauser 
+1950.06.18	583		motor	Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1954.01.17	111	4		Ecurie Rosier	Ferrari 	Ferrari 
+1956.05.13	228	6		Equipe Gordini	Gordini 	Gordini 
+1959.07.05	527	10		Scuderia Centro Sud	Maserati 	Maserati 
+1959.05.10	36		kizárták	Scuderia Ugolini	Maserati 	Maserati 
+1951.09.16	419	3		Alfa Romeo SpA	Alfa 	Alfa 
+1958.01.19	448	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.17	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	649		törés	Kurtis Kraft	Kurtis 	Offenhauser 
+1952.05.18	83		visszalépés	HW Motors	HWM	Alta 
+1955.01.16	111	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.07.29	583		karambol		Talbot-Lago 	Talbot 
+1954.01.17	300		olajfolyás	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.13	546		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1960.05.30	276		törés	Epperly	Epperly	Offenhauser 
+1954.08.01	448	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.30	191	6		Kurtis Kraft	Kurtis 	Offenhauser 
+1951.07.01	720	8			Talbot-Lago 	Talbot 
+1958.10.19	731	16		Team Lotus	Lotus 	Climax 
+1956.05.30	167	10		Stevens	Stevens	Offenhauser 
+1957.07.20	784		motor	Owen Racing Organisation	BRM 	BRM 
+1960.05.29	731	7		Owen Racing Organisation	BRM 	BRM 
+1954.06.20	606		kiállás	Equipe Gordini	Gordini 	Gordini 
+1953.05.30	411		gyújtás	Murrell Belanger	Kurtis 	Offenhauser 
+1953.05.30	139	5		Jack Hinkle	Kurtis 	Offenhauser 
+1952.07.19	364	10			Ferrari 	Ferrari
+1959.08.23	83	1		Rob Walker Racing Team	Cooper 	Climax 
+1951.09.16	550		kompresszor	Alfa Romeo SpA	Alfa 	Alfa 
+1958.08.03	381		benzinpumpa		Cooper 	Climax 
+1959.08.23	452	8		David Brown Corporation	Aston 	Aston 
+1956.07.01	111		gázadagoló	Automobiles Bugatti	Bugatti 	Bugatti 
+1952.09.07	83		kiállás	Connaught Engineering	Connaught 	Lea 
+1955.06.05	325	8		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.07.02	625		motor	Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1951.07.29	546		motor	Ecurie Rosier	Talbot-Lago 	Talbot 
+1957.09.08	140	9		Francesco Godia-Sales	Maserati 	Maserati 
+1957.08.04	448	2		Scuderia Ferrari	Lancia 	Lancia 
+1958.07.06	140		karambol		Maserati 	Maserati 
+1951.05.30	762		motor	Brown Motor Co	Kurtis 	Offenhauser 
+1951.09.16	1		motor	Alfa Romeo SpA	Alfa 	Alfa 
+1957.09.08	238		olajfolyás	Officine Alfieri Maserati	Maserati 	Maserati 
+1957.05.30	669		kuplung	Kuzma	Kuzma	Offenhauser 
+1960.05.29	518	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.05.13	1	2		Scuderia Ferrari	Lancia 	Lancia 
+1953.07.18	258		benzinbefecskendezõ		Cooper 	Bristol 
+1959.05.30	501	15		Leader Cards Inc	Kurtis 	Offenhauser 
+1955.05.22	756		karambol	Daimler Benz AG	Mercedes 	Mercedes 
+1954.08.22	780		futómû	Equipe Gordini	Gordini 	Gordini 
+1954.10.24	557		kiesett	Baron de Graffenried	Maserati 	Maserati 
+1953.05.30	259	7		Ernest Ruiz	Kurtis 	Offenhauser 
+1960.09.04	670	7		Dr Ing F Porsche KG	Porsche 	Porsche 
+1958.05.26	316	7		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.07.16	597		motor	Scuderia Centro Sud	Cooper 	Maserati 
+1953.05.30	800	15		Ray Crawford	Kurtis 	Offenhauser 
+1954.05.31	81	8		Kurtis Kraft	Kurtis 	Offenhauser 
+1956.08.05	584		kiesett	Scuderia Ferrari	Lancia 	Lancia 
+1950.05.21	374	6			ERA 	ERA
+1950.07.02	193		motor	Scuderia Ambrosiana	Maserati 	Maserati 
+1955.09.11	655	2		Daimler Benz AG	Mercedes 	Mercedes 
+1953.05.30	220		olajfolyás	Hart Fullerton	Kurtis 	Offenhauser 
+1959.07.05	178	3		Cooper Car Company	Cooper 	Climax 
+1951.09.16	759	7		Ecurie Rosier	Talbot-Lago 	Talbot 
+1960.07.16	185		kiállás	Owen Racing Organisation	BRM 	BRM 
+1953.08.02	759	10		Ecurie Rosier	Ferrari 	Ferrari 
+1953.07.05	550	7			Maserati 	Maserati 
+1957.05.30	323	6		Kurtis Kraft	Kurtis 	Offenhauser 
+1957.05.19	432		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.07.01	118		karambol	Ecurie Belge	Talbot-Lago 	Talbot 
+1954.07.04	300		motor		Maserati 	Maserati 
+1950.06.18	1	1		Alfa Romeo SpA	Alfa 	Alfa 
+1954.07.17	735		nem rajtolt el	Equipe Anglaise	Cooper 	Bristol 
+1950.05.30	56	5		Ervin Wolfe	Deidt	Offenhauser 
+1953.07.05	767		differenciálmû	Connaught Engineering	Connaught 	Lea 
+1953.07.18	550		kuplung		Maserati 	Maserati 
+1953.08.23	284		karambol	Ecurie Francorchamps	Ferrari 	Ferrari 
+1951.05.30	640	1		Murell Belanger	Kurtis 	Offenhauser 
+1953.07.05	374	11			Cooper 	Bristol 
+1951.07.29	688		karambol	Scuderia Ambrosiana	Maserati 	Maserati 
+1950.05.21	438		olajfolyás		Talbot-Lago 	Talbot 
+1952.07.19	767	11		Equipe Gordini	Gordini 	Gordini 
+1952.08.03	532		sebességváltó	HW Motors	HWM	Alta 
+1950.05.13	374	6			ERA 	ERA
+1960.11.20	731		sebességváltó	Owen Racing Organisation	BRM 	BRM 
+1958.10.19	730	14			Cooper 	Climax 
+1951.05.30	65		túlhajtás	Brown Motors	Schroeder	Offenhauser 
+1960.07.16	734		nem rajtolt el	Cooper Car Company	Cooper 	Climax 
+1954.07.17	448	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.07.16	595		futómû	Equipe Gordini	Gordini 	Gordini 
+1954.08.01	370		kerék	Equipe Gordini	Gordini 	Gordini 
+1952.06.22	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.07.14	118	13		Ecurie Belge	Talbot-Lago 	Talbot 
+1959.12.12	178	4		Cooper Car Company	Cooper 	Climax 
+1956.06.03	532	2		Scuderia Ferrari	Lancia 	Lancia 
+1958.07.06	54		sebességváltó	Vandervell Products Ltd	Vanwall	Vanwall 
+1953.07.05	583	14		HW Motors	HWM	Alta 
+1955.05.30	10		gyújtás	Pawl	Pawl	Offenhauser 
+1950.05.30	706	17		Pat Clancy	Ewing	Offenhauser 
+1957.01.13	526	10			Maserati 	Maserati 
+1951.07.01	364		motor	Graham Whitehead	Ferrari 	Ferrari 
+1951.06.17	248	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.08.02	185	5		Owen Racing Organisation	BRM 	BRM 
+1955.05.22	325	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1957.07.20	185		futómû	Joakim Bonnier Racing Team	Maserati 	Maserati 
+1954.05.31	706	11		Kurtis Kraft	Kurtis 	Offenhauser 
+1960.05.30	10		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1960.05.29	275		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1957.09.08	238	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.06.04	546	9		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.09.05	756	4		Daimler Benz AG	Mercedes 	Mercedes 
+1951.07.01	595		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1958.09.07	238		karambol	Owen Racing Organisation	BRM 	BRM 
+1957.01.13	325	6		Scuderia Ferrari	Lancia 	Lancia 
+1956.05.30	574		kicsúszás	Kuzma	Kuzma	Offenhauser 
+1953.08.23	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.05.18	335	7		Ecurie Espadon	Ferrari 	Ferrari
+1958.07.19	784		gyújtás	BC Ecclestone	Connaught 	Alta 
+1956.05.13	36		kizárták	Scuderia Centro Sud	Ferrari 	Ferrari 
+1951.07.14	42		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1956.05.30	163	4		Kuzma	Kuzma	Offenhauser 
+1960.05.30	594		motor	Christensen	Christensen	Offenhauser 
+1955.09.11	355		olajteknõ	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.08.01	379	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.08.02	419	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.07.19	308	4		Connaught Engineering	Connaught 	Lea 
+1952.07.19	595		kuplung	Equipe Gordini	Gordini 	Gordini 
+1951.05.27	238	12		Enrico Plate	Maserati 	Maserati 
+1960.11.20	185	5		Owen Racing Organisation	BRM 	BRM 
+1958.07.06	238		túlhajtás	Owen Racing Organisation	BRM 	BRM 
+1958.01.19	599		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.06.19	222	2		Cooper Car Company	Cooper 	Climax 
+1960.11.20	5	13		Joe Lubin	Maserati 	Maserati 
+1959.05.10	369		sebességváltó	Cooper Car Company	Cooper 	Climax 
+1952.09.07	701		kizárták	HW Motors	HWM	Alta 
+1954.06.20	587	5		Equipe Gordini	Gordini 	Gordini 
+1954.07.17	374	10			Cooper 	Bristol 
+1960.11.20	150	9		Scuderia Centro Sud	Cooper 	Maserati 
+1955.01.16	584		kiesett	Scuderia Lancia	Lancia 	Lancia 
+1953.05.30	421	3		Ed Walsh	Kurtis 	Offenhauser 
+1951.05.27	759	9		Ecurie Rosier	Talbot-Lago 	Talbot 
+1956.05.13	355	8		Gould's Garage (Bristol)	Maserati 	Maserati 
+1958.09.07	54	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1951.10.28	765		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1953.05.30	693		kiállás	AE Dean	Kuzma	Offenhauser 
+1960.08.14	83		pályaelhagyás	Rob Walker Racing Team	Lotus 	Climax 
+1956.05.30	336		kicsúszás	Kurtis Kraft	Kurtis 	Offenhauser 
+1950.09.03	595		futómû	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1960.07.03	553		futómû	Scuderia Castellotti	Cooper 	Castellotti 
+1958.07.06	336	10		Scuderia Centro Sud	Maserati 	Maserati 
+1953.08.02	295	16			Veritas 	Veritas 
+1954.07.17	767		kiesett	Prince Bira	Maserati 	Maserati 
+1960.02.07	582		feladta		Maserati 	Maserati 
+1954.07.17	42		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.05.31	413	12		Kuzma	Kuzma	Offenhauser 
+1960.05.30	495		törés	Watson	Watson	Offenhauser 
+1955.05.30	31		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.05.30	445		karambol	Peter Schmidt	Kurtis 	Offenhauser 
+1958.05.18	448		benzinpumpa	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.22	584	2		Scuderia Lancia	Lancia 	Lancia 
+1953.08.23	228		nem rajtolt el		Osca 	Osca
+1956.07.14	83		sebességváltó	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.07.19	537	5		Connaught Engineering	Connaught 	Lea 
+1952.06.22	532	5		HW Motors	HWM	Alta 
+1953.06.21	1		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.08.05	599		kiesett	Scuderia Ferrari	Lancia 	Lancia 
+1955.05.22	759		benzinfolyás	Ecurie Rosier	Maserati 	Maserati 
+1951.06.17	419	1		Alfa Romeo SpA	Alfa 	Alfa 
+1950.06.18	42	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.09.04	549		karambol		Cooper 	Climax 
+1950.05.13	523		kiesett		ERA 	ERA
+1951.10.28	546		gyújtás	Ecurie Rosier	Talbot-Lago 	Talbot 
+1952.08.03	298		kiesett	Escuderia Bandeirantes	Maserati 	Maserati
+1958.06.15	394	3		Vandervell Products Ltd	Vanwall	Vanwall 
+1960.11.20	547		túlhajtás	Owen Racing Organisation	BRM 	BRM 
+1960.06.19	19		karambol	Team Lotus	Lotus 	Climax 
+1958.09.07	178		karambol	Cooper Car Company	Cooper 	Climax 
+1950.05.21	721		karambol	Scuderia Achille Varzi	Maserati 	Maserati 
+1959.08.02	150		visszalépés	Dr Ing F Porsche KG	Porsche 	Porsche 
+1957.05.30	639	3		Kuzma	Kuzma	Offenhauser 
+1950.06.18	118	8		Ecurie Belge	Talbot-Lago 	Talbot 
+1956.05.30	645	7		Kurtis Kraft	Kurtis 	Offenhauser 
+1950.05.30	495		leállás	AJ Watson	Watson	Offenhauser 
+1951.05.30	56		kicsúszás	Rotary Engineering	Deidt	Offenhauser 
+1960.02.07	222	1		Cooper Car Company	Cooper 	Climax 
+1959.07.18	19		rosszullét	Team Lotus	Lotus 	Climax 
+1959.12.12	712		motor	Mike Taylor	Cooper 	Climax 
+1959.05.31	369	3		Cooper Car Company	Cooper 	Climax 
+1950.09.03	419	1		Alfa Romeo SpA	Alfa 	Alfa 
+1960.06.19	791		futómû	Scuderia Ferrari	Ferrari 	Ferrari 
+1959.05.30	257		karambol	Leader Cards Inc	Kurtis 	Offenhauser 
+1951.05.30	413		motor	JC Agajanian	Kuzma	Offenhauser 
+1956.09.02	655		kiállás	Vandervell Products Ltd	Vanwall	Vanwall 
+1951.06.17	583	5			Talbot-Lago 	Talbot 
+1954.06.20	721	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.10.24	83		olajpumpa	Officine Alfieri Maserati	Maserati 	Maserati 
+1960.05.30	686		motor	Watson	Watson	Offenhauser 
+1957.09.08	606		túlhajtás	Officine Alfieri Maserati	Maserati 	Maserati 
+1960.02.07	185	7		Owen Racing Organisation	BRM 	BRM 
+1952.07.19	382	13		Ecurie Espadon	Ferrari 	Ferrari 
+1959.05.10	518	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.06.04	729	5		Scuderia Milano	Maserati 	Milano 
+1956.07.01	1	4		Scuderia Ferrari	Lancia 	Lancia 
+1957.08.04	369	8		Scuderia Centro Sud	Maserati 	Maserati 
+1959.05.30	800	2		Watson	Watson	Offenhauser 
+1950.05.30	705		nem azonosított	Louis Rassey	Snowberger	Offenhauser 
+1953.01.18	24	8		Cooper Car Company	Cooper 	Bristol 
+1960.09.04	381		sebességváltó	JB Naylor	JBW	Maserati 
+1959.09.13	36	12		Cooper Car Company	Cooper 	Climax 
+1957.08.04	178		futómû	Cooper Car Company	Cooper 	Climax 
+1952.07.06	595	4		Equipe Gordini	Gordini 	Gordini 
+1960.07.16	784		benzinpumpa	CT Atkins	Cooper 	Climax 
+1957.05.30	658		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1958.06.15	157	10			Maserati 	Maserati 
+1958.05.18	36		motor		Maserati 	Maserati 
+1950.06.04	438		sebességváltó		Talbot-Lago 	Talbot 
+1957.08.04	83	5		Vandervell Products Ltd	Vanwall	Vanwall 
+1954.08.22	448		olajpumpa	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.07.17	587	9		Equipe Gordini	Gordini 	Gordini 
+1959.05.10	700		törés	Owen Racing Organisation	BRM 	BRM 
+1958.09.07	452	4		Scuderia Centro Sud	Maserati 	Maserati 
+1951.07.14	781	6		Alfa Romeo SpA	Alfa 	Alfa 
+1953.06.21	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.06.04	337	11		Scuderia Achille Varzi	Maserati 	Maserati 
+1953.01.18	474		nem azonosított	Equipe Gordini	Simca-Gordini 	Gordini
+1955.05.22	595		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1958.07.06	54		kiesett	Vandervell Products Ltd	Vanwall	Vanwall 
+1951.07.01	238		túlhajtás	Enrico Plate	Maserati 	Maserati
+1957.08.04	756		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1950.05.13	169	7			ERA 	ERA
+1953.07.18	546		nem rajtolt el		Osca 	Osca
+1958.10.19	275	10		Team Lotus	Lotus 	Climax 
+1954.07.04	448		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.06.19	300	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1960.08.14	518		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1957.05.19	526		kizárták		Maserati 	Maserati 
+1954.07.17	364		olajfolyás		Cooper 	Alta 
+1952.09.07	475		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.01.16	370		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.07.04	42		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.09.07	162		kiállás	Connaught Engineering	Connaught 	Lea 
+1951.05.30	641		kuplung	Hall	Hall	Offenhauser 
+1959.08.23	731		karambol	Team Lotus	Lotus 	Climax 
+1959.05.10	116		kizárták	Equipe Nationale Belge	Cooper 	Climax 
+1960.08.14	547		túlhajtás	Owen Racing Organisation	BRM 	BRM 
+1956.06.03	798		olajnyomás		Connaught 	Alta 
+1955.05.22	42		karambol	Scuderia Lancia	Lancia 	Lancia 
+1955.09.11	248		gumi	Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.03	715	8			Veritas 	BMW 
+1950.05.30	430	13		Charles Pritchard	Kurtis 	Offenhauser 
+1959.05.10	346		kizárták		Cooper 	Climax 
+1959.07.18	607	11		Cooper Car Company	Cooper 	Climax 
+1953.06.07	248		gázadagoló	Scuderia Ferrari	Ferrari 	Ferrari 
+1952.06.22	759		futómû	Ecurie Rosier	Ferrari 	Ferrari 
+1953.09.13	300	6		Equipe Gordini	Gordini 	Gordini 
+1958.05.30	495		karambol	Watson	Watson	Offenhauser 
+1954.07.04	767	4		Prince Bira	Maserati 	Maserati 
+1952.05.30	707	5		Ray Brady	Kurtis 	Offenhauser 
+1960.06.19	734		motor	Reventlow Automobiles Inc	Scarab	Scarab 
+1954.07.17	595		hengerfej	Ecurie Rosier	Ferrari 	Ferrari 
+1953.07.05	83		kuplung	Cooper Car Company	Cooper 	Alta 
+1960.05.30	186	10		Kurtis Kraft	Kurtis 	Offenhauser 
+1954.08.01	248		visszalépés	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.09.07	111		motor	Equipe Gordini	Gordini 	Gordini 
+1952.05.30	96	7		John Zink	Kurtis 	Offenhauser 
+1950.05.30	336	15		Bowes Racing	Lesovsky	Offenhauser 
+1958.05.30	96	6		Watson	Watson	Offenhauser 
+1952.08.03	44		nem rajtolt el		AFM	BMW 
+1953.06.07	111	6		Equipe Gordini	Gordini 	Gordini 
+1955.09.11	599		kiállás	Officine Alfieri Maserati	Maserati 	Maserati 
+1959.05.31	499		túlhajtás	David Brown Corporation	Aston 	Aston 
+1958.05.30	182	2		Epperly	Epperly	Offenhauser 
+1951.09.16	382		karambol	Ecurie Espadon	Ferrari 	Ferrari
+1959.07.18	111	5		Rob Walker Racing Team	Cooper 	Climax 
+1952.07.19	298	18		Escuderia Bandeirantes	Maserati 	Maserati
+1952.07.19	499	8		G Caprara	Ferrari 	Ferrari 
+1957.07.07	178	7		Cooper Car Company	Cooper 	Climax 
+1958.05.26	36		sebességváltó		Maserati 	Maserati 
+1953.08.23	729		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.05.30	623	13		Peter Schmidt	Kuzma	Offenhauser 
+1952.08.03	324	9			AFM	BMW 
+1960.05.30	204		gyújtás	Ewing	Ewing	Offenhauser 
+1953.07.05	448	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.08.23	518		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.09.11	526		motor	Scuderia Volpini	Arzani-Volpini	Maserati 
+1960.07.03	150		futómû	Scuderia Ferrari	Ferrari 	Ferrari 
+1953.07.18	606		benzinpumpa	Equipe Gordini	Gordini 	Gordini 
+1952.05.18	767		motor	Equipe Gordini	Simca-Gordini 	Gordini
+1958.06.15	606		olajnyomás	Owen Racing Organisation	BRM 	BRM 
+1959.05.10	121		kizárták	British Racing Partnership	Cooper 	Climax 
+1960.11.20	178	4		Cooper Car Company	Cooper 	Climax 
+1957.08.18	606		olajfolyás	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.30	33	11		Kuzma	Kuzma	Offenhauser 
+1954.05.31	411	15		Kurtis Kraft	Kurtis 	Offenhauser 
+1959.07.05	226	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.01.19	238	6		Joakim Bonnier Racing Team	Maserati 	Maserati 
+1952.07.06	238		kiesett	Enrico Plate	Maserati 	Plate 
+1954.07.04	238		benzinpumpa		Maserati 	Maserati 
+1953.08.02	576		kiesett		Veritas 	Veritas 
+1950.06.04	29	2		Alfa Romeo SpA	Alfa 	Alfa 
+1953.09.13	83	13		Cooper Car Company	Cooper 	Alta 
+1955.06.05	300	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.05.30	183		gyújtás	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.08.02	670		kipufogócsõ	EMW Rennkollektiv	EMW	BMW 
+1954.08.22	300	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.09.03	294		kiesett		Talbot-Lago 	Talbot 
+1956.06.03	355		sebességváltó	Gould's Garage (Bristol)	Maserati 	Maserati 
+1952.09.07	419	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.08.02	238		motor	Equipe Gordini	Gordini 	Gordini 
+1954.06.20	448	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.18	54		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1957.08.04	695	11			Maserati 	Maserati 
+1952.05.30	139	11		Jack Hinkle	Kurtis 	Offenhauser 
+1960.05.29	111		sebességváltó	Scuderia Centro Sud	Cooper 	Maserati 
+1953.08.02	118		kiesett	Ecurie Belge	Connaught 	Lea 
+1952.05.30	411	4		Murrell Belanger	Lesovsky	Offenhauser 
+1950.09.03	781		motor	Alfa Romeo SpA	Alfa 	Alfa 
+1951.07.29	765		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1954.08.22	287	7		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.22	606		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.07.29	759	8		Ecurie Rosier	Talbot-Lago 	Talbot 
+1956.07.14	140	8		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.06.04	419	1		Alfa Romeo SpA	Alfa 	Alfa 
+1955.06.05	606		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1957.07.20	111	4		Scuderia Ferrari	Lancia 	Lancia 
+1953.09.13	354	14		Alex Falkenhausen Motorenen	AFM	Bristol 
+1956.05.30	105		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.08.02	518	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.18	546		kizárták	Andre Testut	Maserati 	Maserati 
+1958.01.19	140	8		Francesco Godia-Sales	Maserati 	Maserati 
+1956.07.01	587	11		Equipe Gordini	Gordini 	Gordini 
+1953.06.07	721	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1957.05.30	389		kicsúszás	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.09.13	248	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.06.06	734		visszalépés	Reventlow Automobiles Inc	Scarab	Scarab 
+1959.05.30	645	12		Moore	Moore	Offenhauser 
+1954.09.05	595		motor	Ecurie Rosier	Ferrari 	Ferrari 
+1953.08.23	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.06.19	283	10		Equipe Gordini	Gordini 	Gordini 
+1951.07.29	337		motor		Maserati 	Maserati 
+1953.07.05	300		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1953.05.30	707	2		Bessie Lee Paoli	Kurtis 	Offenhauser 
+1960.07.03	278		futómû	Fred Tuck Cars	Cooper 	Climax 
+1952.06.22	701	11		HW Motors	HWM	Alta 
+1958.06.15	369		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1951.07.29	382	6		Ecurie Espadon	Ferrari 	Ferrari
+1956.07.01	606	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.05.31	336	4		Kurtis Kraft	Kurtis 	Offenhauser 
+1960.07.03	731		karambol	Owen Racing Organisation	BRM 	BRM 
+1953.06.21	599		kuplung	HW Motors	HWM	Alta 
+1958.08.03	499	2		Cooper Car Company	Cooper 	Climax 
+1954.05.31	411	4		Kurtis Kraft	Kurtis 	Offenhauser 
+1951.06.17	42	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.05.30	96	9		Lesovsky	Lesovsky	Offenhauser 
+1953.07.05	228		motor	OSCA Automobili	Osca 	Osca
+1957.05.30	220	7		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.08.03	376	6		Ecurie Francorchamps	Ferrari 	Ferrari 
+1950.05.13	450		nem teljesítette a távot		Alta 	Alta
+1960.02.07	174	14			Maserati 	Maserati 
+1952.06.22	118	8		Equipe Gordini	Gordini 	Gordini 
+1953.07.18	784		kuplung	John Heath	HWM	Alta 
+1950.09.03	118		túlhajtás	Ecurie Belge	Talbot-Lago 	Talbot 
+1951.07.14	374	11			ERA 	ERA
+1955.01.16	111		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1958.06.15	599		túlhajtás	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.05.31	296	18		Stevens	Stevens	Offenhauser 
+1956.07.01	83		sebességváltó	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.07.04	756		motor	Daimler Benz AG	Mercedes 	Mercedes 
+1952.05.30	259	16		Pete Salemi	Trevis	Offenhauser 
+1950.05.21	546	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.30	188	18		Kurtis Kraft	Kurtis 	Offenhauser 
+1954.06.20	234		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.13	584	4		Scuderia Ferrari	Lancia 	Lancia 
+1955.06.19	448	7		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.09.16	765	6		Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1958.05.30	669	13		Kuzma	Kuzma	Offenhauser 
+1952.07.19	465		motor		HWM	Alta 
+1950.06.04	696		karambol	Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1951.05.27	583		gyújtás		Talbot-Lago 	Talbot 
+1954.08.01	532		kerék	Equipe Gordini	Gordini 	Gordini 
+1954.01.17	432		motor	Onofre Marimon	Maserati 	Maserati 
+1960.06.19	150		futómû	Scuderia Ferrari	Ferrari 	Ferrari 
+1952.06.22	503		karambol	Scuderia Franera	Frazer-Nash 	Bristol 
+1959.05.10	275		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	296		karambol	Watson	Watson	Offenhauser 
+1956.08.05	83	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.09.07	150		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1959.05.30	713		karambol	Leader Cards Inc	Kurtis 	Offenhauser 
+1955.01.16	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.01.18	114		kerék	Cooper Car Company	Cooper 	Bristol 
+1950.07.02	759		túlhajtás	Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1956.09.02	654		defekt	Scuderia Ferrari	Lancia 	Lancia 
+1956.08.05	759	5		Ecurie Rosier	Maserati 	Maserati 
+1953.07.18	234		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1957.07.20	499	5		Cooper Car Company	Cooper 	Climax 
+1953.05.30	698	4		Grancor Auto Specialists	Kurtis 	Offenhauser 
+1960.08.14	334		hûtés	Team Lotus	Lotus 	Climax 
+1950.05.21	402		karambol	Scuderia Achille Varzi	Maserati 	Maserati 
+1955.07.16	355		törés	Gould's Garage (Bristol)	Maserati 	Maserati 
+1950.07.02	29	2		Alfa Romeo SpA	Alfa 	Alfa 
+1953.07.18	111		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1956.01.22	584		sebességváltó	Scuderia Ferrari	Lancia 	Lancia 
+1952.06.22	483	7		Ecurie Francorchamps	Ferrari 	Ferrari 
+1956.09.02	238		futómû	Vandervell Products Ltd	Vanwall	Vanwall 
+1955.05.22	228		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1951.06.17	438		futómû		Talbot-Lago 	Talbot 
+1952.07.06	438	8		Escuderia Bandeirantes	Maserati 	Maserati
+1951.05.30	725		motor	MA Walker	Kurtis 	Offenhauser 
+1957.01.13	584		elosztó	Scuderia Ferrari	Lancia 	Lancia 
+1958.09.07	452		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.05.30	31		olajfolyás	Pete Salemi	Trevis	Offenhauser 
+1950.06.04	42		olajteknõ	Scuderia Ferrari	Ferrari 	Ferrari 
+1956.06.03	448		visszalépés	Owen Racing Organisation	Maserati 	Maserati 
+1955.05.30	445	10		Kurtis Kraft	Kurtis 	Offenhauser 
+1951.10.28	655		kiállás	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.05.31	677	8		Kurtis Kraft	Kurtis 	Offenhauser 
+1958.10.19	606		motor	Owen Racing Organisation	BRM 	BRM 
+1950.09.03	364	7			Ferrari 	Ferrari 
+1951.07.29	284	10		Ecurie Belgique	Talbot-Lago 	Talbot 
+1951.05.27	83	8		HW Motors	HWM	Alta
+1960.08.14	178	1		Cooper Car Company	Cooper 	Climax 
+1957.01.13	599	6		Scuderia Ferrari	Lancia 	Lancia 
+1950.05.21	759		karambol	Ecurie Rosier	Talbot-Lago 	Talbot 
+1960.09.04	36		gázadagoló	Scuderia Castellotti	Cooper 	Maserati 
+1954.10.24	503	8		Owen Racing Organisation	Maserati 	Maserati 
+1957.09.08	185		túlhajtás	Scuderia Centro Sud	Maserati 	Maserati 
+1952.08.03	505		kiesett		BMW 	BMW 
+1959.12.12	275		kuplung	Scuderia Ferrari	Ferrari 	Ferrari 
+1950.07.02	688		visszalépés	Scuderia Ambrosiana	Maserati 	Maserati 
+1959.05.30	758		benzinfolyás	Christensen	Christensen	Offenhauser 
+1953.08.02	722		benzinpumpa		Veritas 	Veritas 
+1950.09.03	714		kiesett	Scuderia Milano	Maserati 	Milano 
+1958.08.24	731		karambol	Team Lotus	Lotus 	Climax 
+1952.09.07	364		kizárták		Ferrari 	Ferrari
+1959.05.10	278		kizárták	Equipe Nationale Belge	Cooper 	Climax 
+1958.07.19	275		motor	Team Lotus	Lotus 	Climax 
+1954.07.17	151	14		Ecurie Ecosse	Connaught 	Lea 
+1952.08.03	229		kiesett		AFM	BMW 
+1953.05.30	411	3		Ed Walsh	Kurtis 	Offenhauser 
+1959.07.05	597		motor	Scuderia Centro Sud	Cooper 	Maserati 
+1958.05.30	648		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1956.07.01	238	10		Vandervell Products Ltd	Vanwall	Vanwall 
+1954.07.04	111		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1953.06.07	599	8		HW Motors	HWM	Alta 
+1960.09.04	262	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.07.06	499	11		Cooper Car Company	Cooper 	Climax 
+1958.01.19	83	1		Rob Walker Racing Team	Cooper 	Climax 
+1953.06.07	238		futómû	Equipe Gordini	Gordini 	Gordini 
+1959.12.12	238		kuplung	Ecurie Bleue	Cooper 	Climax 
+1955.09.11	238		nem azonosított	Vandervell Products Ltd	Vanwall	Vanwall 
+1960.11.20	19	2		Team Lotus	Lotus 	Climax 
+1953.07.05	721	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1960.11.20	743	16		Team Lotus	Lotus 	Climax 
+1957.08.04	394		sebességváltó	Vandervell Products Ltd	Vanwall	Vanwall 
+1952.05.30	639	6		Peter Schmidt	Kurtis 	Offenhauser 
+1953.09.13	767	11		Scuderia Milano	Maserati 	Maserati 
+1959.08.23	111	4		Rob Walker Racing Team	Cooper 	Climax 
+1957.05.30	191	5		Kurtis Kraft	Kurtis 	Offenhauser 
+1956.07.14	238		benzinfolyás	Vandervell Products Ltd	Vanwall	Vanwall 
+1957.09.08	599		motor	Scuderia Ferrari	Lancia 	Lancia 
+1956.05.30	792		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1954.08.01	655	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.09.16	419		motor	Alfa Romeo SpA	Alfa 	Alfa 
+1960.02.07	275	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.07.01	742		nem rajtolt el	G A Vanderwell	Ferrari 	Ferrari 
+1958.05.26	448	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.08.18	316		olajteknõ	Scuderia Ferrari	Lancia 	Lancia 
+1959.05.30	56	4		Epperly	Epperly	Offenhauser 
+1950.09.03	655		kiesett	Alfa Romeo SpA	Alfa 	Alfa 
+1960.07.03	185		motor	Owen Racing Organisation	BRM 	BRM 
+1952.09.07	118		kizárták	Vickomtesse de Walckiers	Simca-Gordini 	Gordini
+1954.05.31	56	15		Kurtis Kraft	Kurtis 	Offenhauser 
+1956.01.22	94	6		Alberto Uria	Maserati 	Maserati 
+1953.06.21	234	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.07.14	86		gyújtás	Emeryson Cars	Emeryson	Alta 
+1960.07.16	278		gyújtás	Fred Tuck Cars	Cooper 	Climax 
+1957.07.20	54	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1951.06.17	294	8			Talbot-Lago 	Talbot 
+1955.09.11	794		benzinpumpa	Equipe Gordini	Gordini 	Gordini 
+1953.07.18	489		motor	Ecurie Ecosse	Connaught 	Lea 
+1950.09.03	625		sebességváltó		Talbot-Lago 	Talbot 
+1960.09.04	30	10		Camoradi International	Behra-Porsche	Porsche 
+1956.07.01	226		kuplung	Scuderia Ferrari	Lancia 	Lancia 
+1954.01.17	606		pályaelhagyás	Equipe Gordini	Gordini 	Gordini 
+1954.05.31	56		kerék	Kurtis Kraft	Kurtis 	Offenhauser 
+1960.05.29	222	2		Cooper Car Company	Cooper 	Climax 
+1960.07.03	700	6		Team Lotus	Lotus 	Climax 
+1959.09.13	178	3		Cooper Car Company	Cooper 	Climax 
+1953.05.30	536	12		Lee Elkins	Kurtis 	Offenhauser 
+1951.05.30	705		motor	HA Chapman	Kurtis 	Offenhauser 
+1958.05.26	499	4		Cooper Car Company	Cooper 	Climax 
+1953.07.18	162		tömlõrepedés	Connaught Engineering	Connaught 	Lea 
+1956.05.13	54		motor	Owen Racing Organisation	BRM 	BRM 
+1957.05.19	111	5		Scuderia Ferrari	Lancia 	Lancia 
+1955.05.22	316		futómû	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.08.23	1	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.05.26	606	3		Owen Racing Organisation	BRM 	BRM 
+1956.09.02	140	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.08.23	532		motor	HW Motors	HWM	Alta 
+1956.07.01	664		karambol	Vandervell Products Ltd	Vanwall	Vanwall 
+1956.01.22	606	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.08.24	394	3		Vandervell Products Ltd	Vanwall	Vanwall 
+1953.07.18	238		elektronikus	Equipe Gordini	Gordini 	Gordini 
+1953.07.18	503	8			Cooper 	Bristol 
+1958.07.06	394		kiesett	Vandervell Products Ltd	Vanwall	Vanwall 
+1952.05.18	599		karambol	HW Motors	HWM	Alta 
+1959.07.18	130	8		Team Lotus	Lotus 	Climax 
+1957.01.13	721	5		Scuderia Ferrari	Lancia 	Lancia 
+1953.05.30	574		gyújtás	RN Sabourin	Del 	Offenhauser 
+1956.05.13	587	6		Equipe Gordini	Gordini 	Gordini 
+1953.08.23	234		olajfolyás	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.10.19	772		karambol	British Racing Partnership	Cooper 	Climax 
+1952.06.22	595	3		Equipe Gordini	Gordini 	Gordini 
+1958.08.24	238	6		Owen Racing Organisation	BRM 	BRM 
+1952.09.07	595	14		Equipe Gordini	Gordini 	Gordini 
+1956.07.14	759		karburátor	Ecurie Rosier	Maserati 	Maserati 
+1954.07.04	503		futómû	Owen Racing Organisation	Maserati 	Maserati 
+1955.01.16	316		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.07.14	721	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.09.16	284		túlhajtás	Ecurie Belgique	Talbot-Lago 	Talbot 
+1953.01.18	721	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.05.26	369		benzinpumpa	Horace Gould	Maserati 	Maserati 
+1958.07.19	394	4		Vandervell Products Ltd	Vanwall	Vanwall 
+1952.08.17	595	5		Equipe Gordini	Gordini 	Gordini 
+1953.07.18	301		kuplung	HW Motors	HWM	Alta 
+1956.07.14	595	9		Equipe Gordini	Gordini 	Gordini 
+1956.06.03	248	5		Scuderia Centro Sud	Maserati 	Maserati 
+1953.08.23	245	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.01.22	526		karambol	Luigi Piotti	Maserati 	Maserati 
+1958.08.03	597	7		High Efficiency Motors	Cooper 	Climax 
+1955.06.19	606	6		Officine Alfieri Maserati	Maserati 	Maserati 
+1957.07.20	54		kiesett	Vandervell Products Ltd	Vanwall	Vanwall 
+1953.09.13	118		benzinfolyás	Ecurie Belge	Connaught 	Lea 
+1951.05.30	26		futómû	Bob Estes	Watson	Offenhauser 
+1951.05.27	335		benzinpumpa		Veritas 	Veritas 
+1950.05.30	800	24		John Lorenz	Wetteroth	Offenhauser 
+1954.08.22	284	8		Ecurie Francorchamps	Ferrari 	Ferrari 
+1954.07.17	111	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.17	668	9		Escuderia Bandeirantes	Maserati 	Maserati
+1957.07.20	374	6			Cooper 	Bristol 
+1951.07.01	472	9		Ecurie Belgique	Talbot-Lago 	Talbot 
+1954.05.31	574		kiesett	Nichels	Nichels	Offenhauser 
+1959.09.13	222		motor	Cooper Car Company	Cooper 	Climax 
+1955.05.30	706	3		Kurtis Kraft	Kurtis 	Offenhauser 
+1954.07.17	42		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.05.31	482		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1958.05.18	731		motor	Team Lotus	Lotus 	Climax 
+1958.07.06	316		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1951.05.30	718		gyújtás	Jean Marcenac	Kurtis 	Novi 
+1959.08.23	19		sebességváltó	Team Lotus	Lotus 	Climax 
+1957.07.20	432		futómû	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.07.05	503		kerék		Cooper 	Bristol 
+1952.09.07	308	12		Connaught Engineering	Connaught 	Lea 
+1952.05.18	354		motor	Alex Falkenhausen Motorenen	AFM	Kuchen 
+1951.10.28	111		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1960.06.19	564		nem azonosított	Taylor-Crawley Racing Team	Lotus 	Climax 
+1958.08.03	518	9		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.09.08	316	8		Scuderia Ferrari	Lancia 	Lancia 
+1960.05.29	150	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	686		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.05.31	54		olajfolyás	Scuderia Ferrari	Ferrari 	Ferrari 
+1953.08.02	499		motor	Connaught Engineering	Connaught 	Lea 
+1957.01.13	432	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.07.02	546		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.10.19	295		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1957.08.18	36	6		Officine Alfieri Maserati	Maserati 	Maserati 
+1952.07.19	111		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1950.05.21	1	1		Alfa Romeo SpA	Alfa 	Alfa 
+1960.06.19	547		motor	Owen Racing Organisation	BRM 	BRM 
+1958.05.18	178	4		Cooper Car Company	Cooper 	Climax 
+1958.07.19	238	5		Owen Racing Organisation	BRM 	BRM 
+1953.09.13	729		benzinhiány	Officine Alfieri Maserati	Maserati 	Maserati 
+1953.01.18	595		kerék	Equipe Gordini	Gordini 	Gordini 
+1955.01.16	379	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1957.07.07	700		karambol	Owen Racing Organisation	BRM 	BRM 
+1959.07.18	527		karambol	Scuderia Centro Sud	Maserati 	Maserati 
+1957.09.08	394		benzintank	Vandervell Products Ltd	Vanwall	Vanwall 
+1953.07.18	248		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.30	677	2		Kurtis Kraft	Kurtis 	Offenhauser 
+1956.05.30	296		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.09.13	499		motor	David Brown Corporation	Aston 	Aston 
+1951.07.14	688		motor	Scuderia Ambrosiana	Maserati 	Maserati 
+1959.07.18	63		kizárták	Reg Parnell Racing	Cooper 	Climax 
+1950.06.18	29	2		Alfa Romeo SpA	Alfa 	Alfa 
+1958.09.07	157		motor		Maserati 	Maserati 
+1959.05.10	238		benzintank	Owen Racing Organisation	BRM 	BRM 
+1958.08.24	157		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1956.09.02	1	2		Scuderia Ferrari	Lancia 	Lancia 
+1958.09.07	394		túlhajtás	Vandervell Products Ltd	Vanwall	Vanwall 
+1960.08.14	743	3		Team Lotus	Lotus 	Climax 
+1951.09.16	655	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.09.11	419		gumi	Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.03	729		pályaelhagyás	Officine Alfieri Maserati	Maserati 	Maserati
+1958.08.24	499	10		Cooper Car Company	Cooper 	Climax 
+1951.05.30	131	2		Jim Robbins	Kurtis 	Offenhauser 
+1953.08.02	756	9		Hans Klenk	Veritas 	Veritas 
+1954.09.05	524		kizárták		Maserati 	Maserati 
+1952.05.30	144		kompresszor	Lewis Welch	Kurtis 	Novi 
+1953.01.18	111	7		Equipe Gordini	Gordini 	Gordini 
+1959.05.10	150		karambol	Dr Ing F Porsche KG	Porsche 	Porsche 
+1958.07.19	83		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1955.09.11	584	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	102		gyújtás	Lesovsky	Lesovsky	Offenhauser 
+1950.05.13	29	2		Alfa Romeo SpA	Alfa 	Alfa 
+1950.05.21	475		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.08.03	606	5		Equipe Gordini	Gordini 	Gordini 
+1950.07.02	475		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.05.30	237	7		Louis Rassey	Kurtis 	Offenhauser 
+1959.07.05	547		kõfelverõdés	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.30	482	5		Kurtis Kraft	Kurtis 	Offenhauser 
+1956.08.05	599		benzinfolyás	Scuderia Ferrari	Lancia 	Lancia 
+1959.05.30	204		kicsúszás	Kuzma	Kuzma	Offenhauser 
+1953.06.21	111	5		Equipe Gordini	Gordini 	Gordini 
+1954.09.05	300		kiállás	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.05.18	595		hûtés	Equipe Gordini	Gordini 	Gordini 
+1956.05.13	759		motor	Ecurie Rosier	Maserati 	Maserati 
+1954.05.31	508	7		Phillips	Phillips	Offenhauser 
+1952.05.30	454	12		Bob Estes	Watson	Offenhauser 
+1953.07.18	599		karambol	HW Motors	HWM	Alta 
+1958.10.19	143	15			Cooper 	Climax 
+1953.09.13	287	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.10.28	419	3		Alfa Romeo SpA	Alfa 	Alfa 
+1960.02.07	28	9		Team Lotus	Lotus 	Climax 
+1951.07.01	765		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1955.09.11	503		benzinbefecskendezõ	Vandervell Products Ltd	Vanwall	Vanwall 
+1954.09.05	370		futómû	Equipe Gordini	Gordini 	Gordini 
+1959.05.10	157		kizárták	Dr Ing F Porsche KG	Behra-Porsche	Porsche 
+1953.08.23	759		karambol	Ecurie Rosier	Ferrari 	Ferrari 
+1958.05.18	316	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.06.03	83		kerék	Officine Alfieri Maserati	Maserati 	Maserati 
+1960.09.04	518	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.09.08	36	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1959.07.18	238	4		Owen Racing Organisation	BRM 	BRM 
+1955.01.16	379		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.07.19	258	21			Frazer-Nash 	BMW 
+1959.05.31	185	1		Owen Racing Organisation	BRM 	BRM 
+1958.08.03	789	8			Cooper 	Climax 
+1960.07.16	54	5		Yeoman Credit Racing Team	Cooper 	Climax 
+1954.05.31	139	3		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.05.30	26	13		Ed Walsh	Kurtis 	Offenhauser 
+1958.05.30	186		kicsúszás	Kurtis Kraft	Kurtis 	Offenhauser 
+1954.07.17	700		kiesett	Prince Bira	Maserati 	Maserati 
+1958.08.03	222	5		Cooper Car Company	Cooper 	Climax 
+1954.07.17	300	6			Maserati 	Maserati 
+1960.06.06	83	4		Rob Walker Racing Team	Lotus 	Climax 
+1960.06.19	185		motor	Owen Racing Organisation	BRM 	BRM 
+1954.05.31	220		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1952.07.19	701	15		HW Motors	HWM	Alta 
+1958.05.18	394		kormány	Vandervell Products Ltd	Vanwall	Vanwall 
+1955.06.05	779		olajfolyás	Daimler Benz AG	Mercedes 	Mercedes 
+1956.06.03	238	4		Vandervell Products Ltd	Vanwall	Vanwall 
+1959.07.18	499	6		David Brown Corporation	Aston 	Aston 
+1957.09.08	355	10			Maserati 	Maserati 
+1957.01.13	764	9		Scuderia Centro Sud	Ferrari 	Ferrari 
+1955.05.22	1		futómû	Daimler Benz AG	Mercedes 	Mercedes 
+1957.08.04	127	14		Ecurie Maarsbergen	Porsche 	Porsche 
+1954.05.31	412	18		Stevens	Schroeder	Offenhauser 
+1959.12.12	54	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.10.19	226		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.05.31	259		kiesett	Pawl	Pawl	Offenhauser 
+1955.09.11	49		motor	Equipe Gordini	Gordini 	Gordini 
+1955.06.05	419	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.07.07	355		sebességváltó		Maserati 	Maserati 
+1956.07.14	178		motor		Maserati 	Maserati 
+1958.10.19	238	5		Owen Racing Organisation	BRM 	BRM 
+1957.05.19	178	6		Rob Walker Racing Team	Cooper 	Climax 
+1953.09.13	42		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1958.10.19	185	4		Owen Racing Organisation	BRM 	BRM 
+1958.06.15	731		motor	Team Lotus	Lotus 	Climax 
+1960.11.20	226	12		Yeoman Credit Racing Team	Cooper 	Climax 
+1959.05.31	275	9		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.01.13	316		kuplung	Scuderia Ferrari	Lancia 	Lancia 
+1960.06.06	222		nem azonosított	Cooper Car Company	Cooper 	Climax 
+1953.08.23	53		sebességváltó	Escuderia Bandeirantes	Maserati 	Maserati 
+1960.07.16	178	1		Cooper Car Company	Cooper 	Climax 
+1957.05.19	121		benzintank	Connaught Engineering	Connaught 	Alta 
+1956.07.14	695		motor		Maserati 	Maserati 
+1954.07.17	759		motor	Ecurie Rosier	Ferrari 	Ferrari 
+1953.06.21	780	9		Equipe Gordini	Gordini 	Gordini 
+1951.05.30	536		tengely	Lee Elkins	Kurtis 	Offenhauser 
+1952.07.06	583	10		HW Motors	HWM	Alta 
+1952.05.30	698		kompresszor	Cummins Engines	Kurtis 	Cummins 
+1952.08.17	53	9		Escuderia Bandeirantes	Maserati 	Maserati
+1953.08.02	248		kiesett	Scuderia Ferrari	Ferrari 	Ferrari 
+1958.08.03	111	3		Rob Walker Racing Team	Cooper 	Climax 
+1958.08.03	363		motor		Cooper 	Climax 
+1950.09.03	475		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.07.01	234		motor	Scuderia Milano	Maserati 	Milano 
+1956.07.14	1	1		Scuderia Ferrari	Lancia 	Lancia 
+1950.05.21	550		karambol		Maserati 	Maserati 
+1958.01.19	432	7		Scuderia Sud Americana	Maserati 	Maserati 
+1960.07.03	111		karambol	Scuderia Centro Sud	Cooper 	Maserati 
+1953.08.23	729	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1952.06.22	465	15			HWM	Alta 
+1951.07.01	550		futómû	Enrico Plate	Maserati 	Maserati
+1960.05.30	404	7		Watson	Watson	Offenhauser 
+1953.06.21	238	7		Equipe Gordini	Gordini 	Gordini 
+1958.05.26	83	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1952.05.18	503	4		Scuderia Franera	Frazer-Nash 	Bristol 
+1954.09.05	721		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1953.05.30	706	10		Pat Clancy	Kurtis 	Offenhauser 
+1953.05.30	800	7		Ernest Ruiz	Kurtis 	Offenhauser 
+1955.05.22	606	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.08.02	42		kiesett	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.05.30	148	9		Trevis	Trevis	Offenhauser 
+1952.08.03	260		kiesett		Veritas 	BMW 
+1953.06.21	550	4			Maserati 	Maserati 
+1956.06.03	599	1		Scuderia Ferrari	Lancia 	Lancia 
+1950.05.13	193	3		Alfa Romeo SpA	Alfa 	Alfa 
+1956.09.02	83	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1955.05.30	360	7		Kurtis Kraft	Kurtis 	Offenhauser 
+1959.07.18	564		futómû	Alan Brown Equipe	Cooper 	Climax 
+1957.07.07	448	4		Scuderia Ferrari	Lancia 	Lancia 
+1953.08.23	534	9		HW Motors	HWM	Alta 
+1956.09.02	695		motor		Maserati 	Maserati 
+1956.01.22	1	1		Scuderia Ferrari	Lancia 	Lancia 
+1954.07.17	738		motor	Ecurie Richmond	Cooper 	Bristol 
+1955.01.16	83	4		Daimler Benz AG	Mercedes 	Mercedes 
+1957.05.19	369	3		Scuderia Centro Sud	Maserati 	Maserati 
+1959.12.12	150	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.06.06	262	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.08.03	185		karambol	Scuderia Centro Sud	Maserati 	Maserati 
+1957.05.30	10		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.06.07	503		kiállás		Cooper 	Bristol 
+1960.07.16	518	7		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.09.07	248	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.05.30	421	1		Epperly	Epperly	Offenhauser 
+1953.05.30	574		kiesett	3L Racing Team	Del 	Offenhauser 
+1959.09.13	784		motor	High Efficiency Motors	Cooper 	Maserati 
+1959.12.12	518		kuplung	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.08.22	83		olajpumpa	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.09.05	721	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.03	676	12			BMW 	BMW 
+1952.07.19	301		motor	HW Motors	HWM	Alta 
+1954.05.31	511		kiesett	Schroeder	Kurtis 	Offenhauser 
+1952.08.03	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.05.19	54	2		Vandervell Products Ltd	Vanwall	Vanwall 
+1952.07.19	238	17		Enrico Plate	Maserati 	Plate 
+1960.06.06	54		sebességváltó	Yeoman Credit Racing Team	Cooper 	Climax 
+1960.07.16	607	8		Yeoman Credit Racing Team	Cooper 	Climax 
+1955.07.16	599		kuplung	Owen Racing Organisation	Maserati 	Maserati 
+1955.06.05	111	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.09.08	448	6		Scuderia Ferrari	Lancia 	Lancia 
+1950.05.21	118	7		Ecurie Belge	Talbot-Lago 	Talbot 
+1951.07.01	1	11		Alfa Romeo SpA	Alfa 	Alfa 
+1954.09.05	250	11			Maserati 	Maserati 
+1960.09.04	355		üzemanyag		Maserati 	Maserati 
+1957.07.07	432		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.07.04	779	2		Daimler Benz AG	Mercedes 	Mercedes 
+1951.10.28	550	6		Alfa Romeo SpA	Alfa 	Alfa 
+1957.05.30	336		motor	Watson	Watson	Offenhauser 
+1950.09.03	767		motor	Enrico Plate	Maserati 	Maserati 
+1956.09.02	584	8		Scuderia Ferrari	Lancia 	Lancia 
+1952.07.19	688		motor	Ecurie Ecosse	Cooper 	Bristol 
+1955.09.11	287	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.05.13	316		karambol	Scuderia Ferrari	Lancia 	Lancia 
+1957.07.20	606		kuplung	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.08.03	238		törés	Owen Racing Organisation	BRM 	BRM 
+1958.07.19	597		kuplung	Cooper Car Company	Cooper 	Climax 
+1951.09.16	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.08.02	19		sebességváltó	Team Lotus	Lotus 	Climax 
+1956.05.13	111		túlhajtás	Vandervell Products Ltd	Vanwall	Vanwall 
+1954.08.01	238	7			Maserati 	Maserati 
+1950.05.30	555	18		Pete Wales	Kurtis 	Offenhauser 
+1958.09.07	185		tûz	Owen Racing Organisation	BRM 	BRM 
+1958.05.18	526		kizárták	OSCA Automobili	Osca	Osca
+1954.10.24	238		sebességváltó		Maserati 	Maserati 
+1954.10.24	606		törés	Equipe Gordini	Gordini 	Gordini 
+1955.07.16	448	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	658		kizárták	Kurtis Kraft	Kurtis 	Offenhauser 
+1954.10.24	595		motor	Ecurie Rosier	Ferrari 	Ferrari 
+1958.05.30	196		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1958.05.18	499		sebességváltó	Cooper Car Company	Cooper 	Climax 
+1960.05.30	482	13		Kuzma	Kuzma	Offenhauser 
+1960.07.16	499		kormány	David Brown Corporation	Aston 	Aston 
+1953.08.02	676	15			BMW 	BMW 
+1957.05.19	499		kizárták	Owen Racing Organisation	BRM 	BRM 
+1959.09.13	54		dugattyú	Scuderia Ferrari	Ferrari 	Ferrari 
+1959.05.30	259	8		Leader Cards Inc	Kurtis 	Offenhauser 
+1950.06.04	248		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.22	655	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.07.05	701		kuplung	HW Motors	HWM	Alta 
+1952.07.19	419	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.01.16	1	1		Daimler Benz AG	Mercedes 	Mercedes 
+1957.05.30	713	14		Kuzma	Kuzma	Offenhauser 
+1950.07.02	118		túlhajtás	Ecurie Belge	Talbot-Lago 	Talbot 
+1954.09.05	780	6		Equipe Gordini	Gordini 	Gordini 
+1959.12.12	19	5		Team Lotus	Lotus 	Climax 
+1951.07.01	438		kipufogócsõ		Talbot-Lago 	Talbot 
+1953.06.07	759	7		Ecurie Rosier	Ferrari 	Ferrari 
+1960.07.16	553	15		Scuderia Castellotti	Cooper 	Castellotti 
+1960.11.20	565	11		Fred Armbruster	Cooper 	Ferrari
+1952.06.22	599		féltengely	HW Motors	HWM	Alta 
+1952.08.17	371		olajnyomás		Connaught 	Lea 
+1959.05.30	508		gyújtás	Leader Cards Inc	Kurtis 	Offenhauser 
+1954.09.05	83	10		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.06.07	550	5			Maserati 	Maserati 
+1952.05.18	738	8		Ecurie Richmond	Cooper 	Bristol 
+1958.05.30	204		futómû	Kuzma	Kuzma	Offenhauser 
+1953.05.30	33	9		JC Agajanian	Kurtis 	Offenhauser 
+1955.07.16	523		kiesett	Rob Walker Racing Team	Connaught 	Alta 
+1958.07.19	150		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1959.12.12	83		sebességváltó	Rob Walker Racing Team	Cooper 	Climax 
+1952.06.22	735	6		Ecurie Richmond	Cooper 	Bristol 
+1951.05.27	42	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.09.13	617		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.13	1		olajfolyás	Alfa Romeo SpA	Alfa 	Alfa 
+1960.07.16	111	11		David Brown Corporation	Aston 	Aston 
+1957.07.20	599		hûtés	Scuderia Ferrari	Lancia 	Lancia 
+1960.11.20	273	7			Lotus 	Climax 
+1950.05.30	81	21		Ludson Morris	Kurtis 	Offenhauser 
+1950.07.02	759	6			Talbot-Lago 	Talbot 
+1958.07.19	736		sebességváltó	Scuderia Centro Sud	Maserati 	Maserati 
+1960.05.29	54	4		Yeoman Credit Racing Team	Cooper 	Climax 
+1951.07.01	583	7			Talbot-Lago 	Talbot 
+1959.07.05	185		motor	Owen Racing Organisation	BRM 	BRM 
+1960.07.03	54		nem azonosított	Vandervell Products Ltd	Vanwall 	Vanwall 
+1952.05.30	167	9		Tom Saraloff	Kurtis 	Offenhauser 
+1956.07.14	584	10		Scuderia Ferrari	Lancia 	Lancia 
+1951.09.16	111		motor	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1955.06.05	238		nem rajtolt el	Scuderia Ferrari	Ferrari 	Ferrari 
+1951.07.29	118	11		Ecurie Belge	Talbot-Lago 	Talbot 
+1959.08.02	178		kuplung	Cooper Car Company	Cooper 	Climax 
+1957.08.04	140		kormány	Francesco Godia-Sales	Maserati 	Maserati 
+1950.05.30	445	10		Grancor Auto	Kurtis 	Offenhauser 
+1951.07.14	729	4		Alfa Romeo SpA	Alfa 	Alfa 
+1954.07.04	499		futómû	Gilby Engineering Ltd	Maserati 	Maserati 
+1951.05.27	419	3		Alfa Romeo SpA	Alfa 	Alfa 
+1960.08.14	150	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.07.07	238	6		Officine Alfieri Maserati	Maserati 	Maserati 
+1960.07.03	262		motor	Reventlow Automobiles Inc	Scarab	Scarab 
+1951.07.29	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.08.01	245		kicsúszás	Daimler Benz AG	Mercedes 	Mercedes 
+1951.07.14	1	2		Alfa Romeo SpA	Alfa 	Alfa 
+1953.09.13	1	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.07.18	499		kiállás	Connaught Engineering	Connaught 	Lea 
+1951.05.27	673		gyújtás	HW Motors	HWM	Alta
+1960.07.16	150	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.07.05	222	5		Cooper Car Company	Cooper 	Climax 
+1956.07.01	325	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.08.01	111	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.09.13	111	9		Rob Walker Racing Team	Cooper 	Climax 
+1955.07.16	584		futómû	Scuderia Ferrari	Ferrari 	Ferrari 
+1956.01.22	432		féltengely	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.05.31	623	13		Kuzma	Kuzma	Offenhauser 
+1955.07.16	316	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1951.09.16	354		karambol	Ecurie Espadon	Ferrari 	Ferrari
+1959.07.05	54	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1957.05.19	1	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1950.06.04	583		karambol	Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1959.05.30	792		karambol	Elder	Elder	Offenhauser 
+1954.07.04	721		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1956.09.02	150		karambol	Scuderia Ferrari	Lancia 	Lancia 
+1960.07.03	178	1		Cooper Car Company	Cooper 	Climax 
+1959.08.23	54	9		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.07.19	106		kizárták	BC Ecclestone	Connaught 	Alta 
+1957.08.04	499		kiállás	Cooper Car Company	Cooper 	Climax 
+1956.07.01	584	2		Scuderia Ferrari	Lancia 	Lancia 
+1950.05.30	227	20		RA Cott	Maserati 	Offenhauser 
+1958.06.15	275	4		Team Lotus	Lotus 	Climax 
+1953.07.18	42	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.08.03	127		motor	Ecurie Maarsbergen	Porsche 	Porsche
+1951.05.30	289		gyújtás	Federal Engineering	Kurtis 	Offenhauser 
+1951.07.29	294	9			Talbot-Lago 	Talbot 
+1960.05.30	610		karambol	Epperly	Epperly	Offenhauser 
+1957.05.30	105		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1954.08.22	379	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1953.08.02	354		kiesett	Alex Falkenhausen Motorenen	AFM	Bristol 
+1955.06.05	759	9		Ecurie Rosier	Maserati 	Maserati 
+1951.09.16	248	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.08.03	54	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1958.06.15	316		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.30	188	8		Kurtis Kraft	Kurtis 	Offenhauser 
+1956.01.22	83		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.07.06	606		benzinpumpa	Owen Racing Organisation	BRM 	BRM 
+1956.06.03	759	8		Ecurie Rosier	Maserati 	Maserati 
+1951.05.30	421		motor	Peter Schmidt	Kurtis 	Offenhauser 
+1959.05.30	639		motor	Epperly	Epperly	Offenhauser 
+1956.07.14	548		nem azonosított	Connaught Engineering	Connaught 	Alta 
+1957.07.20	394	7		Vandervell Products Ltd	Vanwall	Vanwall 
+1960.09.04	603	8		Scuderia Colonia	Cooper 	Climax 
+1957.05.30	800	2		Epperly	Epperly	Offenhauser 
+1958.05.18	86		kizárták	BC Ecclestone	Connaught 	Alta 
+1960.02.07	731		túlhajtás	Owen Racing Organisation	BRM 	BRM 
+1953.08.02	248	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.05.29	185	5		Owen Racing Organisation	BRM 	BRM 
+1955.05.30	163		gyújtás	Kurtis Kraft	Kurtis 	Offenhauser 
+1950.05.30	411	12		Murrell Belanger	Stevens	Offenhauser 
+1952.08.03	153		kiesett		Veritas 	BMW 
+1960.02.07	518	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.05.22	419	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.08.22	756	3		Daimler Benz AG	Mercedes 	Mercedes 
+1952.08.03	446		motor		Veritas 	BMW 
+1958.09.07	731	6		Team Lotus	Lotus 	Climax 
+1959.08.23	700	7		Owen Racing Organisation	BRM 	BRM 
+1953.07.18	767	7		Connaught Engineering	Connaught 	Lea 
+1957.05.19	150		kiesett	Scuderia Ferrari	Lancia 	Lancia 
+1951.07.14	46	7		British Racing Motors Ltd	BRM 	BRM 
+1956.09.02	287		kiesett	Scuderia Guastalla	Maserati 	Maserati 
+1957.01.13	150	6		Scuderia Ferrari	Lancia 	Lancia 
+1959.07.18	778		motor	Dorchester Service Station	Lotus 	Climax 
+1958.08.03	591		benzinpumpa	Ecurie Eperon d'Or	Cooper 	Climax 
+1956.09.02	700	3		Connaught Engineering	Connaught 	Alta 
+1952.08.03	599		motor	HW Motors	HWM	Alta 
+1950.06.04	118	10		Ecurie Belge	Talbot-Lago 	Talbot 
+1951.07.14	301	12			Talbot-Lago 	Talbot 
+1956.07.14	333		kerék	Connaught Engineering	Connaught 	Alta 
+1957.01.13	606	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.06.15	448	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.10.28	729	5		Alfa Romeo SpA	Alfa 	Alfa 
+1957.05.30	56	15		Kurtis Kraft	Kurtis 	Novi 
+1960.08.14	222	2		Cooper Car Company	Cooper 	Climax 
+1956.05.30	259	15		Kuzma	Kuzma	Offenhauser 
+1953.06.07	118		nem ért célba	Ecurie Belge	Connaught 	Lea 
+1954.08.01	595	9		Ecurie Rosier	Ferrari 	Ferrari 
+1960.06.06	518		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.21	595		karambol	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1959.09.13	597	14		Scuderia Centro Sud	Cooper 	Maserati 
+1952.05.30	56		olajnyomás	Earl Slick	Deidt	Offenhauser 
+1955.09.11	83		motor	Daimler Benz AG	Mercedes 	Mercedes 
+1956.09.02	248		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.09.16	721	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.09.16	294		motor		Talbot-Lago 	Talbot 
+1955.05.30	259	13		Trevis	Trevis	Offenhauser 
+1957.05.19	36		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.06.22	376	12		HW Motors	HWM	Alta 
+1954.08.01	234		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1960.05.30	508		gyújtás	Kurtis Kraft	Kurtis 	Offenhauser 
+1958.10.19	222	13		Cooper Car Company	Cooper 	Climax 
+1959.08.23	499	6		David Brown Corporation	Aston 	Aston 
+1960.07.03	791		futómû	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.07.16	743	16		Team Lotus	Lotus 	Climax 
+1956.08.05	606	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.07.01	140	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1955.05.22	248	5		Scuderia Lancia	Lancia 	Lancia 
+1953.06.21	587	11		Ecurie Belge	Connaught 	Lea 
+1960.07.16	369	14		Scuderia Centro Sud	Cooper 	Maserati 
+1954.06.20	83	3		Equipe Moss	Maserati 	Maserati 
+1953.01.18	432		sebességváltó	Equipe Gordini	Gordini 	Gordini 
+1956.08.05	1	1		Scuderia Ferrari	Lancia 	Lancia 
+1958.05.18	736		kizárták	Scuderia Centro Sud	Maserati 	Maserati 
+1959.05.10	83		futómû	Cooper Car Company	Cooper 	Climax 
+1960.06.06	731	3		Owen Racing Organisation	BRM 	BRM 
+1955.06.05	448		sebességváltó	Vandervell Products Ltd	Vanwall	Vanwall 
+1953.05.30	677		gyújtás	Federal Auto Associates	Kurtis 	Offenhauser 
+1956.09.02	794		motor	Equipe Gordini	Gordini 	Gordini 
+1955.05.30	139		gyújtás	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.05.31	178	2		Cooper Car Company	Cooper 	Climax 
+1951.05.30	555		benzinfolyás	Maserati	Maserati 	Offenhauser 
+1959.08.23	178		karambol	Cooper Car Company	Cooper 	Climax 
+1954.09.05	111	5		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.09.13	431	15			Maserati 	Maserati 
+1952.05.18	550	6		Enrico Plate	Maserati 	Plate 
+1960.05.29	695		kizárták	Yeoman Credit Racing Team	Cooper 	Climax 
+1956.05.30	102	8		Kurtis Kraft	Kurtis 	Offenhauser 
+1958.08.24	448	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.05.10	731		tûz	Team Lotus	Lotus 	Climax 
+1950.06.18	294	7			Talbot-Lago 	Talbot 
+1950.05.30	421		olajnyomás	Milt Marion	Kurtis 	Offenhauser 
+1960.09.04	431	4		Scuderia Castellotti	Cooper 	Castellotti 
+1950.09.03	29	3		Alfa Romeo SpA	Alfa 	Alfa 
+1954.07.04	759		motor	Ecurie Rosier	Ferrari 	Ferrari 
+1957.09.08	695		motor		Maserati 	Maserati 
+1958.05.18	275	6		Team Lotus	Lotus 	Climax 
+1953.06.07	162		motor	Connaught Engineering	Connaught 	Lea 
+1960.02.07	682		feladta		Maserati 	Maserati 
+1953.05.30	602		kiesett	3L Racing Team	Kurtis 	Offenhauser 
+1951.06.17	546		motor	Ecurie Rosier	Talbot-Lago 	Talbot 
+1955.01.16	606		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.30	183	16		Kuzma	Kuzma	Offenhauser 
+1951.06.17	759	4		Ecurie Rosier	Talbot-Lago 	Talbot 
+1955.05.22	532	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.05.30	669		motor	Kurtis Kraft	Kurtis 	Offenhauser 
+1954.09.05	599	7		G A Vandervell	Vanwall 	Vanwall 
+1953.05.30	56	9		JC Agajanian	Kurtis 	Offenhauser 
+1951.09.16	364		motor		Ferrari 	Ferrari 
+1950.09.03	398	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.10.19	784	8		Cooper Car Company	Cooper 	Climax 
+1951.07.01	419	5		Alfa Romeo SpA	Alfa 	Alfa 
+1957.05.30	508	17		Kurtis Kraft	Kurtis 	Offenhauser 
+1953.08.02	448	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.10.28	438	8			Talbot-Lago 	Talbot 
+1954.05.31	693	14		Kurtis Kraft	Kurtis 	Offenhauser 
+1958.05.18	58		kizárták	BC Ecclestone	Connaught 	Alta 
+1958.10.19	736	12		Scuderia Centro Sud	Maserati 	Maserati 
+1955.05.30	580		benzinpumpa	Schroeder	Schroeder	Offenhauser 
+1952.07.06	655	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.07.14	193	5		British Racing Motors Ltd	BRM 	BRM 
+1953.08.02	83	6		Cooper Car Company	Cooper 	Alta 
+1957.08.04	599	3		Scuderia Ferrari	Lancia 	Lancia 
+1959.12.12	499		futómû	High Efficiency Motors	Cooper 	Maserati 
+1955.01.16	300	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.05.31	163	11		Kurtis Kraft	Kurtis 	Offenhauser 
+1958.05.30	574		kormány	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.07.18	54		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1951.06.17	118	7		Ecurie Belge	Talbot-Lago 	Talbot 
+1952.08.17	83		motor	ERA Ltd	ERA 	ERA
+1951.07.29	248	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.05.31	131	5		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.08.17	532		sebességváltó	Ecurie Belge	Simca-Gordini 	Gordini
+1957.09.08	369	4		Scuderia Centro Sud	Maserati 	Maserati 
+1959.07.18	731	9		Team Lotus	Lotus 	Climax 
+1957.08.18	178	7		Cooper Car Company	Cooper 	Climax 
+1957.08.04	146		gyújtás	Ridgeway Managements	Cooper 	Climax 
+1959.08.02	54	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.07.06	518	7		Joakim Bonnier Racing Team	Maserati 	Maserati 
+1957.07.07	111		gyújtás	Scuderia Ferrari	Lancia 	Lancia 
+1951.07.01	781	10		Alfa Romeo SpA	Alfa 	Alfa 
+1956.09.02	1	8		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.09.07	53	8		Escuderia Bandeirantes	Maserati 	Maserati
+1954.08.01	756		benzinfolyás	Daimler Benz AG	Mercedes 	Mercedes 
+1960.08.14	19	6		Team Lotus	Lotus 	Climax 
+1957.07.07	499		szelep	Vandervell Products Ltd	Vanwall	Vanwall 
+1952.08.17	448	4		Leslie Hawthorn	Cooper 	Bristol 
+1958.05.18	230		kizárták	Ken Kavanagh	Maserati 	Maserati 
+1958.09.07	499	5		Cooper Car Company	Cooper 	Climax 
+1958.05.30	713		karambol	Dunn	Dunn	Offenhauser 
+1951.10.28	118		karambol	Ecurie Belge	Talbot-Lago 	Talbot 
+1959.09.13	547	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.07.16	115		túlhajtás	Cooper Car Company	Cooper 	Climax 
+1955.06.05	1	1		Daimler Benz AG	Mercedes 	Mercedes 
+1958.05.26	731		motor	Team Lotus	Lotus 	Climax 
+1958.09.07	369	4		Scuderia Centro Sud	Maserati 	Maserati 
+1952.07.19	193	7		AHM Bryde	Cooper 	Bristol 
+1960.05.30	259	6		Trevis	Trevis	Offenhauser 
+1958.05.26	599		kicsúszás	Scuderia Ferrari	Ferrari 	Ferrari 
+1953.08.23	335		olajfolyás	Ecurie Espadon	Ferrari 	Ferrari 
+1954.10.24	316	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1957.08.18	238	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1955.05.30	413	5		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.05.18	673		karambol	HW Motors	HWM	Alta 
+1951.07.14	61		hûtés		Maserati 	Maserati 
+1960.05.29	178		pályaelhagyás	Cooper Car Company	Cooper 	Climax 
+1957.08.18	83	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1956.08.05	325		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1956.05.13	794	5		Equipe Gordini	Gordini 	Gordini 
+1955.07.16	111		túlhajtás	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.01.16	42		karambol	Scuderia Lancia	Lancia 	Lancia 
+1954.05.31	191		kiesett	Nichels	Kurtis 	Offenhauser 
+1950.05.30	598	11		Carl Marchese	Marchese	Offenhauser 
+1955.07.16	83	1		Daimler Benz AG	Mercedes 	Mercedes 
+1959.09.13	185	8		Owen Racing Organisation	BRM 	BRM 
+1954.06.20	721		olajfolyás	Scuderia Ferrari	Ferrari 	Ferrari 
+1952.07.06	335	11		Ecurie Espadon	Ferrari 	Ferrari 
+1957.08.04	381	13		JB Naylor	Cooper 	Climax 
+1958.05.18	83		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1953.09.13	111	5		Equipe Gordini	Gordini 	Gordini 
+1959.08.23	222		futómû	Cooper Car Company	Cooper 	Climax 
+1956.05.13	448		motor	Owen Racing Organisation	BRM 	BRM 
+1957.05.30	758	11		Kurtis Kraft	Kurtis 	Offenhauser 
+1950.05.13	767		benzinhiány	Enrico Plate	Maserati 	Maserati 
+1954.08.22	370		benzinpumpa	Equipe Gordini	Gordini 	Gordini 
+1957.05.19	448		karambol	Scuderia Ferrari	Lancia 	Lancia 
+1953.06.21	269		motor		Simca-Gordini 	Gordini
+1960.07.16	226	9		Yeoman Credit Racing Team	Cooper 	Climax 
+1954.08.22	111		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.09.04	756	6		Porsche System Engineering	Porsche 	Porsche 
+1950.05.30	691	5		Ervin Wolfe	Kurtis 	Offenhauser 
+1957.07.20	1		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.05.22	238		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.07.17	83		futómû	Alfred Moss	Maserati 	Maserati 
+1953.07.05	238		motor	Equipe Gordini	Gordini 	Gordini 
+1956.07.14	721		vezérmûtengely	Vandervell Products Ltd	Vanwall	Vanwall 
+1953.07.05	111		futómû	Equipe Gordini	Gordini 	Gordini 
+1953.08.23	240	8		Ecurie Espadon	Ferrari 	Ferrari 
+1954.07.17	503	8		Owen Racing Organisation	Maserati 	Maserati 
+1953.08.02	331		motor	Equipe Anglaise	Cooper 	Bristol 
+1956.05.30	800		motor	Kurtis Kraft	Kurtis 	Offenhauser 
+1958.08.03	121	11		Ecurie Demi Litre	Lotus 	Climax 
+1950.09.03	729		visszalépés	Scuderia Milano	Milano	Milano 
+1958.05.30	223		karambol	Kuzma	Kuzma	Offenhauser 
+1960.11.20	499	8		High Efficiency Motors	Cooper 	Climax 
+1950.05.13	759	5		Ecurie Rosier	Talbot-Lago 	Talbot 
+1954.05.31	707	11		Kurtis Kraft	Kurtis 	Offenhauser 
+1957.09.08	557	11		Ottoronio Volonterio	Maserati 	Maserati 
+1960.08.14	226	7		Yeoman Credit Racing Team	Cooper 	Climax 
+1959.09.13	226	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.05.30	257	8		Watson	Watson	Offenhauser 
+1958.07.06	185	8		Giorgio Scarlatti	Maserati 	Maserati 
+1956.07.14	248	6		Luigi Piotti	Maserati 	Maserati 
+1952.08.17	298		sebességváltó	Escuderia Bandeirantes	Maserati 	Maserati
+1957.05.30	622		benzinfolyás	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.08.23	606		olajnyomás	Equipe Gordini	Gordini 	Gordini 
+1954.08.22	503	6		Owen Racing Organisation	Maserati 	Maserati 
+1955.06.19	759	9		Ecurie Rosier	Maserati 	Maserati 
+1953.06.07	448	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.05.31	452		motor	David Brown Corporation	Aston 	Aston 
+1958.06.15	578		motor	Ken Kavanagh	Maserati 	Maserati 
+1951.05.27	248		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.01.17	250		sebességváltó		Maserati 	Maserati 
+1953.07.05	606	10		Equipe Gordini	Gordini 	Gordini 
+1953.05.30	102	16		MA Walker	Kurtis 	Offenhauser 
+1956.07.01	83	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1952.08.03	595		karambol	Equipe Gordini	Gordini 	Gordini 
+1956.01.22	226	5		Scuderia Ferrari	Ferrari 	Lancia 
+1959.08.02	606		karambol		Behra-Porsche	Porsche 
+1957.05.19	394	4		Connaught Engineering	Connaught 	Alta 
+1952.09.07	32		kizárták	WS Aston	Aston	Butterworth 
+1958.09.07	431		motor	Joakim Bonnier Racing Team	Maserati 	Maserati 
+1960.06.19	83		nem azonosított	Rob Walker Racing Team	Lotus 	Climax 
+1953.09.13	238	9		Equipe Gordini	Gordini 	Gordini 
+1951.05.30	411	8		Rotary Engineering	Deidt	Offenhauser 
+1954.06.20	1	1		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.05.31	31	1		Kurtis Kraft	Kurtis 	Offenhauser 
+1960.06.19	117		karambol	Yeoman Credit Racing Team	Cooper 	Climax 
+1950.07.02	729		motor	Scuderia Milano	Maserati 	Milano 
+1960.05.29	262	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.07.19	499	3		Cooper Car Company	Cooper 	Climax 
+1954.01.17	721	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.08.02	284	7		Ecurie Francorchamps	Ferrari 	Ferrari 
+1952.08.03	173		sebességváltó	Motor-Presse-Verlag	Veritas 	Veritas 
+1955.01.16	238	6		Officine Alfieri Maserati	Maserati 	Maserati 
+1960.08.14	185		motor	Owen Racing Organisation	BRM 	BRM 
+1960.07.03	778		motor	Robert Bodle Ltd	Lotus 	Climax 
+1957.07.07	178		karambol	Cooper Car Company	Cooper 	Climax 
+1958.09.07	756		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1954.10.24	284		motor	Ecurie Francorchamps	Ferrari 	Ferrari 
+1953.08.23	503	7			Cooper 	Bristol 
+1960.11.20	334		karambol	Team Lotus	Lotus 	Climax 
+1958.07.06	448	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1950.05.13	441	10			Maserati 	Maserati 
+1952.07.19	448	3		Leslie Hawthorn	Cooper 	Bristol 
+1958.07.19	54	7		Vandervell Products Ltd	Vanwall	Vanwall 
+1958.05.18	111	1		Rob Walker Racing Team	Cooper 	Climax 
+1956.08.05	695		pályaelhagyás		Maserati 	Maserati 
+1951.05.27	781	4		Alfa Romeo SpA	Alfa 	Alfa 
+1950.06.18	759	3		Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1960.05.30	683	15		Watson	Watson	Offenhauser 
+1951.05.30	336		motor	JC Agajanian	Kurtis 	Offenhauser 
+1950.09.03	688		sebességváltó	Scuderia Ambrosiana	Maserati 	Maserati 
+1958.08.24	275		karambol	Team Lotus	Lotus 	Climax 
+1960.02.07	83	3		Rob Walker Racing Team	Cooper 	Climax 
+1953.07.05	599	13		HW Motors	HWM	Alta 
+1958.07.06	178	6		Cooper Car Company	Cooper 	Climax 
+1956.07.01	765		motor		Maserati 	Maserati 
+1958.07.19	599	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.09.11	1	1		Daimler Benz AG	Mercedes 	Mercedes 
+1950.06.04	60	7		Scuderia Achille Varzi	Maserati 	Maserati 
+1951.05.27	118	13		Ecurie Belge	Talbot-Lago 	Talbot 
+1958.01.19	316	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.10.19	178	11		Cooper Car Company	Cooper 	Climax 
+1959.07.05	36	8		Scuderia Ugolini	Maserati 	Maserati 
+1956.07.01	759	6		Ecurie Rosier	Maserati 	Maserati 
+1960.06.06	499		visszalépés	David Brown Corporation	Aston 	Aston 
+1959.08.02	275		kuplung	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.05.30	639		benzinpumpa	Epperly	Epperly	Offenhauser 
+1955.07.16	655	4		Daimler Benz AG	Mercedes 	Mercedes 
+1952.09.07	228		sebességváltó		Osca 	Osca
+1957.05.30	102		kompresszor	Lesovsky	Lesovsky	Offenhauser 
+1954.05.31	105		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.01.18	248	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.06.22	448	4		Leslie Hawthorn	Cooper 	Bristol 
+1954.05.31	800		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1955.01.16	721	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.06.19	178	1		Cooper Car Company	Cooper 	Climax 
+1954.07.17	499		futómû	Gilby Engineering Ltd	Maserati 	Maserati 
+1952.08.17	668		differenciálmû	Escuderia Bandeirantes	Maserati 	Maserati
+1951.06.17	781		hûtés	Alfa Romeo SpA	Alfa 	Alfa 
+1958.07.06	111		olajfolyás	Owen Racing Organisation	BRM 	BRM 
+1956.06.03	606	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.01.17	767	7		Officine Alfieri Maserati	Maserati 	Maserati 
+1958.08.03	670	6		Dr Ing F Porsche KG	Porsche 	Porsche
+1954.05.31	471	15		Kurtis Kraft	Kurtis 	Offenhauser 
+1952.05.30	511	15		George Leitenberger	Sherman	Offenhauser 
+1959.08.02	83		futómû	Rob Walker Racing Team	Cooper 	Climax 
+1960.05.29	547		nem teljesítette a távot	Owen Racing Organisation	BRM 	BRM 
+1958.06.15	238	5		Owen Racing Organisation	BRM 	BRM 
+1960.07.16	547	10		Owen Racing Organisation	BRM 	BRM 
+1950.09.03	1		sebességváltó	Alfa Romeo SpA	Alfa 	Alfa 
+1957.01.13	599		kuplung	Scuderia Ferrari	Lancia 	Lancia 
+1951.06.17	1	9		Alfa Romeo SpA	Alfa 	Alfa 
+1955.05.30	693	1		Kurtis Kraft	Kurtis 	Offenhauser 
+1955.07.16	784		motor	Connaught Engineering	Connaught 	Alta 
+1950.05.30	602	23		Norm Olson	Olson	Offenhauser 
+1960.05.29	499		túlhajtás	High Efficiency Motors	Cooper 	Climax 
+1954.05.31	698	6		Kurtis Kraft	Kurtis 	Offenhauser 
+1954.07.04	269		motor		Gordini 	Gordini 
+1960.02.07	238		benzinpumpa	Ecurie Bleue	Cooper 	Climax 
+1952.08.03	358		kiesett		BMW 	BMW 
+1955.01.16	94		benzinhiány		Maserati 	Maserati 
+1954.05.31	421		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.01.18	238	7		Equipe Gordini	Gordini 	Gordini 
+1953.08.02	234		kiállás	Officine Alfieri Maserati	Maserati 	Maserati 
+1951.07.14	419		kuplung	Alfa Romeo SpA	Alfa 	Alfa 
+1952.07.19	32		nem rajtolt el	WS Aston	Aston	Butterworth 
+1955.07.16	238	9		Vandervell Products Ltd	Vanwall	Vanwall 
+1959.09.13	452	10		David Brown Corporation	Aston 	Aston 
+1955.07.16	300		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1958.10.19	756	9		Joakim Bonnier Racing Team	Maserati 	Maserati 
+1956.07.01	655		motor	Officine Alfieri Maserati	Maserati 	Maserati 
+1955.01.16	474		karambol	Equipe Gordini	Gordini 	Gordini 
+1954.01.17	759		karambol	Ecurie Rosier	Ferrari 	Ferrari 
+1958.10.19	448	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.08.22	721	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1960.05.29	553		kizárták	Scuderia Castellotti	Cooper 	Ferrari
+1954.08.22	595		karambol	Scuderia Ferrari	Ferrari 	Ferrari 
+1955.07.16	694	7		Equipe Gordini	Gordini 	Gordini 
+1951.10.28	140	10		Scuderia Milano	Maserati 	Maserati 
+1955.05.22	701		kizárták	Stirling Moss Ltd	Maserati 	Maserati 
+1960.05.30	611	4		Phillips	Phillips	Offenhauser 
+1956.05.30	360		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1954.09.05	779		karambol	Daimler Benz AG	Mercedes 	Mercedes 
+1956.09.02	736	10		Scuderia Guastalla	Maserati 	Maserati 
+1960.07.16	334	2		Team Lotus	Lotus 	Climax 
+1959.07.05	499		dugattyú	High Efficiency Motors	Cooper 	Maserati 
+1960.06.06	130		futómû	Team Lotus	Lotus 	Climax 
+1955.09.11	316		sebességváltó	Officine Alfieri Maserati	Maserati 	Maserati 
+1954.07.17	238	12			Maserati 	Maserati 
+1957.05.19	129		kizárták	Cooper Car Company	Cooper 	Climax 
+1956.05.30	56		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.08.02	735		motor	RJ Chase	Cooper 	Bristol 
+1950.05.30	725	4		MA Walker	Kurtis 	Offenhauser 
+1960.06.19	226	3		Yeoman Credit Racing Team	Cooper 	Climax 
+1955.06.05	532	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.03	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.09.13	53		motor	Scuderia Milano	Maserati 	Maserati 
+1960.07.16	381	13		JB Naylor	JBW	Maserati 
+1958.06.15	83		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1958.06.15	185	9		Joakim Bonnier Racing Team	Maserati 	Maserati 
+1958.06.15	295		motor	Scuderia Centro Sud	Maserati 	Maserati 
+1960.02.07	83		kiállás	Rob Walker Racing Team	Cooper 	Climax 
+1959.12.12	272	7		Blanchard Automobiles	Porsche 	Porsche 
+1957.05.30	163	16		Kurtis Kraft	Kurtis 	Offenhauser 
+1957.05.19	599		karambol	Scuderia Ferrari	Lancia 	Lancia 
+1954.05.31	33		kiesett	Kurtis Kraft	Kurtis 	Offenhauser 
+1952.09.07	738	13		Ecurie Richmond	Cooper 	Bristol 
+1950.05.21	419		karambol	Alfa Romeo SpA	Alfa 	Alfa 
+1960.06.06	115		visszalépés	Reventlow Automobiles Inc	Scarab	Scarab 
+1959.07.18	121	13		British Racing Partnership	Cooper 	Borgward
+1960.02.07	111	3		Rob Walker Racing Team	Cooper 	Climax 
+1957.08.04	670	12		Dr Ing Porsche KG	Porsche 	Porsche 
+1960.05.30	762		törés	Kurtis Kraft	Kurtis 	Offenhauser 
+1953.09.13	234		karambol	Officine Alfieri Maserati	Maserati 	Maserati 
+1960.06.19	518	4		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.08.17	419	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1954.08.01	721	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1952.06.22	738	9		Ecurie Richmond	Cooper 	Bristol 
+1954.01.17	287	9		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.07.16	178		motor	Cooper Car Company	Cooper 	Bristol 
+1950.06.18	438		túlhajtás	Automobiles Talbot-Darracq SA	Talbot-Lago 	Talbot 
+1950.06.18	248	6		Scuderia Ferrari	Ferrari 	Ferrari 
+1953.05.30	677	4		Grancor Auto Specialists	Kurtis 	Offenhauser 
+1959.05.10	222	5		Cooper Car Company	Cooper 	Climax 
+1955.01.16	432		kiesett	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.07.06	599	6		HW Motors	HWM	Alta 
+1954.05.31	482		kiesett	Nichels	Kurtis 	Offenhauser 
+1959.05.10	499		futómû	High Efficiency Motors	Cooper 	Maserati 
+1952.05.18	655	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1956.06.03	587	6		Scuderia Ferrari	Lancia 	Lancia 
+1960.06.06	369		visszalépés	Scuderia Centro Sud	Cooper 	Maserati 
+1952.07.06	118		nem azonosított	Ecurie Belge	Simca-Gordini 	Gordini
+1950.07.02	419	7		Alfa Romeo SpA	Alfa 	Alfa 
+1954.05.31	458	9		Kurtis Kraft	Kurtis 	Offenhauser 
+1953.07.05	499		gyújtás	Connaught Engineering	Connaught 	Lea 
+1959.05.30	611		kiállás	Phillips	Phillips	Offenhauser 
+1953.06.07	729	3		Officine Alfieri Maserati	Maserati 	Maserati 
+1951.05.27	438	10			Talbot-Lago 	Talbot 
+1957.07.07	606	5		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.09.05	42		motor	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.08.01	448		sebességváltó	Scuderia Ferrari	Ferrari 	Ferrari 
+1957.08.18	1	2		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.10.24	756		befecskendezõ	Daimler Benz AG	Mercedes 	Mercedes 
+1958.09.07	275	7		Team Lotus	Lotus 	Climax 
+1952.08.03	617		törés	Scuderia Marzotto	Ferrari 	Ferrari
+1953.05.30	81		kiesett	John Zink	Kurtis 	Offenhauser 
+1960.05.30	411	12		Kuzma	Kuzma	Offenhauser 
+1953.06.21	701		motor	HW Motors	HWM	Alta 
+1952.08.03	675		sebességváltó	Escuderia Bandeirantes	Maserati 	Maserati
+1956.08.05	248		motor	Luigi Piotti	Maserati 	Maserati 
+1951.10.28	759	7		Ecurie Rosier	Talbot-Lago 	Talbot 
+1950.05.30	709	8		Lou Moore	Lesovsky	Offenhauser 
+1954.05.31	81		motor	Kurtis Kraft	Kurtis 	Offenhauser 
+1950.05.30	56		kerék	Lou Moore	Deidt	Offenhauser 
+1956.01.22	736	4		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.10.24	283		motor	Equipe Gordini	Gordini 	Gordini 
+1955.05.30	698		kicsúszás	Kurtis Kraft	Kurtis 	Offenhauser 
+1958.05.26	394		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1958.05.26	178	8		Cooper Car Company	Cooper 	Climax 
+1956.05.13	584		kuplung	Scuderia Ferrari	Lancia 	Lancia 
+1959.07.18	207	12		Alan Brown Equipe	Cooper 	Climax 
+1956.06.03	111		motor	Vandervell Products Ltd	Vanwall	Vanwall 
+1954.06.20	767	6		Prince Bira	Maserati 	Maserati 
+1953.07.18	729	6		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.10.24	42		kuplung	Scuderia Lancia	Lancia 	Lancia 
+1959.12.12	111	2		Rob Walker Racing Team	Cooper 	Climax 
+1959.07.05	731		kõfelverõdés	Team Lotus	Lotus 	Climax 
+1955.07.16	606		olajfolyás	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.05.30	33		kipufogócsõ	Mel Wiggers	Kurtis 	Offenhauser 
+1958.05.26	127	11		Ecurie Maarsbergen	Porsche 	Porsche 
+1954.08.01	779	4		Daimler Benz AG	Mercedes 	Mercedes 
+1952.06.22	200		motor	WS Aston	Aston	Butterworth 
+1950.09.03	470		kiesett	Ecurie Rosier	Talbot-Lago 	Talbot 
+1955.07.16	162		olajfolyás	Connaught Engineering	Connaught 	Alta 
+1958.05.26	111	9		Rob Walker Racing Team	Cooper 	Climax 
+1950.05.30	637		kiesett	Richard Palmer	Adams	Offenhauser 
+1954.07.04	595	3		Ecurie Rosier	Ferrari 	Ferrari 
+1958.08.03	178		karambol	Cooper Car Company	Cooper 	Climax 
+1950.05.13	546		kuplung	Officine Alfieri Maserati	Maserati 	Maserati 
+1952.08.17	111	6		Equipe Gordini	Gordini 	Gordini 
+1959.05.30	658		karambol	Sutton	Sutton	Offenhauser 
+1956.08.05	287		kormány	Officine Alfieri Maserati	Maserati 	Maserati 
+1957.05.30	677	4		Kurtis Kraft	Kurtis 	Novi 
+1950.07.02	721		motor	Scuderia Achille Varzi	Maserati 	Maserati 
+1953.06.21	606		motor	Equipe Gordini	Gordini 	Gordini 
+1958.05.30	188		karambol	Kurtis Kraft	Kurtis 	Offenhauser 
+1951.07.29	419		túlhajtás	Alfa Romeo SpA	Alfa 	Alfa 
+1955.06.19	355		karambol	Gould's Garage (Bristol)	Maserati 	Maserati 
+1957.07.20	83	1		Vandervell Products Ltd	Vanwall	Vanwall 
+1960.07.16	778	12		Robert Bodle Ltd	Lotus 	Climax 
+1950.06.18	625		motor		Talbot-Lago 	Talbot 
+1954.06.20	419		gyújtás	Scuderia Ferrari	Ferrari 	Ferrari 
+1960.02.07	432	4		Scuderia Centro Sud	Cooper 	Maserati 
+1960.02.07	178		sebességváltó	Cooper Car Company	Cooper 	Climax 
+1956.05.30	698	12		Kurtis Kraft	Kurtis 	Offenhauser 
+1957.08.04	36	10		Officine Alfieri Maserati	Maserati 	Maserati 
+1954.10.24	759	7		Ecurie Rosier	Maserati 	Maserati 
+1958.05.30	639	1		Epperly	Epperly	Offenhauser 
+1959.07.05	369		feladta	Cooper Car Company	Cooper 	Climax 
+1951.05.30	102		olajcsõ	Louis and Bruce Bromme	Bromme	Offenhauser 
+1959.05.10	54	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.05.30	677	9		Leader Cards Inc	Kurtis 	Offenhauser 
+1950.07.02	364	3			Ferrari 	Ferrari 
+1957.08.04	789	15		Ridgeway Managements	Cooper 	Climax 
+1952.09.07	448		nem teljesítette a távot	AHM Bryde	Cooper 	Bristol 
+1955.06.19	1	1		Daimler Benz AG	Mercedes 	Mercedes 
+1958.09.07	226		nem azonosított	Scuderia Ferrari	Ferrari 	Ferrari 
+1954.06.20	111	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1958.07.06	150	3		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.05.27	721		olajpumpa		Talbot-Lago 	Talbot 
+1956.06.03	584		futómû	Scuderia Ferrari	Lancia 	Lancia 
+1954.10.24	448	1		Scuderia Ferrari	Ferrari 	Ferrari 
+1951.05.30	144		kiesett	Jean Marcenac	Kurtis 	Novi 
+1954.05.31	577	16		Kurtis Kraft	Kurtis 	Offenhauser 
+1957.05.30	698		benzinfolyás	Kurtis Kraft	Kurtis 	Offenhauser 
+1959.07.05	127	9		Scuderia Ugolini	Maserati 	Maserati 
+1957.08.04	606	6		Officine Alfieri Maserati	Maserati 	Maserati 
+1956.07.14	54		karambol	Owen Racing Organisation	BRM 	BRM 
+1951.07.29	301		olajnyomás		Talbot-Lago 	Talbot 
+1952.05.30	683	18		Bessie Lee Paoli	Kurtis 	Offenhauser 
+1953.08.02	153	12			Veritas 	Veritas 
+1956.09.02	526	6		Luigi Piotti	Maserati 	Maserati 
+1954.08.01	300		benzinfolyás		Maserati 	Maserati 
+1950.09.03	111		vízcsõ	Equipe Gordini	Simca-Gordini 	Simca-Gordini 
+1952.06.22	134	14			Simca-Gordini 	Gordini
+1956.07.14	355	5		Gould's Garage (Bristol)	Maserati 	Maserati 
+1952.05.18	701		visszalépés	HW Motors	HWM	Alta 
+1960.02.07	535	11		Scuderia Centro Sud	Cooper 	Maserati 
+1953.08.02	229		kiesett		Veritas 	Veritas 
+1954.09.05	448	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1955.06.05	118		motor	Stirling Moss Ltd	Maserati 	Maserati 
+1955.05.30	56	2		Kurtis Kraft	Kurtis 	Offenhauser 
+1955.05.30	800	14		Epperly	Epperly	Offenhauser 
+1957.01.13	238	4		Scuderia Centro Sud	Maserati 	Maserati 
+1959.05.30	574	3		Lesovsky	Lesovsky	Offenhauser 
+1959.09.13	518	2		Scuderia Ferrari	Ferrari 	Ferrari 
+1959.09.13	700	13		Owen Racing Organisation	BRM 	BRM 
+1950.06.18	419	4		Alfa Romeo SpA	Alfa 	Alfa 
+1952.07.06	617		motor	Scuderia Marzotto	Ferrari 	Ferrari
+1952.07.06	606	7		Equipe Gordini	Gordini 	Gordini 
+1957.08.18	369	4		Scuderia Centro Sud	Maserati 	Maserati 
+1951.05.27	382	11		Ecurie Espadon	Ferrari 	Ferrari
+1956.08.05	557		nem teljesítette a távot		Maserati 	Maserati 
+1953.05.30	231		gyújtás	Murrell Belanger	Kurtis 	Offenhauser 
+1958.05.26	238	2		Owen Racing Organisation	BRM 	BRM 
+1957.08.18	185		túlhajtás	Scuderia Centro Sud	Maserati 	Maserati 
+1954.05.31	227		kiesett	Bromme	Bromme	Offenhauser 
+1954.05.31	639	2		Kuzma	Kuzma	Offenhauser 
+1950.05.13	40		kompresszor	TASO Mathieson	ERA 	ERA
+1950.06.04	238	8		Ecurie Bleue	Talbot-Lago 	Talbot 
+1956.07.14	654	10		Scuderia Ferrari	Lancia 	Lancia 
+1953.05.30	508		karambol	Bob Estes	Watson	Offenhauser 
+1959.07.18	340		kizárták		Lotus 	Climax 
+1951.07.14	759	10		Ecurie Rosier	Talbot-Lago 	Talbot 
+1959.07.18	597		futómû	Scuderia Centro Sud	Cooper 	Maserati 
+1960.06.06	127	8		Ecurie Maarsbergen	Cooper 	Climax 
+1954.07.17	1	4		Daimler Benz AG	Mercedes 	Mercedes 
+1955.01.16	248		kiesett	Scuderia Lancia	Lancia 	Lancia 
+1950.05.21	169		karambol		ERA 	ERA
+1954.01.17	550	8		Baron de Graffenried	Maserati 	Maserati 

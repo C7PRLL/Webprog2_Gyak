@@ -1,0 +1,32 @@
+{
+  "name": "webprog2_gyak",
+  "version": "1.0.0",
+  "description": "Ez egy Node.js alapú webfejlesztési gyakorlat projekt.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C7PRLL/Webprog2_Gyak.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/C7PRLL/Webprog2_Gyak/issues"
+  },
+  "homepage": "https://github.com/C7PRLL/Webprog2_Gyak#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "iconv-lite": "^0.7.0",
+    "mysql2": "^3.15.3",
+    "sequelize": "^6.37.7"
+  }
+}

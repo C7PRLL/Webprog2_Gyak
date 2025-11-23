@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztrált Felhasználók - Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .card-f1 { border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 20px; margin-top: 20px; }
+        .bg-f1-red { background-color: #e10600; }
+        .bg-f1-dark { background-color: #15151e; }
+        .bg-f1-silver { background-color: #d0d0d2; }
+        .pilot-id-badge { background: #333; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; }
+        .pilot-name-cell { font-weight: bold; color: #e10600; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <div class="container"><a class="navbar-brand" href="/">F1 Tech Admin</a></div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-form">
+                    
+                    <!-- PARTIAL BEHÚZÁSA -->
+                    <%- include('../partials/admin-header', { title: 'Regisztrált Felhasználók', icon: 'fa-users', activePage: 'users' }) %>
+                    
+                    <% if (users && users.length > 0) { %>
+                        <div class="card-f1">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>ID</th> <th>Név</th> <th>Email</th> <th>Email Megerősítve</th> <th>Regisztráció Dátuma</th> <th>Utolsó Módosítás</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% users.forEach(function(user) { %>
+                                        <tr>
+                                            <td><span class="pilot-id-badge"><%= user.id %></span></td>
+                                            <td class="pilot-name-cell"><%= user.name %></td>
+                                            <td><%= user.email %></td>
+                                            <td>
+                                                <% if (user.email_verified_at) { %>
+                                                    <span class="badge bg-success"><i class="fas fa-check"></i> Megerősítve</span><br>
+                                                    <small class="text-muted"><%= new Date(user.email_verified_at).toLocaleDateString('hu-HU') %></small>
+                                                <% } else { %>
+                                                    <span class="badge bg-warning text-dark"><i class="fas fa-clock"></i> Nem megerősített</span>
+                                                <% } %>
+                                            </td>
+                                            <td><%= new Date(user.created_at).toLocaleDateString('hu-HU') %> <%= new Date(user.created_at).toLocaleTimeString('hu-HU', {hour:'2-digit', minute:'2-digit'}) %></td>
+                                            <td><%= new Date(user.updated_at).toLocaleDateString('hu-HU') %></td>
+                                        </tr>
+                                        <% }); %>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4"><div class="card bg-f1-red text-white mb-3"><div class="card-body text-center"><h3><%= stats.total %></h3><p class="m-0">Összes felhasználó</p></div></div></div>
+                            <div class="col-md-4"><div class="card bg-f1-dark text-white mb-3"><div class="card-body text-center"><h3><%= stats.verified %></h3><p class="m-0">Megerősített email</p></div></div></div>
+                            <div class="col-md-4"><div class="card bg-f1-silver text-dark mb-3"><div class="card-body text-center"><h3><%= stats.today %></h3><p class="m-0">Mai regisztrációk</p></div></div></div>
+                        </div>
+                    <% } else { %>
+                        <div class="alert alert-info text-center mt-4"><i class="fas fa-info-circle me-2"></i> Még nincsenek regisztrált felhasználók.</div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

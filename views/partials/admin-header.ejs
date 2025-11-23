@@ -1,0 +1,60 @@
+
+<h2 class="text-center mb-4">
+    <i class="fas fa-shield-alt"></i> Admin Felület
+</h2>
+
+<div class="admin-nav mb-4">
+    <div class="btn-group w-100" role="group">
+        <a href="/admin/contact-messages" 
+           class="add-pilot-button <%= (typeof activePage !== 'undefined' && activePage === 'messages') ? '' : 'btn-outline' %>">
+            <i class="fas fa-envelope"></i> Kontakt Üzenetek
+        </a>
+        <a href="/admin/registered-users" 
+           class="add-pilot-button <%= (typeof activePage !== 'undefined' && activePage === 'users') ? '' : 'btn-outline' %>">
+            <i class="fas fa-users"></i> Felhasználók
+        </a>
+    </div>
+</div>
+
+<h3 class="mb-4">
+    <i class="fas <%= icon %>"></i> <%= title %>
+</h3>
+
+<% if (typeof success !== 'undefined' && success) { %>
+    <div class="alert alert-success" role="alert">
+        <strong>Siker!</strong> <%= success %>
+    </div>
+<% } %>
+
+<% if (typeof error !== 'undefined' && error) { %>
+    <div class="alert alert-danger" role="alert">
+        <strong>Hiba!</strong> <%= error %>
+    </div>
+<% } %>
+
+<style>
+    .add-pilot-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #e10600;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border: 2px solid #e10600;
+        flex: 1;
+        text-align: center;
+    }
+    .add-pilot-button:hover {
+        background-color: #b30000;
+        border-color: #b30000;
+        color: white;
+    }
+    .add-pilot-button.btn-outline {
+        background-color: transparent;
+        color: #e10600;
+    }
+    .add-pilot-button.btn-outline:hover {
+        background-color: #e10600;
+        color: white;
+    }
+</style>

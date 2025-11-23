@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Üzenetek - Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .card-f1 { border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 20px; margin-top: 20px; }
+        .unread-message { background-color: #fff3cd; font-weight: bold; }
+        .bg-f1-red { background-color: #e10600; }
+        .bg-f1-dark { background-color: #15151e; }
+        .bg-f1-silver { background-color: #d0d0d2; }
+        .pilot-id-badge { background: #333; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <div class="container"><a class="navbar-brand" href="/">F1 Tech Admin</a></div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-form">
+                    
+                    <!-- PARTIAL BEHÚZÁSA -->
+                    <%- include('../partials/admin-header', { title: 'Kontakt Üzenetek', icon: 'fa-envelope', activePage: 'messages' }) %>
+                    
+                    <% if (messages && messages.length > 0) { %>
+                        <div class="card-f1">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>ID</th> <th>Név</th> <th>Email</th> <th>Tárgy</th> <th>Üzenet</th> <th>Hírlevél</th> <th>Dátum</th> <th>Műveletek</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% messages.forEach(function(msg) { %>
+                                        <tr class="<%= msg.is_read ? '' : 'table-warning' %>">
+                                            <td><span class="pilot-id-badge"><%= msg.id %></span></td>
+                                            <td><%= msg.name %></td>
+                                            <td><%= msg.email %></td>
+                                            <td><%= msg.subject.length > 30 ? msg.subject.substring(0, 30) + '...' : msg.subject %></td>
+                                            <td><%= msg.message.length > 50 ? msg.message.substring(0, 50) + '...' : msg.message %></td>
+                                            <td><% if (msg.newsletter) { %><span class="badge bg-success">Igen</span><% } else { %><span class="badge bg-secondary">Nem</span><% } %></td>
+                                            <td><%= new Date(msg.created_at).toLocaleDateString('hu-HU') %></td>
+                                            <td>
+                                                <div class="btn-group btn-group-sm">
+                                                    <% if (!msg.is_read) { %>
+                                                        <form action="/admin/contact-messages/<%= msg.id %>/mark-read" method="POST" style="display: inline;">
+                                                            <button type="submit" class="btn btn-outline-primary" title="Olvasott"><i class="fas fa-check"></i></button>
+                                                        </form>
+                                                    <% } else { %><span class="badge bg-success me-2">Olvasva</span><% } %>
+                                                    <form action="/admin/contact-messages/<%= msg.id %>/delete" method="POST" style="display: inline;" onsubmit="return confirm('Törlöd?')">
+                                                        <button type="submit" class="btn btn-outline-danger" title="Törlés"><i class="fas fa-trash"></i></button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <% }); %>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4"><div class="card bg-danger text-white mb-3"><div class="card-body text-center"><h3><%= stats.total %></h3><p class="m-0">Összes üzenet</p></div></div></div>
+                            <div class="col-md-4"><div class="card bg-dark text-white mb-3"><div class="card-body text-center"><h3><%= stats.read %></h3><p class="m-0">Olvasott</p></div></div></div>
+                            <div class="col-md-4"><div class="card bg-secondary text-white mb-3"><div class="card-body text-center"><h3><%= stats.unread %></h3><p class="m-0">Új üzenetek</p></div></div></div>
+                        </div>
+                    <% } else { %>
+                        <div class="alert alert-info text-center mt-4"><i class="fas fa-info-circle me-2"></i> Még nincsenek kontakt üzenetek.</div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
