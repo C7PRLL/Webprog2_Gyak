@@ -1,134 +1,23 @@
-/* F1 Tech Solutions - Generált Stíluslap */
-:root {
-    --f1-red: #e10600;
-    --f1-dark: #15151e;
-    --f1-dark-gray: #38383f;
-    --f1-light-gray: #f3f3f3;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
-
-/* --- HERO SECTIONS --- */
-.hero-section {
-    background: linear-gradient(135deg, var(--f1-dark) 0%, #2c3e50 100%);
-    color: white;
-    padding: 60px 0;
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.hero-title {
-    font-size: 2.8rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.hero-title strong { color: var(--f1-red); }
-
-/* --- KÁRTYÁK --- */
-.card-f1 {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    padding: 25px;
-    margin-bottom: 20px;
-    border-top: 4px solid var(--f1-red);
-    transition: transform 0.3s ease;
-}
-
-.card-f1:hover { transform: translateY(-2px); }
-
-/* --- GOMBOK --- */
-.btn-f1 {
-    background-color: var(--f1-red);
-    color: white;
-    padding: 10px 25px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: none;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-f1:hover {
-    background-color: #b30000;
-    color: white;
-    box-shadow: 0 4px 10px rgba(225, 6, 0, 0.4);
-}
-
-.btn-outline-f1 {
-    border: 2px solid var(--f1-red);
-    color: var(--f1-red);
-    background: transparent;
-    padding: 8px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-outline-f1:hover {
-    background-color: var(--f1-red);
-    color: white;
-}
-
-/* --- TÁBLÁZATOK --- */
-.table-f1 { width: 100%; border-collapse: separate; border-spacing: 0 5px; }
-.table-f1 thead th { background-color: var(--f1-dark); color: white; padding: 15px; border: none; }
-.table-f1 tbody tr { background-color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.2s; }
-.table-f1 tbody tr:hover { transform: scale(1.01); z-index: 10; position: relative; }
-.table-f1 td { padding: 15px; vertical-align: middle; border-top: 1px solid #eee; }
-
-/* --- BADGES --- */
-.pilot-id-badge { background-color: var(--f1-dark); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; }
-.team-badge { background-color: #eee; color: #333; padding: 4px 10px; border-radius: 15px; font-size: 0.9em; font-weight: 600; }
-
-/* --- NAVIGÁCIÓ --- */
+:root { --f1-red: #e10600; --f1-dark: #15151e; }
+body { font-family: 'Segoe UI', sans-serif; background: #f8f9fa; }
+.hero-section { background: linear-gradient(135deg, var(--f1-dark), #2c3e50); color: white; padding: 60px 0; text-align: center; margin-bottom: 30px; border-radius: 0 0 20px 20px; }
+.hero-title { font-size: 2.5rem; font-weight: 800; text-transform: uppercase; }
+.card-f1 { background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); padding: 25px; margin-bottom: 20px; border-top: 4px solid var(--f1-red); }
+.btn-f1 { background: var(--f1-red); color: white; border-radius: 25px; padding: 8px 20px; font-weight: bold; border: none; text-decoration: none; display: inline-block; }
+.btn-f1:hover { background: #b30000; color: white; }
+.btn-outline-f1 { border: 2px solid var(--f1-red); color: var(--f1-red); border-radius: 25px; padding: 8px 20px; font-weight: bold; text-decoration: none; display: inline-block; }
+.btn-outline-f1:hover { background: var(--f1-red); color: white; }
+.text-f1 { color: var(--f1-red); }
+.table-f1 thead th { background: var(--f1-dark); color: white; padding: 15px; }
+.table-f1 tbody tr:hover { background: #f1f1f1; }
+.table-f1 td { padding: 12px; border-bottom: 1px solid #eee; }
 #header { background: var(--f1-dark); padding: 15px 0; color: white; }
-#header nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-#header nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.3s; }
-#header nav a:hover, #header nav a.active { color: var(--f1-red); }
-.logo { text-align: center; margin-bottom: 15px; }
-
-/* --- ÜZENETEK --- */
-.alert-f1 { border-radius: 8px; padding: 15px; border-left: 5px solid; }
-.alert-success { border-color: #28a745; background-color: #d4edda; color: #155724; }
-.alert-danger { border-color: #dc3545; background-color: #f8d7da; color: #721c24; }
-
-/* --- WELCOME PAGE SPECIFICS --- */
-.white-content-wrapper { background: white; padding-bottom: 50px; }
-.welcome-logo-container { text-align: center; padding: 40px 0; background: #f4f4f4; }
-.welcome-logo { max-width: 150px; }
-.content-section { padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
-.welcome-subtitle { font-size: 1.1rem; line-height: 1.6; color: #444; text-align: center; max-width: 900px; margin: 0 auto 40px; }
-.red-title { color: var(--f1-red); font-size: 1.5rem; }
-.full-width-image img { width: 100%; height: auto; border-radius: 10px; margin: 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
-.content-with-image { display: flex; align-items: center; gap: 40px; margin: 60px 0; flex-wrap: wrap; }
-.content-text { flex: 1; min-width: 300px; }
-.content-image { flex: 1; min-width: 300px; }
-.content-image img { width: 100%; border-radius: 15px; box-shadow: -10px 10px 0 var(--f1-red); }
-.welcome-features { background: var(--f1-dark); padding: 60px 0; color: white; }
-.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.feature-card { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px; text-align: center; transition: background 0.3s; }
-.feature-card:hover { background: rgba(255,255,255,0.15); }
-.feature-title { color: var(--f1-red); font-size: 1.4rem; margin-bottom: 15px; }
-.feature-link { color: white; text-decoration: none; font-weight: bold; border-bottom: 2px solid var(--f1-red); padding-bottom: 2px; }
-
-/* --- INPUTS --- */
-.form-control { border: 1px solid #ddd; padding: 10px; border-radius: 8px; width: 100%; }
-.form-control:focus { border-color: var(--f1-red); outline: none; box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.1); }
-
-/* --- ADMIN --- */
-.admin-nav .btn-group { display: flex; gap: 10px; margin-bottom: 20px; }
+#header a { color: rgba(255,255,255,0.8); text-decoration: none; margin: 0 10px; font-weight: 500; }
+#header a:hover, #header a.active { color: var(--f1-red); }
+.welcome-logo { max-width: 150px; margin-bottom: 20px; }
+.feature-card { text-align: center; padding: 30px; background: #fff; border-radius: 10px; transition: transform 0.3s; }
+.feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.pagination { display: flex; justify-content: center; gap: 5px; list-style: none; padding: 0; }
+.pagination li a { padding: 5px 10px; border: 1px solid #ddd; text-decoration: none; color: #333; border-radius: 4px; }
+.pagination li.active a { background: var(--f1-red); color: white; border-color: var(--f1-red); }
+.pagination li.disabled a { color: #ccc; pointer-events: none; }

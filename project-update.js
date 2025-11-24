@@ -1,3 +1,20 @@
+const fs = require('fs');
+const path = require('path');
+
+function write(relativePath, content) {
+    const fullPath = path.join(__dirname, relativePath);
+    const dir = path.dirname(fullPath);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(fullPath, content.trim());
+    console.log(`✅ Frissítve: ${relativePath}`);
+}
+
+console.log('🚀 Rendszer javítása (Pilóta szűrők és változók)...');
+
+// =============================================================================
+// 1. SERVER.JS (Javított /pilots route)
+// =============================================================================
+const serverContent = `
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -31,8 +48,8 @@ app.use(async (req, res, next) => {
 });
 
 // Helpers
-function parseDate(d) { try { const p=d.trim().split('.'); return p.length===3?`${p[0]}-${p[1].padStart(2,'0')}-${p[2].padStart(2,'0')}`:null; } catch{return null;} }
-function readTxt(f) { const p=path.join(__dirname,'data',f); return fs.existsSync(p)?iconv.decode(fs.readFileSync(p),'win1252').split(/\r?\n/).filter(l=>l.trim()):[]; }
+function parseDate(d) { try { const p=d.trim().split('.'); return p.length===3?\`\${p[0]}-\${p[1].padStart(2,'0')}-\${p[2].padStart(2,'0')}\`:null; } catch{return null;} }
+function readTxt(f) { const p=path.join(__dirname,'data',f); return fs.existsSync(p)?iconv.decode(fs.readFileSync(p),'win1252').split(/\\r?\\n/).filter(l=>l.trim()):[]; }
 
 // Seeder
 async function seed() {
@@ -64,9 +81,9 @@ async function seed() {
     ];
     await PilotCurrent.bulkCreate(currentPilots,{ignoreDuplicates:true});
 
-    const pl=readTxt('pilota.txt'); for(let i=1;i<pl.length;i++){const d=pl[i].split('\t'); if(d.length>=5) await Pilot.create({az:d[0].trim(),name:d[1].trim(),gender:d[2].trim(),birth_date:parseDate(d[3]),nationality:d[4].trim()||null}).catch(()=>{});}
-    const gl=readTxt('gp.txt'); for(let i=1;i<gl.length;i++){const d=gl[i].split('\t'); if(d.length>=3){const pd=parseDate(d[0]); if(pd) await GrandPrix.create({race_date:pd,name:d[1].trim(),location:d[2].trim()}).catch(()=>{});}}
-    const rl=readTxt('eredmeny.txt'); for(let i=1;i<rl.length;i++){const d=rl[i].split('\t'); if(d.length>=7){const pid=parseInt(d[1].trim()); if(await Pilot.findByPk(pid)) await Result.create({race_date:parseDate(d[0])||d[0].trim().replace(/\./g,'-'),pilotaaz:pid,position:d[2].trim()?parseInt(d[2]):null,issue:d[3].trim()||null,team:d[4].trim(),car_type:d[5].trim(),engine:d[6].trim()}).catch(()=>{});}}
+    const pl=readTxt('pilota.txt'); for(let i=1;i<pl.length;i++){const d=pl[i].split('\\t'); if(d.length>=5) await Pilot.create({az:d[0].trim(),name:d[1].trim(),gender:d[2].trim(),birth_date:parseDate(d[3]),nationality:d[4].trim()||null}).catch(()=>{});}
+    const gl=readTxt('gp.txt'); for(let i=1;i<gl.length;i++){const d=gl[i].split('\\t'); if(d.length>=3){const pd=parseDate(d[0]); if(pd) await GrandPrix.create({race_date:pd,name:d[1].trim(),location:d[2].trim()}).catch(()=>{});}}
+    const rl=readTxt('eredmeny.txt'); for(let i=1;i<rl.length;i++){const d=rl[i].split('\\t'); if(d.length>=7){const pid=parseInt(d[1].trim()); if(await Pilot.findByPk(pid)) await Result.create({race_date:parseDate(d[0])||d[0].trim().replace(/\\./g,'-'),pilotaaz:pid,position:d[2].trim()?parseInt(d[2]):null,issue:d[3].trim()||null,team:d[4].trim(),car_type:d[5].trim(),engine:d[6].trim()}).catch(()=>{});}}
     console.log('✅ Kész.');
 }
 
@@ -126,7 +143,7 @@ app.get('/pilots', async (req, res) => {
         const page = parseInt(req.query.page) || 1;
         const limit = 15;
         const where = {};
-        if (req.query.search) where.name = { [Op.like]: `%${req.query.search}%` };
+        if (req.query.search) where.name = { [Op.like]: \`%\${req.query.search}%\` };
         if (req.query.nationality) where.nationality = req.query.nationality;
 
         const { count, rows } = await PilotCurrent.findAndCountAll({ 
@@ -147,7 +164,7 @@ app.get('/pilots', async (req, res) => {
             currentPage: page,
             totalPages: Math.ceil(count / limit),
             totalItems: count,
-            queryParams: `&search=${req.query.search||''}&nationality=${req.query.nationality||''}`,
+            queryParams: \`&search=\${req.query.search||''}&nationality=\${req.query.nationality||''}\`,
             query: req.query
         });
     } catch(e) {
@@ -165,8 +182,8 @@ app.post('/pilots/delete/:id', async (req, res) => { if(await Result.count({wher
 
 app.get('/database', async (req, res) => {
     const {search,nationality,year,location} = req.query;
-    const pw={}; if(search) pw.name={[Op.like]:`%${search}%`}; if(nationality) pw.nationality=nationality;
-    const gw={}; if(location) gw.location={[Op.like]:`%${location}%`}; if(year) gw.race_date={[Op.startsWith]:year};
+    const pw={}; if(search) pw.name={[Op.like]:\`%\${search}%\`}; if(nationality) pw.nationality=nationality;
+    const gw={}; if(location) gw.location={[Op.like]:\`%\${location}%\`}; if(year) gw.race_date={[Op.startsWith]:year};
     
     const pilots = await Pilot.findAll({where:pw,order:[['name','ASC']]});
     const gps = await GrandPrix.findAll({where:gw,order:[['race_date','ASC']]});
@@ -220,3 +237,58 @@ async function start() {
     app.listen(3000,()=>console.log('🚀 Fut: http://localhost:3000'));
 }
 start();
+`;
+write('server.js', serverContent);
+
+// =============================================================================
+// 2. PILOTS INDEX VIEW (Javított: biztonsági ellenőrzés)
+// =============================================================================
+const pilotIndex = `
+<%- include('../partials/layout-header', { title: 'Pilóták Kezelése' }) %>
+<% 
+    // BIZTONSÁGI VÁLTOZÓK (Ha véletlenül nem jönnének a szervertől)
+    const q = (typeof query !== 'undefined') ? query : {}; 
+    const nats = (typeof nationalities !== 'undefined') ? nationalities : [];
+%>
+<div class="content-section">
+    <div class="container">
+        <div class="hero-section"><h1 class="hero-title">Jelenlegi Pilóták</h1></div>
+        <div class="text-end mb-3"><a href="/pilots/create" class="btn btn-f1">Új Pilóta +</a></div>
+        <div class="card-f1">
+            <form class="d-flex gap-2 mb-3" method="GET">
+                <input name="search" class="form-control w-auto" placeholder="Keresés..." value="<%= q.search || '' %>">
+                <select name="nationality" class="form-control w-auto">
+                    <option value="">Minden</option>
+                    <% nats.forEach(n=>{ %>
+                        <option value="<%= n %>" <%= q.nationality==n?'selected':'' %>><%= n %></option>
+                    <% }) %>
+                </select>
+                <button class="btn btn-f1">Szűr</button>
+            </form>
+            <table class="table table-f1">
+                <thead><tr><th>Név</th><th>Csapat</th><th>Művelet</th></tr></thead>
+                <tbody>
+                    <% pilots.forEach(p => { %>
+                        <tr>
+                            <td><strong><%= p.name %></strong></td>
+                            <td><%= p.team || '-' %></td>
+                            <td>
+                                <a href="/pilots/show/<%= p.pilot_id %>" class="btn btn-sm btn-info text-white">Info</a>
+                                <a href="/pilots/edit/<%= p.pilot_id %>" class="btn btn-sm btn-warning">Szerk</a>
+                                <form action="/pilots/delete/<%= p.pilot_id %>" method="POST" style="display:inline" onsubmit="return confirm('Biztos?')">
+                                    <button class="btn btn-sm btn-danger">Töröl</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+            <%- include('../partials/pagination', {currentPage, totalPages, queryParams}) %>
+        </div>
+    </div>
+</div>
+<%- include('../partials/layout-footer') %>
+`;
+write('views/pilots/index.ejs', pilotIndex);
+
+console.log('✨ Minden kész! Indíthatod a szervert.');
