@@ -1,0 +1,51 @@
+<%- include('partials/layout-header', { title: 'Főoldal - F1 Tech' }) %>
+<div class="white-content-wrapper">
+    <div class="welcome-logo-container">
+        <!-- Helyőrző logó, ha nincs meg a fájl -->
+        <div style="font-size: 3rem; color: #e10600; font-weight: bold;">F1 <span style="color:#333">TECH</span></div>
+    </div>
+    
+    <div class="content-section">
+        <p class="welcome-subtitle">
+            <strong class="red-title">Üdvözlünk az F1 Akadémián, ahol a sebesség, a szenvedély és a történelem találkozik!</strong><br><br>
+            <span class="normal-text">Oldalunk célja, hogy elhozzuk neked a Formula–1 aranykorának minden pillanatát...</span>
+        </p>
+        
+        <div class="text-center my-5">
+            <img src="https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/manual/Misc/2023-Season-Launch/Ferrari_SF-23.jpg" alt="F1 Car" style="width: 100%; max-width: 800px; border-radius: 10px;">
+        </div>
+        
+        <div class="content-with-image">
+            <div class="content-text">
+                <p class="welcome-subtitle" style="text-align: left;">
+                    <strong>A hősöd Ayrton Senna, Michael Schumacher vagy Max Verstappen?</strong><br>
+                    Csatlakozz az F1 Akadémiához!
+                    <% if(!user) { %>
+                        <br>Nincs más dolgod, mint regisztrálni <a href="/register" style="color: #e10600; font-weight: bold;">ITT</a>!
+                    <% } %>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="welcome-features">
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3 class="feature-title">Pilóták adatbázisa</h3>
+            <p>Tekintse meg a Formula 1 pilóták részletes adatait és eredményeit.</p>
+            <a href="/pilots" class="feature-link">Böngészés →</a>
+        </div>
+        <div class="feature-card">
+            <h3 class="feature-title">Diagramok</h3>
+            <p>Interaktív grafikonok és statisztikák a F1 eredményekről.</p>
+            <a href="/diagrams" class="feature-link">Megtekintés →</a>
+        </div>
+        <div class="feature-card">
+            <h3 class="feature-title">Bajnokok Csarnoka</h3>
+            <p>Szűrhető történeti adatbázis.</p>
+            <a href="/database" class="feature-link">Kezelés →</a>
+        </div>
+    </div>
+</section>
+<%- include('partials/layout-footer') %>

@@ -1,0 +1,19 @@
+<%- include('../partials/layout-header', { title: 'Szerkesztés' }) %>
+<div class="content-section">
+    <div class="container">
+        <div class="hero-section"><h1 class="hero-title">Szerkesztés: <%= pilot.name %></h1></div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card-f1">
+                    <form action="/pilots/edit/<%= pilot.pilot_id %>" method="POST">
+                        <div class="mb-3"><label>Név</label><input type="text" name="name" class="form-control" value="<%= pilot.name %>" required></div>
+                        <div class="mb-3"><label>Csapat</label><input type="text" name="team" class="form-control" value="<%= pilot.team %>"></div>
+                        <div class="mb-3"><label>Nemzetiség</label><input type="text" name="nationality" class="form-control" value="<%= pilot.nationality %>"></div>
+                        <button class="btn btn-f1">Frissítés</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('../partials/layout-footer') %>

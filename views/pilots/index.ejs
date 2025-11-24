@@ -1,0 +1,32 @@
+<%- include('../partials/layout-header', { title: 'Pilóták Kezelése' }) %>
+<div class="content-section">
+    <div class="container">
+        <div class="hero-section"><h1 class="hero-title">Jelenlegi Pilóták</h1></div>
+        <div class="mb-4 text-end">
+            <a href="/pilots/create" class="btn btn-f1">Új Pilóta +</a>
+        </div>
+        <div class="card-f1">
+            <table class="table table-f1">
+                <thead><tr><th>ID</th><th>Név</th><th>Csapat</th><th>Műveletek</th></tr></thead>
+                <tbody>
+                    <% pilots.forEach(p => { %>
+                        <tr>
+                            <td><span class="pilot-id-badge"><%= p.pilot_id %></span></td>
+                            <td><strong><%= p.name %></strong></td>
+                            <td><%= p.team || '-' %></td>
+                            <td>
+                                <a href="/pilots/show/<%= p.pilot_id %>" class="btn btn-sm btn-info text-white">Megtekint</a>
+                                <a href="/pilots/edit/<%= p.pilot_id %>" class="btn btn-sm btn-warning">Szerk</a>
+                                <form action="/pilots/delete/<%= p.pilot_id %>" method="POST" style="display:inline;" onsubmit="return confirm('Biztos?')">
+                                    <button class="btn btn-sm btn-danger">Töröl</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+            <%- include('../partials/pagination', { currentPage: currentPage, totalPages: totalPages }) %>
+        </div>
+    </div>
+</div>
+<%- include('../partials/layout-footer') %>

@@ -1,0 +1,21 @@
+<% 
+    const curr = typeof currentPage !== 'undefined' ? currentPage : 1;
+    const total = typeof totalPages !== 'undefined' ? totalPages : 1;
+    if (total > 1) { 
+%>
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item <%= curr === 1 ? 'disabled' : '' %>">
+                <a class="page-link" href="?page=<%= curr - 1 %>">&laquo; Előző</a>
+            </li>
+            <% for(let i = 1; i <= total; i++) { %>
+                <li class="page-item <%= curr === i ? 'active' : '' %>">
+                    <a class="page-link" href="?page=<%= i %>"><%= i %></a>
+                </li>
+            <% } %>
+            <li class="page-item <%= curr === total ? 'disabled' : '' %>">
+                <a class="page-link" href="?page=<%= curr + 1 %>">Következő &raquo;</a>
+            </li>
+        </ul>
+    </nav>
+<% } %>

@@ -1,0 +1,28 @@
+<%- include('../partials/layout-header', { title: pilot.name }) %>
+<div class="content-section">
+    <div class="container">
+        <div class="hero-section"><h1 class="hero-title"><%= pilot.name %></h1></div>
+        <div class="row g-4">
+            <div class="col-md-4"><div class="card-f1 text-center"><h4>Csapat</h4><p><strong><%= pilot.team %></strong></p></div></div>
+            <div class="col-md-4"><div class="card-f1 text-center"><h4>Nemzetiség</h4><p><strong><%= pilot.nationality %></strong></p></div></div>
+            <div class="col-md-4"><div class="card-f1 text-center"><h4>ID</h4><p class="pilot-id-badge"><%= pilot.pilot_id %></p></div></div>
+        </div>
+        <div class="card-f1 mt-4">
+            <h3>Eredmények</h3>
+            <table class="table table-f1">
+                <thead><tr><th>Dátum</th><th>Futam</th><th>Helyezés</th></tr></thead>
+                <tbody>
+                    <% results.forEach(r => { %>
+                        <tr>
+                            <td><%= new Date(r.race_date).toLocaleDateString('hu-HU') %></td>
+                            <td><%= r.GrandPrix ? r.GrandPrix.name : '?' %></td>
+                            <td><%= r.position ? 'P'+r.position : 'DNF (' + (r.issue||'-') + ')' %></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-4 text-center"><a href="/pilots" class="btn btn-outline-f1">Vissza a listához</a></div>
+    </div>
+</div>
+<%- include('../partials/layout-footer') %>

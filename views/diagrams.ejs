@@ -1,0 +1,41 @@
+<%- include('partials/layout-header', { title: 'Diagramok' }) %>
+<div class="content-section">
+    <div class="container">
+        <div class="hero-section"><h1 class="hero-title">Statisztikák</h1></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-f1">
+                    <h3>DNF (Kiesések) Csapatonként</h3>
+                    <canvas id="dnfChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-f1">
+                    <h3>Futamok Helyszínenként</h3>
+                    <canvas id="locChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const dnfData = JSON.parse('<%- JSON.stringify(dnfData) %>');
+    const locData = JSON.parse('<%- JSON.stringify(locationData) %>');
+    
+    new Chart(document.getElementById('dnfChart'), {
+        type: 'bar',
+        data: {
+            labels: dnfData.teams,
+            datasets: [{ label: 'DNF', data: Object.values(dnfData.teamDNFCounts), backgroundColor: '#e10600' }]
+        }
+    });
+    new Chart(document.getElementById('locChart'), {
+        type: 'pie',
+        data: {
+            labels: locData.locations.slice(0, 10),
+            datasets: [{ label: 'Futamok', data: locData.raceCounts.slice(0, 10), backgroundColor: ['#e10600', '#15151e', '#333', '#666', '#999'] }]
+        }
+    });
+</script>
+<%- include('partials/layout-footer') %>

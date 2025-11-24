@@ -1,0 +1,19 @@
+<%- include('../partials/layout-header', { title: 'Új Pilóta' }) %>
+<div class="content-section">
+    <div class="container">
+        <div class="hero-section"><h1 class="hero-title">Új Pilóta</h1></div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card-f1">
+                    <form action="/pilots" method="POST">
+                        <div class="mb-3"><label>Név</label><input type="text" name="name" class="form-control" required></div>
+                        <div class="mb-3"><label>Csapat</label><input type="text" name="team" class="form-control"></div>
+                        <div class="mb-3"><label>Nemzetiség</label><input type="text" name="nationality" class="form-control"></div>
+                        <button class="btn btn-f1">Mentés</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('../partials/layout-footer') %>
