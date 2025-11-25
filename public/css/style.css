@@ -1,0 +1,490 @@
+/* ==========================================
+   F1 TECH - JAVÍTOTT & VÉGLEGES STÍLUS
+   (Bootstrap Override Version)
+   ========================================== */
+
+/* 1. ALAPBEÁLLÍTÁSOK (BASE) */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+html {
+    background: url('https://i.imgur.com/GfpR4rL.png') center center fixed no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body {
+    background: transparent !important; /* Hogy látsszon a háttérkép */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* 2. ELRENDEZÉS (LAYOUT) - Glassmorphism */
+.container,
+.content-container,
+.main-content {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 107, 107, 0.3);
+    color: white !important;
+}
+
+#header {
+    background: rgba(28, 29, 38, 0.95) !important; /* Sötét háttér */
+    position: fixed !important; /* Rögzítjük a tetejére */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000; /* Minden felett legyen */
+    height: 3.5em;
+    line-height: 3.5em;
+    display: block !important; /* Biztos ami biztos */
+}
+
+
+#header .container {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 1rem !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    top: 0;
+    height: 3.5em;
+    line-height: 3.5em;
+}
+
+#nav {
+    top: 0;
+    height: 3.5em;
+    line-height: 3.5em;
+}
+
+/* Navigációs linkek */
+.nav-link, #header nav a {
+    color: white !important;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover, #header nav a:hover {
+    background: linear-gradient(135deg, #dc143c 0%, #b91c1c 100%);
+    color: white !important;
+}
+
+/* 4. TÁBLÁZATOK JAVÍTÁSA */
+
+.table-f1, .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 107, 107, 0.4);
+}
+
+/* Fejléc */
+.table-f1 thead th, 
+.table thead th {
+    background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%) !important;
+    color: white !important;
+    border: none !important;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+/* Sorok és Cellák - Itt kényszerítjük a sötét hátteret */
+.table-f1 tbody tr, 
+.table tbody tr,
+.table-striped tbody tr {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Sötét háttér */
+}
+
+.table-f1 tbody td, 
+.table tbody td {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Minden cella sötét */
+    color: white !important; /* Minden szöveg fehér */
+    border-bottom: 1px solid rgba(255, 107, 107, 0.2) !important;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+/* Hover effekt */
+.table-f1 tbody tr:hover td,
+.table tbody tr:hover td {
+    background-color: rgba(50, 50, 50, 0.9) !important;
+    color: #ff6b6b !important; /* Piros szöveg rámutatáskor */
+    cursor: default;
+}
+
+/* 5. ŰRLAPOK (FORMS) */
+.form-control {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 2px solid rgba(255, 107, 107, 0.4) !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.form-control:focus {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-color: #ff6b6b !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+}
+
+/* Select option-ök sötét háttérrel */
+select.form-control option {
+    background-color: #333;
+    color: white;
+}
+
+/* Gombok */
+.btn-f1, .btn-primary {
+    background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%) !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 25px !important;
+    padding: 8px 20px !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-f1:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+.btn-danger {
+    border-radius: 20px !important;
+}
+
+/* 6. WELCOME OLDAL JAVÍTÁS */
+/* Ha fehér doboz van, abban legyen fekete a szöveg */
+
+.white-content-wrapper {
+    background: #ffffff !important;
+    color: #333333 !important; /* Sötét szöveg */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Specifikus szöveg javítások a fehér dobozban */
+.white-content-wrapper h1,
+.white-content-wrapper h2,
+.white-content-wrapper h3,
+.white-content-wrapper p,
+.white-content-wrapper li {
+    color: #333333 !important;
+    text-shadow: none !important;
+}
+
+.white-content-wrapper .red-title {
+    color: #dc2626 !important;
+}
+
+/* 7. KÁRTYÁK (CARDS) */
+.card {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(255, 107, 107, 0.4) !important;
+    color: white !important;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%) !important;
+    color: white !important;
+    border-bottom: 1px solid rgba(255, 107, 107, 0.4) !important;
+}
+
+/* 8. LÁBLÉC */
+footer {
+    background: rgba(0, 0, 0, 0.9) !important;
+    color: white !important;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+/* 9. RESZPONZÍV JAVÍTÁSOK */
+@media (max-width: 768px) {
+    .table-f1 { font-size: 0.8rem; }
+    .btn-f1 { padding: 6px 12px !important; font-size: 0.8rem; }
+    #header .container { flex-direction: column; }
+    .white-content-wrapper { padding: 20px; }
+}
+
+/* =========================================
+   DIAGRAM OLDAL STÍLUSAI
+   ========================================= */
+
+.hero-section {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #15151e 0%, #2c3e50 100%);
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 2px solid #ff6b6b;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.card-f1 {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    height: 100%;
+    color: #333; /* Sötét betűszín a kártyákon */
+}
+
+.chart-stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e10600;
+}
+
+/* Diagram gombok */
+.btn-f1 {
+    background-color: #e10600 !important;
+    color: white !important;
+    border: none;
+}
+.btn-f1:hover {
+    background-color: #b30000 !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline-f1 {
+    border: 2px solid #e10600 !important;
+    color: #e10600 !important;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.btn-outline-f1:hover {
+    background-color: #e10600 !important;
+    color: white !important;
+}
+
+/* Sötét táblázat fejlécek */
+.table-dark th {
+    background-color: #1c1d26 !important;
+    color: #ff6b6b !important;
+}
+
+/* =========================================
+   FIX: TARTALOM ELCSÚSZÁS & KÁRTYÁK
+   ========================================= */
+
+/* 1. Hogy a tartalom a menü ALATT kezdődjön minden oldalon */
+#page-wrapper {
+    padding-top: 3.5em; /* A menü magassága */
+}
+
+/* Kivétel: A főoldalon a Banner legyen teljes képernyős, ott nem kell padding */
+body.landing #page-wrapper {
+    padding-top: 0;
+}
+
+/* 2. Kártyák javítása (Hogy egy sorban legyenek és szépek) */
+.features-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 2em;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #e10600; /* F1 Piros */
+}
+
+.feature-box h3 {
+    color: #e10600;
+    font-weight: bold;
+}
+
+.feature-box p {
+    color: #ccc;
+}
+
+.feature-box .icon {
+    color: #e10600;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+/* 3. Képek igazítása */
+.spotlight .image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/* =========================================
+   BANNER HÁTTÉRKÉP BEÁLLÍTÁS
+   ========================================= */
+
+#banner {
+    /* 
+       Itt történik a varázslat:
+       1. linear-gradient: ez a sötétítő réteg (rgba fekete, 0.6-os áttetszőséggel)
+       2. url: ez tölti be a képet
+    */
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url("/images/avtosport-formula-1-bolid.jpg") !important;
+    
+    background-size: cover !important;      /* Kitölti a teljes szélességet/magasságot */
+    background-position: center center !important; /* Középre igazítja a képet */
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important; /* Parallax effekt (a kép áll, ha görgetsz) - Opcionális */
+    
+    /* Biztosítjuk, hogy a szöveg fehér legyen */
+    color: white !important;
+}
+
+/* Ha a Landed sablon alapból tenne rá valami mást, ezt felülütjük */
+#banner::after {
+    opacity: 0 !important; /* Kikapcsoljuk a sablon saját overlay-ét, ha van */
+}
+/* =========================================
+   1. TARTALOM POZICIONÁLÁSA (Menü alól kiszedés)
+   ========================================= */
+
+/* Minden oldalnak adunk felső térközt, hogy ne takarja ki a menü */
+#page-wrapper {
+    padding-top: 5em !important; /* Kb. 80px, ez elég a menünek */
+}
+
+/* KIVÉTEL: A Főoldal (ahol a nagy banner van) */
+/* Ott nullázzuk, mert a Bannernek a menü alatt kell kezdődnie */
+body.landing #page-wrapper {
+    padding-top: 0 !important;
+}
+
+
+/* =========================================
+   2. FEHÉR DOBOZOK -> SÖTÉT ÜVEG DESIGN
+   ========================================= */
+
+/* Minden kártya, doboz, és tároló legyen sötét, áttetsző */
+.card, 
+.card-f1, 
+.white-content-wrapper,
+.box,
+.feature-box {
+    background-color: rgba(30, 32, 40, 0.85) !important; /* Sötét szürke, picit áttetsző */
+    backdrop-filter: blur(10px) !important;              /* Homályosítás mögötte (üveg effekt) */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important; /* Vékony világos keret */
+    color: white !important;                             /* Szöveg legyen fehér */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;  /* Mélység (árnyék) */
+    border-radius: 8px !important;
+}
+
+/* Ha van benne alcím (pl. Card Header), az is illeszkedjen */
+.card-header, .card-footer {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ff6b6b !important; /* F1 piros a címsoroknak */
+}
+
+/* A beviteli mezők és gombok a dobozokon belül */
+.card input, .card select, .card textarea {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* A "Vissza a listához" gomb igazítása */
+.btn-outline-danger, .btn-outline-light {
+    backdrop-filter: none !important; /* Hogy a gomb ne legyen üveges */
+}
+
+/* =========================================
+   FIX: MENÜ ALÁ CSÚSZÁS ÉS CÍMSOR DESIGN
+   ========================================= */
+
+/* 1. Térköz biztosítása minden oldalon (kivéve a főoldalt) */
+/* Ez tolja le a tartalmat, hogy látszódjon a menü alatt */
+body:not(.landing) .content-section,
+body:not(.landing) #main {
+    margin-top: 4em !important; /* A menü magassága + kis hely */
+    padding-top: 2em !important;
+}
+
+/* 2. A fenti "Jelenlegi Pilóták" doboz stílusa (Sötét üveg) */
+.hero-section {
+    background-color: rgba(30, 32, 40, 0.85) !important; /* Sötét háttér */
+    backdrop-filter: blur(10px) !important;              /* Homályosítás */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important; /* Vékony keret */
+    border-radius: 15px !important;
+    padding: 2em !important;
+    margin-bottom: 2em !important;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+}
+
+/* A cím színe benne */
+.hero-title {
+    color: #ff6b6b !important; /* F1 Piros */
+    margin: 0 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+}
+
+/* A táblázat gombjainak igazítása */
+.btn-group .btn {
+    margin: 0 2px;
+}

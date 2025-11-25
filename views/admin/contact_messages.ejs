@@ -1,1 +1,25 @@
-<%- include('../partials/layout-header',{title:'Üzenetek'}) %><div class="content-section"><div class="container"><%- include('../partials/admin-header',{title:'Üzenetek',icon:'fa-envelope',activePage:'messages'}) %><div class="card-f1"><table class="table table-f1"><thead><tr><th>Név</th><th>Email</th><th>Üzenet</th><th>Művelet</th></tr></thead><tbody><% messages.forEach(m=>{ %><tr><td><%= m.name %></td><td><%= m.email %></td><td><%= m.message.substring(0,50) %>...</td><td><% if(!m.is_read){ %><form action="/admin/contact-messages/<%= m.id %>/mark-read" method="POST" style="display:inline"><button class="btn btn-sm btn-success">Olvasva</button></form><% } %><form action="/admin/contact-messages/<%= m.id %>/delete" method="POST" style="display:inline"><button class="btn btn-sm btn-danger">Töröl</button></form></td></tr><% }) %></tbody></table></div></div></div><%- include('../partials/layout-footer') %>
+<%- include('partials/header', { title: 'Üzenetek' }) %>
+<div class="content-section">
+    <div class="container">
+        <%- include('../partials/admin-header', { title: 'Kontakt Üzenetek', icon: 'fa-envelope', activePage: 'messages' }) %>
+        <div class="card-f1">
+            <table class="table table-f1">
+                <thead><tr><th>Név</th><th>Email</th><th>Tárgy</th><th>Művelet</th></tr></thead>
+                <tbody>
+                    <% messages.forEach(m => { %>
+                        <tr class="<%= m.is_read ? '' : 'fw-bold' %>">
+                            <td><%= m.name %></td><td><%= m.email %></td><td><%= m.subject %></td>
+                            <td>
+                                <% if(!m.is_read) { %>
+                                    <form action="/admin/contact-messages/<%= m.id %>/mark-read" method="POST" style="display:inline;"><button class="btn btn-sm btn-success">Olvasva</button></form>
+                                <% } %>
+                                <form action="/admin/contact-messages/<%= m.id %>/delete" method="POST" style="display:inline;"><button class="btn btn-sm btn-danger">Töröl</button></form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>

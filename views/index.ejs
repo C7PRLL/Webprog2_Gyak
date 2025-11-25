@@ -1,11 +1,101 @@
-<%- include('partials/layout-header', { title: 'Főoldal' }) %>
-<div class="white-content-wrapper">
-    <div class="text-center py-5" style="background:#f4f4f4"><h1 class="text-f1" style="font-size:3rem">F1 TECH</h1></div>
-    <div class="content-section">
-        <p class="text-center lead mb-5">Üdvözlünk az F1 Akadémián, ahol a sebesség, a szenvedély és a történelem találkozik!</p>
-        <div class="text-center mb-5"><img src="https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/manual/Misc/2023-Season-Launch/Ferrari_SF-23.jpg" style="width:100%;max-width:800px;border-radius:10px"></div>
-        <% if(!user){ %><div class="text-center"><a href="/register" class="btn btn-f1 btn-lg">Csatlakozz Hozzánk!</a></div><% } %>
+<%- include('partials/header') %>
+
+<!-- 1. BANNER (Főoldali nagy kép) -->
+<section id="banner">
+    <div class="content">
+        <header>
+            <h2>F1 Akadémia</h2>
+            <p>Ahol a sebesség, a szenvedély<br />
+            és a történelem találkozik.</p>
+        </header>
     </div>
-</div>
-<section class="py-5 bg-dark text-white"><div class="container"><div class="row g-4"><div class="col-md-4"><div class="feature-card"><h3 class="text-f1">Pilóták</h3><a href="/pilots" class="btn btn-outline-dark">Megtekintés</a></div></div><div class="col-md-4"><div class="feature-card"><h3 class="text-f1">Diagramok</h3><a href="/diagrams" class="btn btn-outline-dark">Megtekintés</a></div></div><div class="col-md-4"><div class="feature-card"><h3 class="text-f1">Bajnokok</h3><a href="/database" class="btn btn-outline-dark">Megtekintés</a></div></div></div></div></section>
-<%- include('partials/layout-footer') %>
+    <a href="#one" class="goto-next scrolly">Tovább</a>
+</section>
+
+<!-- 2. SPOTLIGHT (Kép + Szöveg váltakozva) -->
+<section id="one" class="spotlight style1 bottom">
+    <span class="image fit main">
+        <img src="https://cparici.com/wp-content/uploads/2025/08/cparici-2025-08-01T205416.688.jpg" alt="F1 History" />
+    </span>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12-medium">
+                    <header>
+                        <h2>A Formula–1<br />Aranykora</h2>
+                        <p>1950 - 2006</p>
+                    </header>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <p>Oldalunk célja, hogy elhozzuk neked a Formula–1 aranykorának minden pillanatát. Merülj el a sportág gyökereiben, és fedezd fel, hogyan vált a benzingőzös álmokból a világ legizgalmasabb versenysorozata!</p>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <p>Ismerd meg a legendás pilótákat, akik örökre beírták nevüket a történelembe – Fangio, Lauda, Senna, Prost, Schumacher és sokan mások. Fedezd fel a csapatokat és konstrukciókat, amelyek forradalmasították a versenyzést.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#two" class="goto-next scrolly">Tovább</a>
+</section>
+
+<section id="two" class="spotlight style2 right">
+    <span class="image fit main">
+        <img src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/content/dam/fom-website/manual/Misc/Verstappenbacktobacktitles/verstappen-hero.webp" alt="Verstappen" />
+    </span>
+    <div class="content">
+        <header>
+            <h2>Legendák nyomában</h2>
+            <p>Sennától Verstappenig</p>
+        </header>
+        <p>A hősöd Ayrton Senna, Michael Schumacher vagy Max Verstappen? Tanulj róluk nálunk – nézd meg, hogyan emelkedtek fel, hogyan győztek, és mi tette őket legendává. Csatlakozz az F1 Akadémiához!</p>
+        <ul class="actions">
+            <li><a href="/register" class="button">Regisztráció</a></li>
+        </ul>
+    </div>
+    <a href="#three" class="goto-next scrolly">Tovább</a>
+</section>
+
+<!-- 3. FEATURES (Kártyák) -->
+<section id="three" class="wrapper style1 special fade-up">
+    <div class="container">
+        <header class="major">
+            <h2>Funkciók</h2>
+            <p>Fedezd fel az adatbázist</p>
+        </header>
+        
+        <div class="row gtr-uniform features-row">
+            <!-- Kártya 1 -->
+            <section class="col-4 col-6-medium col-12-xsmall">
+                <div class="feature-box">
+                    <span class="icon solid alt major fa-users"></span>
+                    <h3>Pilóták</h3>
+                    <p>Részletes adatbázis a jelenlegi és múltbéli versenyzőkről.</p>
+                    <a href="/pilots" class="button small">Böngészés</a>
+                </div>
+            </section>
+            
+            <!-- Kártya 2 -->
+            <section class="col-4 col-6-medium col-12-xsmall">
+                <div class="feature-box">
+                    <span class="icon solid alt major fa-chart-area"></span>
+                    <h3>Diagramok</h3>
+                    <p>Látványos grafikonok és DNF statisztikák.</p>
+                    <a href="/diagrams" class="button small">Megtekintés</a>
+                </div>
+            </section>
+            
+            <!-- Kártya 3 -->
+            <section class="col-4 col-6-medium col-12-xsmall">
+                <div class="feature-box">
+                    <span class="icon solid alt major fa-database"></span>
+                    <h3>CRUD Műveletek</h3>
+                    <p>Adatok kezelése, új pilóták felvétele.</p>
+                    <a href="/pilots" class="button small">Kezelés</a>
+                </div>
+            </section>
+        </div>
+        
+    </div>
+</section>
+
+<%- include('partials/footer') %>

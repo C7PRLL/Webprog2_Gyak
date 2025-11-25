@@ -1,1 +1,243 @@
-<%- include('partials/layout-header',{title:'Diagramok'}) %><div class="content-section"><div class="container"><div class="hero-section"><h1 class="hero-title">Statisztikák</h1></div><div class="row"><div class="col-md-6"><div class="card-f1"><h3>DNF Csapatonként</h3><canvas id="dnfChart"></canvas></div></div><div class="col-md-6"><div class="card-f1"><h3>Futamok Helyszínenként</h3><canvas id="locChart"></canvas></div></div></div></div></div><script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script>const dnf=JSON.parse('<%- JSON.stringify(dnfData) %>');const loc=JSON.parse('<%- JSON.stringify(locationData) %>');new Chart(document.getElementById('dnfChart'),{type:'bar',data:{labels:dnf.teams,datasets:[{label:'DNF',data:Object.values(dnf.teamDNFCounts),backgroundColor:'#e10600'}]}});new Chart(document.getElementById('locChart'),{type:'pie',data:{labels:loc.locations.slice(0,10),datasets:[{label:'Futam',data:loc.raceCounts.slice(0,10),backgroundColor:['#e10600','#333','#666']}]}});</script><%- include('partials/layout-footer') %>
+<%- include('partials/header') %>
+
+<!-- Fő tartalom -->
+<div id="main" class="wrapper style1">
+    <div class="content-section">
+        <div class="container">
+            
+            <!-- Header -->
+            <div class="hero-section">
+                <h1 class="hero-title">Diagramok a múltbeli nagydíjakról</h1>
+            </div>
+    
+         
+    
+            <!-- Gombok -->
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="button primary" onclick="showChart('dnf')" id="dnfBtn">
+                            DNF Bar Chart
+                        </button>
+                        <button type="button" class="button alt" onclick="showChart('bar')" id="barBtn">
+                            Helyszín Gyakoriság
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="badge bg-primary fs-6" style="padding: 10px;">
+                        <% if((typeof selectedTeam !== 'undefined' && selectedTeam) || (typeof selectedYear !== 'undefined' && selectedYear)) { %>
+                            Szűrve: 
+                            <%= selectedTeam ? selectedTeam : '' %>
+                            <%= selectedYear ? selectedYear : '' %>
+                        <% } else { %>
+                            Adatok: <%= dnfData.detailedData.length %> DNF rekord
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- DNF Chart -->
+            <div id="dnfChart" class="chart-container">
+                <div class="card shadow-sm card-f1">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4" style="color: #333;">DNF Statisztikák</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-8">
+                                <canvas id="dnfBarChart" style="max-height: 400px;"></canvas>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: #333;">
+                                    <%= dnfData.isFiltered ? 'Szűrt Részletek' : 'Összesítés' %>
+                                </h5>
+                                <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                                    <% if(dnfData.isFiltered) { %>
+                                        <table class="table table-sm table-striped" style="background: white; color: #333;">
+                                            <thead class="table-dark sticky-top">
+                                                <tr><th>Csapat</th><th>Dátum</th><th>Hiba</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <% dnfData.detailedData.forEach(function(dnf) { %>
+                                                <tr>
+                                                    <td class="fw-bold"><%= dnf.team %></td>
+                                                    <td><small><%= new Date(dnf.race_date).toLocaleDateString('hu-HU') %></small></td>
+                                                    <td><span class="badge bg-warning text-dark"><%= dnf.issue || 'N/A' %></span></td>
+                                                </tr>
+                                                <% }); %>
+                                            </tbody>
+                                        </table>
+                                    <% } else { %>
+                                        <table class="table table-sm table-striped" style="background: white; color: #333;">
+                                            <thead class="table-dark sticky-top">
+                                                <tr><th>Csapat</th><th>DNF szám</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <% Object.entries(dnfData.teamDNFCounts).forEach(function([team, count]) { %>
+                                                <tr>
+                                                    <td class="fw-bold"><%= team %></td>
+                                                    <td><span class="badge bg-danger"><%= count %></span></td>
+                                                </tr>
+                                                <% }); %>
+                                            </tbody>
+                                        </table>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Location Chart -->
+            <div id="barChart" class="chart-container" style="display: none;">
+                <div class="card shadow-sm card-f1">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4" style="color: #333;">Helyszínek statisztikája</h2>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <canvas id="locationBarChart" style="max-height: 400px;"></canvas>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                                    <table class="table table-sm table-striped" style="background: white; color: #333;">
+                                        <thead class="table-dark sticky-top">
+                                            <tr><th>Helyszín</th><th>Versenyek</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <% locationData.locations.forEach(function(loc, i) { %>
+                                            <tr>
+                                                <td class="fw-bold"><%= loc %></td>
+                                                <td><span class="badge bg-primary"><%= locationData.raceCounts[i] %></span></td>
+                                            </tr>
+                                            <% }); %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Stats Summary -->
+            <div class="row g-4 mt-5 mb-5">
+                <div class="col-md-4">
+                    <div class="card-f1 text-center">
+                        <div class="chart-stat-number"><%= dnfData.teams.length %></div>
+                        <h3 style="color:#333">Csapatok</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-f1 text-center">
+                        <div class="chart-stat-number"><%= dnfData.detailedData.length %></div>
+                        <h3 style="color:#333">Összes DNF</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-f1 text-center">
+                        <div class="chart-stat-number"><%= locationData.locations.length %></div>
+                        <h3 style="color:#333">Helyszínek</h3>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+<!-- Chart.js (Ha nincs a headerben, bár ott kellene lennie) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    // JAVÍTÁS ITT: Közvetlenül adjuk át az objektumot, nem JSON.parse-al stringből!
+    const dnfData = <%- JSON.stringify(dnfData) %>;
+    const locationData = <%- JSON.stringify(locationData) %>;
+    
+    let dnfChart, barChart;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        initDnfChart();
+        initBarChart();
+    });
+    
+    function showChart(chartType) {
+        document.querySelectorAll('.chart-container').forEach(container => {
+            container.style.display = 'none';
+        });
+        
+        const dnfBtn = document.getElementById('dnfBtn');
+        const barBtn = document.getElementById('barBtn');
+
+        if (chartType === 'dnf') {
+            document.getElementById('dnfChart').style.display = 'block';
+            dnfBtn.classList.remove('alt'); dnfBtn.classList.add('primary');
+            barBtn.classList.remove('primary'); barBtn.classList.add('alt');
+        } else if (chartType === 'bar') {
+            document.getElementById('barChart').style.display = 'block';
+            barBtn.classList.remove('alt'); barBtn.classList.add('primary');
+            dnfBtn.classList.remove('primary'); dnfBtn.classList.add('alt');
+        }
+    }
+    
+    function initDnfChart() {
+        const ctx = document.getElementById('dnfBarChart');
+        if (!ctx) return;
+        
+        const context = ctx.getContext('2d');
+        if (dnfChart) dnfChart.destroy();
+        
+        const teams = dnfData.teams || [];
+        const dnfCounts = teams.map(team => dnfData.teamDNFCounts[team] || 0);
+        
+        // Chart.js nem működik rejtett canvas-on, ezért inicializálás
+        dnfChart = new Chart(context, {
+            type: 'bar',
+            data: {
+                labels: teams,
+                datasets: [{
+                    label: 'DNF Szám',
+                    data: dnfCounts,
+                    backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    }
+    
+    function initBarChart() {
+        const ctx = document.getElementById('locationBarChart');
+        if (!ctx) return;
+        
+        const context = ctx.getContext('2d');
+        if (barChart) barChart.destroy();
+        
+        const locations = locationData.locations || [];
+        const raceCounts = locationData.raceCounts || [];
+        
+        barChart = new Chart(context, {
+            type: 'bar',
+            data: {
+                labels: locations,
+                datasets: [{
+                    label: 'Grand Prix Szám',
+                    data: raceCounts,
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    }
+</script>
+
+<%- include('partials/footer') %>

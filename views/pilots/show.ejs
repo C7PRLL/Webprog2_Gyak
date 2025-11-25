@@ -1,1 +1,51 @@
-<%- include('../partials/layout-header',{title:pilot.name}) %><div class="content-section"><div class="container"><div class="hero-section"><h1 class="hero-title"><%= pilot.name %></h1></div><div class="row g-4"><div class="col-md-6"><div class="card-f1"><h4>Adatok</h4><p>Csapat: <%= pilot.team %></p><p>Nemzetiség: <%= pilot.nationality %></p></div></div><div class="col-md-6"><div class="card-f1"><h4>Eredmények</h4><table class="table table-sm"><thead><tr><th>Dátum</th><th>Futam</th><th>Hely</th></tr></thead><tbody><% results.forEach(r=>{ %><tr><td><%= new Date(r.race_date).toLocaleDateString('hu-HU') %></td><td><%= r.GrandPrix?r.GrandPrix.name:'-' %></td><td><%= r.position?'P'+r.position:'DNF' %></td></tr><% }) %></tbody></table></div></div></div><div class="text-center mt-4"><a href="/pilots" class="btn btn-outline-f1">Vissza</a></div></div></div><%- include('../partials/layout-footer') %>
+<%- include('../partials/header', { title: pilot.name }) %>
+
+<div id="main" class="wrapper style1">
+    <div class="container medium">
+        
+        <!-- Fejléc -->
+        <div class="hero-section">
+            <h1 class="hero-title"><%= pilot.name %></h1>
+            <p style="color: #ccc;">Pilóta Adatlap</p>
+        </div>
+
+        <!-- Adatlap Kártya -->
+        <div class="card-f1" style="text-align: center;">
+            <div class="row gtr-uniform">
+                
+                <!-- Csapat -->
+                <div class="col-6 col-12-xsmall">
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                        <h3 style="color: #e10600;">Csapat</h3>
+                        <p style="font-size: 1.5em; margin: 0; color: white;"><%= pilot.team %></p>
+                    </div>
+                </div>
+
+                <!-- Nemzetiség -->
+                <div class="col-6 col-12-xsmall">
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                        <h3 style="color: #e10600;">Nemzetiség</h3>
+                        <p style="font-size: 1.5em; margin: 0; color: white;"><%= pilot.nationality %></p>
+                    </div>
+                </div>
+
+                <!-- ID (Opcionális) -->
+                <div class="col-12">
+                    <p style="color: #666;">Adatbázis ID: #<%= pilot.id %></p>
+                </div>
+
+                <!-- Gombok -->
+                <div class="col-12">
+                    <ul class="actions special">
+                        <li><a href="/pilots" class="button alt">Vissza a listához</a></li>
+                        <li><a href="/pilots/edit/<%= pilot.id %>" class="button primary">Szerkesztés</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

@@ -1,1 +1,48 @@
-<%- include('partials/layout-header',{title:'Kapcsolat'}) %><div class="content-section"><div class="container"><div class="hero-section"><h1 class="hero-title">Kapcsolat</h1></div><div class="row justify-content-center"><div class="col-lg-8"><div class="card-f1"><% if(typeof success!='undefined'){ %><div class="alert alert-success"><%= success %></div><% } %><form method="post" action="/contact"><div class="mb-3"><label>Név</label><input type="text" name="name" class="form-control" required></div><div class="mb-3"><label>Email</label><input type="email" name="email" class="form-control" required></div><div class="mb-3"><label>Tárgy</label><select name="subject" class="form-control"><option>Általános</option><option>Technikai</option></select></div><div class="mb-3"><label>Üzenet</label><textarea name="message" rows="5" class="form-control" required></textarea></div><div class="mb-3"><input type="checkbox" name="newsletter"> Hírlevél</div><button class="btn btn-f1 w-100">Küldés</button></form></div></div></div></div></div><%- include('partials/layout-footer') %>
+<%- include('partials/header') %>
+
+<div id="main" class="wrapper style1">
+    <div class="container medium">
+        
+        <!-- Címsor -->
+        <div class="hero-section">
+            <h1 class="hero-title">Kapcsolat</h1>
+            <p style="margin:0; color: #ccc;">Írj nekünk üzenetet!</p>
+        </div>
+
+        <!-- Űrlap doboz -->
+        <div class="card-f1">
+            <% if (typeof success !== 'undefined' && success) { %>
+                <div class="alert alert-success" style="background: rgba(40, 167, 69, 0.8); color: white; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                    <%= success %>
+                </div>
+            <% } %>
+
+            <form method="post" action="/contact">
+                <div class="row gtr-uniform">
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="name" id="name" value="" placeholder="Név" style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required />
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+                        <input type="email" name="email" id="email" value="" placeholder="Email" style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required />
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" id="message" placeholder="Üzenet" rows="6" style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter" style="color: white;">Feliratkozom a hírlevélre</label>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Üzenet küldése" class="primary" /></li>
+                            <li><input type="reset" value="Törlés" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include('partials/footer') %>

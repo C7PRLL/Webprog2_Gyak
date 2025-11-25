@@ -1,44 +1,88 @@
-<%- include('../partials/layout-header', { title: 'Pilóták Kezelése' }) %>
-<% 
-    // BIZTONSÁGI VÁLTOZÓK (Ha véletlenül nem jönnének a szervertől)
-    const q = (typeof query !== 'undefined') ? query : {}; 
-    const nats = (typeof nationalities !== 'undefined') ? nationalities : [];
-%>
-<div class="content-section">
+<%- include('../partials/header', { title: 'Pilóták Kezelése' }) %>
+
+<!-- Fő keret a térközhöz (ez tolja le a menü alól) -->
+<div id="main" class="wrapper style1">
     <div class="container">
-        <div class="hero-section"><h1 class="hero-title">Jelenlegi Pilóták</h1></div>
-        <div class="text-end mb-3"><a href="/pilots/create" class="btn btn-f1">Új Pilóta +</a></div>
-        <div class="card-f1">
-            <form class="d-flex gap-2 mb-3" method="GET">
-                <input name="search" class="form-control w-auto" placeholder="Keresés..." value="<%= q.search || '' %>">
-                <select name="nationality" class="form-control w-auto">
-                    <option value="">Minden</option>
-                    <% nats.forEach(n=>{ %>
-                        <option value="<%= n %>" <%= q.nationality==n?'selected':'' %>><%= n %></option>
-                    <% }) %>
-                </select>
-                <button class="btn btn-f1">Szűr</button>
-            </form>
-            <table class="table table-f1">
-                <thead><tr><th>Név</th><th>Csapat</th><th>Művelet</th></tr></thead>
-                <tbody>
-                    <% pilots.forEach(p => { %>
-                        <tr>
-                            <td><strong><%= p.name %></strong></td>
-                            <td><%= p.team || '-' %></td>
-                            <td>
-                                <a href="/pilots/show/<%= p.pilot_id %>" class="btn btn-sm btn-info text-white">Info</a>
-                                <a href="/pilots/edit/<%= p.pilot_id %>" class="btn btn-sm btn-warning">Szerk</a>
-                                <form action="/pilots/delete/<%= p.pilot_id %>" method="POST" style="display:inline" onsubmit="return confirm('Biztos?')">
-                                    <button class="btn btn-sm btn-danger">Töröl</button>
-                                </form>
-                            </td>
-                        </tr>
-                    <% }) %>
-                </tbody>
-            </table>
-            <%- include('../partials/pagination', {currentPage, totalPages, queryParams}) %>
+        
+        <!-- 1. Címsor doboz (Sötét üveg) -->
+        <div class="hero-section">
+            <h1 class="hero-title">Jelenlegi Pilóták</h1>
         </div>
+
+        <div class="text-end mb-3">
+            <a href="/pilots/create" class="button primary small">Új Pilóta +</a>
+        </div>
+
+        <!-- 2. Tartalom doboz (Sötét üveg) -->
+        <div class="card-f1">
+            <!-- Kereső és Szűrő -->
+            <form class="d-flex gap-2 mb-3" method="GET" style="margin: 0;">
+                <div class="row gtr-uniform" style="width: 100%;">
+                    <div class="col-4 col-12-small">
+                        <input name="search" class="form-control" placeholder="Keresés..." value="<%= (typeof query !== 'undefined' && query.search) ? query.search : '' %>" style="background: rgba(0,0,0,0.3); border-color: #555; color: white;">
+                    </div>
+                    <div class="col-4 col-12-small">
+                        <select name="nationality" class="form-control" style="background: rgba(0,0,0,0.3); border-color: #555; color: white;">
+                            <option value="" style="background: #333;">Minden nemzetiség</option>
+                            <% if(typeof nationalities !== 'undefined') { %>
+                                <% nationalities.forEach(n => { %>
+                                    <option value="<%= n %>" style="background: #333;" <%= (typeof query !== 'undefined' && query.nationality == n) ? 'selected' : '' %>><%= n %></option>
+                                <% }) %>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div class="col-4 col-12-small">
+                        <button class="button primary fit small">Szűr</button>
+                    </div>
+                </div>
+            </form>
+
+            <hr style="border-color: rgba(255,255,255,0.1);">
+
+            <!-- Táblázat -->
+            <div class="table-responsive">
+                <table class="table table-f1">
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Csapat</th>
+                            <th>Nemzetiség</th>
+                            <th style="text-align: center;">Művelet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if(pilots.length > 0) { %>
+                            <% pilots.forEach(p => { %>
+                                <tr>
+                                    <td><strong><%= p.name %></strong></td>
+                                    <td>
+                                        <span class="badge" style="background: #e10600; color: white;"><%= p.team || '-' %></span>
+                                    </td>
+                                    <td><%= p.nationality %></td>
+                                    <td style="text-align: center;">
+                                        <!-- ITT A VISSZAKERÜLT INFO GOMB: -->
+                                        <a href="/pilots/<%= p.id %>" class="button small">Info</a>
+                                        
+                                        <a href="/pilots/edit/<%= p.id %>" class="button small">Szerk</a>
+                                        
+                                        <form action="/pilots/delete/<%= p.id %>" method="POST" style="display:inline" onsubmit="return confirm('Biztosan törlöd <%= p.name %>-t?')">
+                                            <button class="button small alt">Töröl</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            <% }) %>
+                        <% } else { %>
+                            <tr>
+                                <td colspan="4" class="text-center">Nincs találat.</td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Tartalom doboz vége -->
+
     </div>
 </div>
-<%- include('../partials/layout-footer') %>
+
+<%- include('../partials/footer') %>

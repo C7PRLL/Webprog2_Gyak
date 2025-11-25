@@ -1,1 +1,35 @@
-<%- include('partials/layout-header',{title:'Bajnokok'}) %><div class="content-section"><div class="container"><div class="hero-section"><h1 class="hero-title">Bajnokok Csarnoka</h1></div><div class="card-f1"><h3>Pilóták</h3><form method="GET" action="/database" class="d-flex gap-2 mb-3"><input type="text" name="search" class="form-control w-auto" placeholder="Keresés..." value="<%= query.search||'' %>"><select name="nationality" class="form-control w-auto"><option value="">Minden nemzetiség</option><% nationalities.forEach(n=>{ %><option value="<%= n %>" <%= query.nationality==n?'selected':'' %>><%= n %></option><% }) %></select><button class="btn btn-f1">Szűrés</button></form><div class="table-responsive" style="max-height:400px;overflow:auto"><table class="table table-f1"><thead><tr><th>Név</th><th>Nemzetiség</th><th>Csapat</th></tr></thead><tbody><% pilots.forEach(p=>{ %><tr><td><%= p.name %></td><td><%= p.nationality %></td><td><%= p.team||'-' %></td></tr><% }) %></tbody></table></div></div></div></div><%- include('partials/layout-footer') %>
+<%- include('partials/header', { title: 'Bajnokok Csarnoka' }) %>
+<div class="content-section">
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="hero-title">Bajnokok Csarnoka</h1>
+            <p>Történelmi adatok szűrése</p>
+        </div>
+        <div class="card-f1">
+            <h2 class="text-f1 mb-3">Pilóták</h2>
+            <form method="GET" action="/database" class="d-flex gap-2 mb-4">
+                <input type="text" name="search" class="form-control w-auto" placeholder="Név keresés..." value="<%= query.search || '' %>">
+                <select name="nationality" class="form-control w-auto">
+    <option value="">Minden nemzetiség</option>
+    <% if (typeof nationalities !== 'undefined' && nationalities.length > 0) { %>
+        <% nationalities.forEach(n => { %>
+            <option value="<%= n %>" <%= (typeof query !== 'undefined' && query.nationality === n) ? 'selected' : '' %>><%= n %></option>
+        <% }) %>
+    <% } %>
+</select>
+                <button class="btn btn-f1">Szűrés</button>
+            </form>
+            <div class="table-responsive" style="max-height:400px; overflow:auto;">
+                <table class="table table-f1">
+                    <thead><tr><th>Név</th><th>Nemzetiség</th><th>Születési dátum</th></tr></thead>
+                    <tbody>
+                        <% pilots.forEach(p => { %>
+                            <tr><td><%= p.name %></td><td><%= p.nationality %></td><td><%= p.birth_date || '-' %></td></tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>
