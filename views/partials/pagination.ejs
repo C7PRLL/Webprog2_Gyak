@@ -3,7 +3,7 @@
         
         <!-- Előző gomb -->
         <% if (currentPage > 1) { %>
-            <!-- A 'queryParams' változó gondoskodik róla, hogy a keresés megmaradjon lapozáskor -->
+           
             <a href="?page=<%= currentPage - 1 %><%= typeof queryParams !== 'undefined' ? queryParams : '' %>" class="button small alt">
                 &laquo; Előző
             </a>
@@ -13,7 +13,7 @@
 
         <!-- Oldalszámok -->
         <% for(let i = 1; i <= totalPages; i++) { %>
-            <!-- Ha túl sok oldal van, tegyünk ...-ot, de most egyszerűsítve mindet kiírjuk -->
+           
             <a href="?page=<%= i %><%= typeof queryParams !== 'undefined' ? queryParams : '' %>" 
                class="button small <%= currentPage == i ? 'primary' : 'alt' %>">
                <%= i %>
