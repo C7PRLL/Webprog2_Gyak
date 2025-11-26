@@ -1,35 +1,140 @@
-<%- include('partials/header', { title: 'Bajnokok Csarnoka' }) %>
-<div class="content-section">
+<%- include('partials/header', { title: 'Adatbázis' }) %>
+
+<div id="main" class="wrapper style1">
     <div class="container">
+        
+        <!-- Címsor (Sötét üveg stílus) -->
         <div class="hero-section">
             <h1 class="hero-title">Bajnokok Csarnoka</h1>
-            <p>Történelmi adatok szűrése</p>
+            <p style="color: #ccc;">Történelmi adatok böngészése</p>
         </div>
-        <div class="card-f1">
-            <h2 class="text-f1 mb-3">Pilóták</h2>
-            <form method="GET" action="/database" class="d-flex gap-2 mb-4">
-                <input type="text" name="search" class="form-control w-auto" placeholder="Név keresés..." value="<%= query.search || '' %>">
-                <select name="nationality" class="form-control w-auto">
-    <option value="">Minden nemzetiség</option>
-    <% if (typeof nationalities !== 'undefined' && nationalities.length > 0) { %>
-        <% nationalities.forEach(n => { %>
-            <option value="<%= n %>" <%= (typeof query !== 'undefined' && query.nationality === n) ? 'selected' : '' %>><%= n %></option>
-        <% }) %>
-    <% } %>
-</select>
-                <button class="btn btn-f1">Szűrés</button>
+
+        <!-- ==========================
+             1. PILÓTÁK SZEKCIÓ 
+             ========================== -->
+        <div class="card-f1 mb-5" style="margin-bottom: 3em;">
+            <h2 style="color: #ff6b6b; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-bottom: 20px;">
+                <i class="fa-solid fa-helmet-safety"></i> Pilóták
+            </h2>
+
+            <!-- Pilóta Szűrő -->
+            <form method="GET" action="/database" style="margin-bottom: 20px;">
+                <div class="row gtr-uniform">
+                    <div class="col-4 col-12-small">
+                        <input type="text" name="search" placeholder="Név keresés..." value="<%= query.search || '' %>" 
+                               style="background: rgba(0,0,0,0.3); border-color: #555; color: white;">
+                    </div>
+                    <div class="col-4 col-12-small">
+                        <select name="nationality" style="background: rgba(0,0,0,0.3); border-color: #555; color: white; background-color: #333;">
+                            <option value="">Minden nemzetiség</option>
+                            <% if(typeof nationalities !== 'undefined') { %>
+                                <% nationalities.forEach(n => { %>
+                                    <option value="<%= n %>" <%= query.nationality === n ? 'selected' : '' %>><%= n %></option>
+                                <% }) %>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div class="col-4 col-12-small">
+                        <button class="button primary fit small">Szűrés</button>
+                    </div>
+                </div>
             </form>
-            <div class="table-responsive" style="max-height:400px; overflow:auto;">
+
+            <!-- Pilóta Táblázat -->
+            <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
                 <table class="table table-f1">
-                    <thead><tr><th>Név</th><th>Nemzetiség</th><th>Születési dátum</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Nemzetiség</th>
+                            <th>Születési dátum</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <% pilots.forEach(p => { %>
-                            <tr><td><%= p.name %></td><td><%= p.nationality %></td><td><%= p.birth_date || '-' %></td></tr>
-                        <% }) %>
+                        <% if(pilots.length > 0) { %>
+                            <% pilots.forEach(p => { %>
+                                <tr>
+                                    <td><strong><%= p.name %></strong></td>
+                                    <td><%= p.nationality %></td>
+                                    <td><%= p.birth_date ? p.birth_date : '-' %></td>
+                                </tr>
+                            <% }) %>
+                        <% } else { %>
+                            <tr><td colspan="3" class="text-center">Nincs találat.</td></tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>
         </div>
+
+        <!-- ==========================
+             2. NAGYDÍJAK SZEKCIÓ (ÚJ!)
+             ========================== -->
+        <div class="card-f1">
+            <h2 style="color: #e10600; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-bottom: 20px; text-align: right;">
+                Nagydíjak <i class="fa-solid fa-flag-checkered"></i>
+            </h2>
+
+            <!-- Nagydíj Szűrő -->
+            <form method="GET" action="/database" style="margin-bottom: 20px;">
+                <div class="row gtr-uniform">
+                    <div class="col-4 col-12-small">
+                        <!-- Év választó -->
+                        <select name="year" style="background: rgba(0,0,0,0.3); border-color: #555; color: white; background-color: #333;">
+                            <option value="">Minden év</option>
+                            <% if(typeof years !== 'undefined') { %>
+                                <% years.forEach(y => { %>
+                                    <option value="<%= y %>" <%= query.year === y ? 'selected' : '' %>><%= y %></option>
+                                <% }) %>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div class="col-4 col-12-small">
+                        <!-- Helyszín kereső -->
+                        <input type="text" name="location" placeholder="Helyszín keresés..." value="<%= query.location || '' %>" 
+                               style="background: rgba(0,0,0,0.3); border-color: #555; color: white;">
+                    </div>
+                    <div class="col-4 col-12-small">
+                        <!-- Gombok -->
+                        <ul class="actions fit small">
+                            <li><button class="button primary fit small">Keresés</button></li>
+                            <li><a href="/database" class="button alt fit small">Reset</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Nagydíj Táblázat -->
+            <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                <table class="table table-f1">
+                    <thead>
+                        <tr>
+                            <th>Dátum</th>
+                            <th>Nagydíj Neve</th>
+                            <th>Helyszín</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if(grandPrix.length > 0) { %>
+                            <% grandPrix.forEach(gp => { %>
+                                <tr>
+                                    <!-- Dátum formázása -->
+                                    <td style="color: #ff6b6b !important;">
+                                        <%= gp.race_date %>
+                                    </td>
+                                    <td><strong><%= gp.name %></strong></td>
+                                    <td><%= gp.location %></td>
+                                </tr>
+                            <% }) %>
+                        <% } else { %>
+                            <tr><td colspan="3" class="text-center">Nincs találat.</td></tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 </div>
+
 <%- include('partials/footer') %>

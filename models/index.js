@@ -16,18 +16,24 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-// --- 1. A KRITIKUS RÉSZ: JELENLEGI PILÓTÁK ---
-// Neve a kódban: PilotsCurrent
-// Neve az adatbázisban: pilotscurrent (kisbetű, egybeírva)
+// --- 1. JELENLEGI PILÓTÁK ---
 db.PilotsCurrent = sequelize.define('PilotsCurrent', {
-    pilot_id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+    // ID helyett pilot_id
+    pilot_id: { 
+        type: Sequelize.INTEGER, 
+        primaryKey: true, 
+        autoIncrement: true 
+    },
     name: { type: Sequelize.STRING, allowNull: false },
     team: { type: Sequelize.STRING },
-    nationality: { type: Sequelize.STRING }
+    nationality: { type: Sequelize.STRING },
+    gender: { type: Sequelize.STRING } // A képen láttam, hogy van gender is
 }, { 
-    tableName: 'pilotsCurrent', 
-    timestamps: false,
-    freezeTableName: true       // Megtiltjuk a Sequelize-nek, hogy átnevezze
+    tableName: 'pilotscurrent', 
+    timestamps: true,           // Vannak időbélyegek a képen!
+    createdAt: 'created_at',    // Megmondjuk, hogy az adatbázisban így hívják
+    updatedAt: 'updated_at',
+    freezeTableName: true
 });
 
 // --- 2. RÉGI ADATOK (Database oldal) ---

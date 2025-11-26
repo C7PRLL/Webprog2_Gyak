@@ -10,8 +10,6 @@
                 <h1 class="hero-title">Diagramok a múltbeli nagydíjakról</h1>
             </div>
     
-         
-    
             <!-- Gombok -->
             <div class="row mb-4">
                 <div class="col-md-8">
@@ -146,11 +144,11 @@
     </div>
 </div>
 
-<!-- Chart.js (Ha nincs a headerben, bár ott kellene lennie) -->
+<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-    // JAVÍTÁS ITT: Közvetlenül adjuk át az objektumot, nem JSON.parse-al stringből!
+    
     const dnfData = <%- JSON.stringify(dnfData) %>;
     const locationData = <%- JSON.stringify(locationData) %>;
     
@@ -190,7 +188,6 @@
         const teams = dnfData.teams || [];
         const dnfCounts = teams.map(team => dnfData.teamDNFCounts[team] || 0);
         
-        // Chart.js nem működik rejtett canvas-on, ezért inicializálás
         dnfChart = new Chart(context, {
             type: 'bar',
             data: {

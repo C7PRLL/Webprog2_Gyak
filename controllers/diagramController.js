@@ -2,40 +2,83 @@ const db = require('../models');
 const sequelize = db.sequelize;
 const Result = db.Result;
 const GrandPrix = db.GrandPrix;
+const { Op } = require('sequelize');
 
 exports.index = async (req, res) => {
     try {
-        // 1. DNF Statisztika (Results táblából, ahol van 'issue')
-        const dnfStats = await Result.findAll({
-            attributes: ['team', [sequelize.fn('COUNT', sequelize.col('id')), 'count']],
-            where: { issue: { [db.Sequelize.Op.not]: null } }, // Ahol van hiba
-            group: ['team']
-        });
+        const { team, year } = req.query;
 
-        // 2. Helyszínek (GrandPrix táblából)
-        const locationStats = await GrandPrix.findAll({
-            attributes: ['location', [sequelize.fn('COUNT', sequelize.col('race_date')), 'count']],
-            group: ['location']
-        });
-
-        // Adatok előkészítése
-        const dnfLabels = dnfStats.map(d => d.team);
-        const dnfData = dnfStats.map(d => d.dataValues.count);
+        // 1. Szűrők előkészítése
+        const whereClause = {};
+        whereClause.issue = { [Op.not]: null, [Op.ne]: '' };
         
-        const locLabels = locationStats.map(l => l.location);
-        const locData = locationStats.map(l => l.dataValues.count);
+        if (team) whereClause.team = team;
+        if (year) whereClause.race_date = { [Op.startsWith]: year };
 
-        res.render('diagrams', {
-            // Átadjuk JSON stringként a Chart.js-nek
-            chartDnfLabels: JSON.stringify(dnfLabels),
-            chartDnfData: JSON.stringify(dnfData),
-            chartLocLabels: JSON.stringify(locLabels),
-            chartLocData: JSON.stringify(locData),
-            
-            // Szűrőhöz szükséges üres adatok (hogy ne dobjon hibát az EJS)
-            teams: [], years: [], selectedTeam: '', selectedYear: '',
-            dnfData: { detailedData: [], teamDNFCounts: {}, teams: [], isFiltered: false },
-            locationData: { locations: [], raceCounts: [] }
+        // 2. DNF Adatok lekérése
+        const dnfDetails = await Result.findAll({
+            where: whereClause,
+            order: [['race_date', 'DESC']]
         });
-    } catch (e) { res.status(500).send(e.message); }
+
+        // 3. DNF Statisztika összeszámolása
+        const teamCounts = {};
+        dnfDetails.forEach(r => {
+            teamCounts[r.team] = (teamCounts[r.team] || 0) + 1;
+        });
+
+        // --- ITT A RENDEZÉS (DNF) ---
+        // Átalakítjuk tömbbé, sorba rendezzük érték szerint (csökkenő), majd vissza
+        const sortedDnfEntries = Object.entries(teamCounts)
+            .sort((a, b) => b[1] - a[1]); // b[1] a darabszám, csökkenő sorrend
+
+        const sortedTeams = sortedDnfEntries.map(entry => entry[0]); // Csapatnevek sorban
+
+        // 4. Helyszínek lekérése
+        const locations = await GrandPrix.findAll();
+        const locCounts = {};
+        locations.forEach(l => {
+            locCounts[l.location] = (locCounts[l.location] || 0) + 1;
+        });
+
+        // --- ITT A RENDEZÉS (Helyszínek) ---
+        const sortedLocEntries = Object.entries(locCounts)
+            .sort((a, b) => b[1] - a[1]); // Csökkenő sorrend
+
+        const sortedLocations = sortedLocEntries.map(entry => entry[0]); // Helyszínek
+        const sortedRaceCounts = sortedLocEntries.map(entry => entry[1]); // Darabszámok
+
+        // 5. Szűrő listák (Dropdownokhoz) - Ezek maradjanak ABC sorrendben
+        const distinctTeams = await Result.findAll({
+            attributes: [[sequelize.fn('DISTINCT', sequelize.col('team')), 'team']],
+            order: [['team', 'ASC']]
+        });
+        
+        const distinctYears = await GrandPrix.findAll({
+            attributes: [[sequelize.fn('DISTINCT', sequelize.fn('YEAR', sequelize.col('race_date'))), 'year']],
+            order: [[sequelize.col('year'), 'DESC']]
+        });
+
+        // ADATOK ÁTADÁSA
+        res.render('diagrams', {
+            dnfData: {
+                detailedData: dnfDetails,
+                teamDNFCounts: teamCounts, // Ez marad objektum a gyors kereséshez
+                teams: sortedTeams,        // EZT KÜLDJÜK RENDEZVE A DIAGRAMNAK!
+                isFiltered: !!(team || year)
+            },
+            locationData: {
+                locations: sortedLocations,   // Rendezett helyszínek
+                raceCounts: sortedRaceCounts  // Rendezett adatok
+            },
+            teams: distinctTeams.map(t => t.team),
+            years: distinctYears.map(y => y.get('year')),
+            selectedTeam: team || '',
+            selectedYear: year || ''
+        });
+
+    } catch (e) {
+        console.error(e);
+        res.status(500).send("Hiba a diagramok betöltésekor: " + e.message);
+    }
 };

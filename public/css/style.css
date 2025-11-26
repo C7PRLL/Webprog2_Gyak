@@ -488,3 +488,70 @@ body:not(.landing) #main {
 .btn-group .btn {
     margin: 0 2px;
 }
+/* =========================================
+   DIAGRAM OLDAL STÍLUSAI
+   ========================================= */
+
+.hero-section {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #15151e 0%, #2c3e50 100%);
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 2px solid #ff6b6b;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.card-f1 {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    height: 100%;
+    color: #333; /* Sötét betűszín a kártyákon */
+}
+
+.chart-stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e10600;
+}
+
+/* Diagram gombok */
+.btn-f1 {
+    background-color: #e10600 !important;
+    color: white !important;
+    border: none;
+}
+.btn-f1:hover {
+    background-color: #b30000 !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline-f1 {
+    border: 2px solid #e10600 !important;
+    color: #e10600 !important;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.btn-outline-f1:hover {
+    background-color: #e10600 !important;
+    color: white !important;
+}
+
+/* Sötét táblázat fejlécek */
+.table-dark th {
+    background-color: #1c1d26 !important;
+    color: #ff6b6b !important;
+}
