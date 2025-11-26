@@ -1,33 +1,41 @@
 <%- include('../partials/header', { title: 'Regisztráció' }) %>
-<div class="content-section">
-    <div class="container">
-        <div class="hero-section"><h1 class="hero-title">Regisztráció</h1></div>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card-f1">
-                    <% if (typeof errors !== 'undefined' && errors.general) { %><div class="alert alert-danger"><%= errors.general %></div><% } %>
-                    <form action="/register" method="POST">
-                        <div class="mb-3">
-                            <label>Név</label>
-                            <input type="text" name="name" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label>Email</label>
-                            <input type="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label>Jelszó (min 8)</label>
-                            <input type="password" name="password" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label>Jelszó megerősítés</label>
-                            <input type="password" name="password_confirmation" class="form-control" required>
-                        </div>
-                        <button class="btn btn-f1 w-100">Regisztráció</button>
-                    </form>
-                </div>
-            </div>
+
+<div id="main" class="wrapper style1">
+    <div class="container medium">
+        
+        <div class="hero-section">
+            <h1 class="hero-title">Regisztráció</h1>
+            <p style="color: #ccc;">Csatlakozz az F1 Akadémiához</p>
         </div>
+
+        <div class="card-f1">
+            <% if (typeof error !== 'undefined' && error) { %>
+                <div class="alert alert-danger" style="background: rgba(220, 53, 69, 0.8); color: white; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+                    <%= error %>
+                </div>
+            <% } %>
+
+            <form method="post" action="/register">
+                <div class="row gtr-uniform">
+                    <div class="col-12">
+                        <input type="text" name="name" placeholder="Teljes név" style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required />
+                    </div>
+                    <div class="col-12">
+                        <input type="email" name="email" placeholder="Email cím" style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required />
+                    </div>
+                    <div class="col-12">
+                        <input type="password" name="password" placeholder="Jelszó (min. 6 karakter)" style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required />
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions special">
+                            <li><input type="submit" value="Regisztráció" class="button primary" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </div>
 </div>
+
 <%- include('../partials/footer') %>

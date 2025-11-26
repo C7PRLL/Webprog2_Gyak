@@ -27,21 +27,37 @@
             <nav id="nav">
                 <ul>
                     <li><a href="/">Főoldal</a></li>
-                    <li><a href="/pilots">Pilóták</a></li>
+                    <li><a href="/pilots">CRUD</a></li>
                     <li><a href="/diagrams">Diagramok</a></li>
                     <li><a href="/database">Adatbázis</a></li>
                     <li><a href="/contact">Kapcsolat</a></li>
-                    
-                    <% if (typeof user !== 'undefined' && user) { %>
-                        <!-- Bejelentkezve -->
-                        <li><span style="color: rgba(255,255,255,0.7); margin-right: 10px;">User: <%= user.name %></span></li>
-                        <li><a href="/logout" class="button primary small">Kilépés</a></li>
-                    <% } else { %>
-                        <!-- Vendég -->
-                        <li><a href="/login" class="button small">Belépés</a></li>
-                        <li><a href="/register" class="button primary small">Regisztráció</a></li>
-                    <% } %>
-                </ul>
-            </nav>
-        </header>
-       
+
+
+                 <% if (typeof user !== 'undefined' && user) { %>
+                <!-- HA BE VAN JELENTKEZVE -->
+                <li><span style="color: rgba(255,255,255,0.7); margin-right: 10px;">Szia, <%= user.name %>!</span></li>
+                <li><a href="/logout" class="button primary small">Kilépés</a></li>
+            <% } else { %>
+                <!-- HA NINCS BEJELENTKEZVE (INLINE LOGIN) -->
+                <li style="margin-right: 5px;">
+                    <form action="/login" method="POST" style="margin: 0; display: flex; gap: 5px; align-items: center;">
+                        <!-- Email mező -->
+                        <input type="email" name="email" placeholder="Email" required 
+                               class="header-input" />
+                        
+                        <!-- Jelszó mező -->
+                        <input type="password" name="password" placeholder="Jelszó" required 
+                               class="header-input" />
+                        
+                        <!-- Belépés gomb (kis nyíl vagy szöveg) -->
+                        <button type="submit" class="button primary small icon solid fa-sign-in-alt" style="height: 2.2em; line-height: 2.2em; padding: 0 0.8em; box-shadow: none;">
+                            <!-- Ha szöveget akarsz, vedd ki az ikont és írd be: Belépés -->
+                        </button>
+                    </form>
+                </li>
+                <!-- Regisztráció gomb marad -->
+                <li><a href="/register" class="button small alt">Regisztráció</a></li>
+            <% } %>
+        </ul>
+    </nav>
+</header>

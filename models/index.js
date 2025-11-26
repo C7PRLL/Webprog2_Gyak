@@ -70,7 +70,12 @@ db.User = sequelize.define('User', {
     email: { type: Sequelize.STRING, allowNull: false, unique: true },
     password: { type: Sequelize.STRING, allowNull: false },
     is_admin: { type: Sequelize.BOOLEAN, defaultValue: false }
-}, { tableName: 'users', timestamps: true });
+}, { 
+    tableName: 'users', 
+    timestamps: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at'
+});
 
 // --- 6. CONTACT ---
 db.ContactMessage = sequelize.define('ContactMessage', {

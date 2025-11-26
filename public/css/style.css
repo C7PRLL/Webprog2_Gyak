@@ -555,3 +555,38 @@ body:not(.landing) #main {
     background-color: #1c1d26 !important;
     color: #ff6b6b !important;
 }
+/* =========================================
+   FEJLÉC BEJELENTKEZÉS (INLINE LOGIN)
+   ========================================= */
+
+/* A kis beviteli mezők stílusa */
+input.header-input {
+    height: 2.2em !important;       /* Alacsonyabb legyen */
+    width: 130px !important;        /* Keskenyebb */
+    padding: 0 10px !important;     /* Kisebb belső térköz */
+    font-size: 0.8em !important;    /* Kisebb betű */
+    color: white !important;        /* Fehér szöveg */
+    background: rgba(255, 255, 255, 0.1) !important; /* Áttetsző háttér */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Halvány keret */
+    border-radius: 4px !important;
+    transition: all 0.3s ease;
+}
+
+/* Ha ráklikkelsz */
+input.header-input:focus {
+    border-color: #e10600 !important; /* F1 piros keret */
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Placeholder (halvány szöveg) színe */
+input.header-input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Mobil nézeten rejtsük el a formot, vagy rendezzük át */
+@media screen and (max-width: 980px) {
+    #nav form {
+        display: none !important; /* Mobilon ne legyen ott a fejlécben, mert nem fér el */
+    }
+
+}
