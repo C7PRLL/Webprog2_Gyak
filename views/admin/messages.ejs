@@ -1,0 +1,70 @@
+<%- include('../partials/header', { title: 'Üzenetek' }) %>
+
+<div id="main" class="wrapper style1">
+    <div class="container">
+        
+        <!-- Címsor -->
+        <div class="hero-section">
+            <h1 class="hero-title">Adminisztráció</h1>
+            <p style="color: #ccc;">Rendszer kezelése</p>
+        </div>
+
+        <!-- GOMBOK (NAVIGÁCIÓ) -->
+        <div class="row mb-4" style="margin-bottom: 20px;">
+            <div class="col-12">
+                <div class="btn-group" role="group">
+                    <!-- AKTÍV GOMB -->
+                    <a href="/admin/messages" class="button primary">Beérkezett Üzenetek</a>
+                    <!-- INAKTÍV GOMB -->
+                    <a href="/admin/users" class="button alt">Felhasználók</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TÁBLÁZAT DOBOZ -->
+        <div class="card-f1">
+            <h3 style="color: #ff6b6b; margin-bottom: 1em;">Üzenetek listája</h3>
+            
+            <div class="table-responsive">
+                <table class="table table-f1">
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Email</th>
+                            <th>Üzenet</th>
+                            <th>Dátum</th>
+                            <th>Művelet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if(messages.length > 0) { %>
+                            <% messages.forEach(m => { %>
+                                <tr style="<%= m.is_read ? 'opacity: 0.7;' : 'font-weight: bold; color: white;' %>">
+                                    <td><%= m.name %></td>
+                                    <td><%= m.email %></td>
+                                    <td><%= m.message.substring(0, 30) %>...</td>
+                                    <td><%= new Date(m.created_at).toLocaleDateString('hu-HU') %></td>
+                                    <td>
+                                        <% if(!m.is_read) { %>
+                                            <form action="/admin/messages/mark-read/<%= m.id %>" method="POST" style="display:inline">
+                                                <button class="button small primary icon solid fa-check">Olvas</button>
+                                            </form>
+                                        <% } %>
+                                        
+                                        <form action="/admin/messages/delete/<%= m.id %>" method="POST" style="display:inline" onsubmit="return confirm('Törlöd?')">
+                                            <button class="button small alt icon solid fa-trash">Töröl</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            <% }) %>
+                        <% } else { %>
+                            <tr><td colspan="5" class="text-center">Nincs üzenet.</td></tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

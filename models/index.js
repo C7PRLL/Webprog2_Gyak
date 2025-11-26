@@ -84,6 +84,7 @@ db.ContactMessage = sequelize.define('ContactMessage', {
     message: Sequelize.TEXT,
     newsletter: { type: Sequelize.BOOLEAN, defaultValue: false },
     is_read: { type: Sequelize.BOOLEAN, defaultValue: false }
-}, { tableName: 'contact_messages', timestamps: true });
+}, { tableName: 'contact_messages', timestamps: true, createdAt: 'created_at', updatedAt: 'updated_at' });
+
 
 module.exports = db;

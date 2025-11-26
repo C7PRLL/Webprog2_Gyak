@@ -1,0 +1,67 @@
+<%- include('../partials/header', { title: 'Felhasználók' }) %>
+
+<div id="main" class="wrapper style1">
+    <div class="container">
+        
+        <!-- Címsor -->
+        <div class="hero-section">
+            <h1 class="hero-title">Adminisztráció</h1>
+            <p style="color: #ccc;">Rendszer kezelése</p>
+        </div>
+
+        <!-- GOMBOK (NAVIGÁCIÓ) -->
+        <div class="row mb-4" style="margin-bottom: 20px;">
+            <div class="col-12">
+                <div class="btn-group" role="group">
+                    <!-- INAKTÍV GOMB -->
+                    <a href="/admin/messages" class="button alt">Beérkezett Üzenetek</a>
+                    <!-- AKTÍV GOMB -->
+                    <a href="/admin/users" class="button primary">Felhasználók</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TÁBLÁZAT DOBOZ -->
+        <div class="card-f1">
+            <h3 style="color: #ff6b6b; margin-bottom: 1em;">Regisztrált tagok</h3>
+
+            <div class="table-responsive">
+                <table class="table table-f1">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Név</th>
+                            <th>Email</th>
+                            <th>Regisztráció Dátuma</th>
+                            <th style="text-align: center;">Jogosultság</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (users.length > 0) { %>
+                            <% users.forEach(u => { %>
+                                <tr>
+                                    <td>#<%= u.id %></td>
+                                    <td style="font-weight: bold; color: white;"><%= u.name %></td>
+                                    <td><%= u.email %></td>
+                                    <td><%= new Date(u.created_at).toLocaleDateString('hu-HU') %></td>
+                                    <td style="text-align: center;">
+                                        <% if (u.is_admin) { %>
+                                            <span class="button small primary" style="pointer-events: none; cursor: default;">ADMIN</span>
+                                        <% } else { %>
+                                            <span class="button small alt" style="pointer-events: none; opacity: 0.6; cursor: default;">User</span>
+                                        <% } %>
+                                    </td>
+                                </tr>
+                            <% }) %>
+                        <% } else { %>
+                            <tr><td colspan="5" class="text-center">Nincsenek felhasználók.</td></tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

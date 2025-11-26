@@ -34,6 +34,7 @@ router.post('/contact', contactCtrl.sendMessage);
 
 // --- ADMIN (Védett) ---
 router.get('/admin/messages', adminCtrl.messages);
+router.post('/admin/messages/mark-read/:id', adminCtrl.markRead);
 router.post('/admin/messages/delete/:id', adminCtrl.deleteMessage);
 router.get('/admin/users', adminCtrl.users);
 
@@ -47,5 +48,7 @@ router.post('/login', authCtrl.login);
 router.get('/logout', authCtrl.logout);
 router.get('/register', authCtrl.registerForm);
 router.post('/register', authCtrl.register);
+
+
 
 module.exports = router;

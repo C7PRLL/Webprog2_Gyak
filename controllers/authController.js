@@ -13,7 +13,9 @@ exports.login = async (req, res) => {
         const user = await User.findOne({ where: { email: req.body.email } });
         
         if (user && await bcrypt.compare(req.body.password, user.password)) {
-            req.session.user = user;
+            
+            req.session.user = user.toJSON();
+            
             return res.redirect('/');
         }
         

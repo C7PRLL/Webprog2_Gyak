@@ -34,8 +34,13 @@
 
 
                  <% if (typeof user !== 'undefined' && user) { %>
+                     <% if (user.is_admin) { %>
+                    <li>
+                        <a href="/admin/messages" class="button small" style="background-color: #e10600 !important; color: white !important; margin-right: 10px;">Admin</a>
+                    </li>
+                <% } %>
                 <!-- HA BE VAN JELENTKEZVE -->
-                <li><span style="color: rgba(255,255,255,0.7); margin-right: 10px;">Szia, <%= user.name %>!</span></li>
+                <li><span style="color: rgba(255,255,255,0.7); margin-right: 10px;">Üdv, <%= user.name %>!</span></li>
                 <li><a href="/logout" class="button primary small">Kilépés</a></li>
             <% } else { %>
                 
