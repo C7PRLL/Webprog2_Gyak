@@ -38,6 +38,7 @@
                 <li><span style="color: rgba(255,255,255,0.7); margin-right: 10px;">Szia, <%= user.name %>!</span></li>
                 <li><a href="/logout" class="button primary small">Kilépés</a></li>
             <% } else { %>
+                
                 <!-- HA NINCS BEJELENTKEZVE (INLINE LOGIN) -->
                 <li style="margin-right: 5px;">
                     <form action="/login" method="POST" style="margin: 0; display: flex; gap: 5px; align-items: center;">
@@ -51,7 +52,6 @@
                         
                         <!-- Belépés gomb (kis nyíl vagy szöveg) -->
                         <button type="submit" class="button primary small icon solid fa-sign-in-alt" style="height: 2.2em; line-height: 2.2em; padding: 0 0.8em; box-shadow: none;">
-                            <!-- Ha szöveget akarsz, vedd ki az ikont és írd be: Belépés -->
                         </button>
                     </form>
                 </li>
