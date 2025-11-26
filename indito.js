@@ -51,30 +51,6 @@ app.get('/', (req, res) => res.redirect(BASE_URL));
 db.sequelize.sync({ alter: true }).then(async () => {
     console.log('✅ Adatbázis szinkronizálva.');
 
-    // --- AUTOMATIKUS ADATFELTÖLTÉS ---
-    
-    try {
-        const count = await db.PilotsCurrent.count();
-        if (count === 0) {
-            console.log('🌱 Üres a tábla, alap adatok betöltése...');
-            await db.PilotsCurrent.bulkCreate([
-                { name: 'Max Verstappen', team: 'Red Bull Racing', nationality: 'Holland' },
-                { name: 'Sergio Perez', team: 'Red Bull Racing', nationality: 'Mexikói' },
-                { name: 'Lewis Hamilton', team: 'Mercedes', nationality: 'Brit' },
-                { name: 'George Russell', team: 'Mercedes', nationality: 'Brit' },
-                { name: 'Charles Leclerc', team: 'Ferrari', nationality: 'Monacói' },
-                { name: 'Carlos Sainz', team: 'Ferrari', nationality: 'Spanyol' },
-                { name: 'Lando Norris', team: 'McLaren', nationality: 'Brit' },
-                { name: 'Oscar Piastri', team: 'McLaren', nationality: 'Ausztrál' },
-                { name: 'Fernando Alonso', team: 'Aston Martin', nationality: 'Spanyol' },
-                { name: 'Lance Stroll', team: 'Aston Martin', nationality: 'Kanadai' }
-            ]);
-            console.log('✅ 10 pilóta hozzáadva!');
-        }
-    } catch (err) {
-        console.error('Seeder hiba (nem kritikus):', err.message);
-    }
-    // -------------------------------------------
 
     app.listen(PORT, () => {
         console.log(`--------------------------------------------------`);
