@@ -1,21 +1,33 @@
-<% 
-    const curr = typeof currentPage !== 'undefined' ? currentPage : 1;
-    const total = typeof totalPages !== 'undefined' ? totalPages : 1;
-    if (total > 1) { 
-%>
-    <nav class="mt-4">
-        <ul class="pagination justify-content-center">
-            <li class="page-item <%= curr === 1 ? 'disabled' : '' %>">
-                <a class="page-link" href="?page=<%= curr - 1 %>">&laquo; Előző</a>
-            </li>
-            <% for(let i = 1; i <= total; i++) { %>
-                <li class="page-item <%= curr === i ? 'active' : '' %>">
-                    <a class="page-link" href="?page=<%= i %>"><%= i %></a>
-                </li>
-            <% } %>
-            <li class="page-item <%= curr === total ? 'disabled' : '' %>">
-                <a class="page-link" href="?page=<%= curr + 1 %>">Következő &raquo;</a>
-            </li>
-        </ul>
-    </nav>
+<% if (typeof totalPages !== 'undefined' && totalPages > 1) { %>
+    <div class="pagination-wrapper" style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
+        
+        <!-- Előző gomb -->
+        <% if (currentPage > 1) { %>
+            <!-- A 'queryParams' változó gondoskodik róla, hogy a keresés megmaradjon lapozáskor -->
+            <a href="?page=<%= currentPage - 1 %><%= typeof queryParams !== 'undefined' ? queryParams : '' %>" class="button small alt">
+                &laquo; Előző
+            </a>
+        <% } else { %>
+            <span class="button small disabled">&laquo; Előző</span>
+        <% } %>
+
+        <!-- Oldalszámok -->
+        <% for(let i = 1; i <= totalPages; i++) { %>
+            <!-- Ha túl sok oldal van, tegyünk ...-ot, de most egyszerűsítve mindet kiírjuk -->
+            <a href="?page=<%= i %><%= typeof queryParams !== 'undefined' ? queryParams : '' %>" 
+               class="button small <%= currentPage == i ? 'primary' : 'alt' %>">
+               <%= i %>
+            </a>
+        <% } %>
+
+        <!-- Következő gomb -->
+        <% if (currentPage < totalPages) { %>
+            <a href="?page=<%= currentPage + 1 %><%= typeof queryParams !== 'undefined' ? queryParams : '' %>" class="button small alt">
+                Következő &raquo;
+            </a>
+        <% } else { %>
+            <span class="button small disabled">Következő &raquo;</span>
+        <% } %>
+
+    </div>
 <% } %>

@@ -1,10 +1,28 @@
-<h2 class="text-center mb-4 text-f1"><i class="fas fa-shield-alt"></i> Admin Felület</h2>
-<div class="admin-nav mb-4 d-flex justify-content-center gap-3">
-    <a href="/admin/contact-messages" class="btn <%= activePage === 'messages' ? 'btn-f1' : 'btn-outline-secondary' %>">
-        <i class="fas fa-envelope"></i> Üzenetek
-    </a>
-    <a href="/admin/registered-users" class="btn <%= activePage === 'users' ? 'btn-f1' : 'btn-outline-secondary' %>">
-        <i class="fas fa-users"></i> Felhasználók
-    </a>
+<!-- Admin Címsor -->
+<div class="hero-section">
+  
+    <h1 class="hero-title"><%= typeof title !== 'undefined' ? title : 'Adminisztráció' %></h1>
+    <p style="color: #ccc;">
+        <i class="fa-solid <%= typeof icon !== 'undefined' ? icon : 'fa-cogs' %>"></i> Rendszer kezelése
+    </p>
 </div>
-<h3 class="mb-4 text-center"><i class="fas <%= icon %>"></i> <%= title %></h3>
+
+<!-- Admin Navigációs Gombok -->
+<div class="row mb-4" style="margin-bottom: 20px;">
+    <div class="col-12">
+        <div class="btn-group" role="group">
+            <!-- Üzenetek Gomb -->
+         
+            <a href="<%= baseUrl %>/admin/messages" 
+               class="button <%= (typeof activePage !== 'undefined' && activePage === 'messages') ? 'primary' : 'alt' %>">
+               Beérkezett Üzenetek
+            </a>
+            
+            <!-- Felhasználók Gomb -->
+            <a href="<%= baseUrl %>/admin/users" 
+               class="button <%= (typeof activePage !== 'undefined' && activePage === 'users') ? 'primary' : 'alt' %>">
+               Felhasználók
+            </a>
+        </div>
+    </div>
+</div>

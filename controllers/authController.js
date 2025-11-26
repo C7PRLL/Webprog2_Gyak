@@ -14,9 +14,11 @@ exports.login = async (req, res) => {
         
         if (user && await bcrypt.compare(req.body.password, user.password)) {
             
+            // Fontos: .toJSON(), hogy csak az adatokat mentsük, ne a Sequelize objektumot
             req.session.user = user.toJSON();
             
-            return res.redirect('/');
+           
+            return res.redirect(req.baseUrl + '/');
         }
         
         res.render('auth/login', { error: 'Hibás email vagy jelszó' });
@@ -39,7 +41,8 @@ exports.register = async (req, res) => {
             email: req.body.email,
             password: hashedPassword
         });
-        res.redirect('/login');
+       
+        res.redirect(req.baseUrl + '/login');
     } catch (e) {
         res.render('auth/register', { error: 'Hiba történt (pl. foglalt email)' });
     }
@@ -48,6 +51,7 @@ exports.register = async (req, res) => {
 // Kijelentkezés
 exports.logout = (req, res) => {
     req.session.destroy(() => {
-        res.redirect('/');
+       
+        res.redirect(req.baseUrl + '/');
     });
 };

@@ -15,7 +15,8 @@
                 </div>
             <% } %>
 
-            <form method="post" action="/register">
+           
+            <form method="post" action="<%= baseUrl %>/register">
                 <div class="row gtr-uniform">
                     <div class="col-12">
                         <input type="text" name="name" placeholder="Teljes név" style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required />
@@ -29,10 +30,17 @@
                     <div class="col-12">
                         <ul class="actions special">
                             <li><input type="submit" value="Regisztráció" class="button primary" /></li>
+                            
+                            <li><a href="<%= baseUrl %>/" class="button">Mégse</a></li>
                         </ul>
                     </div>
                 </div>
             </form>
+
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <p style="color: #ccc;">Már van fiókod? <a href="<%= baseUrl %>/login" style="color: #e10600;">Jelentkezz be itt!</a></p>
+            </div>
         </div>
 
     </div>

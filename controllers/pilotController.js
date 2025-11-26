@@ -2,6 +2,7 @@ const db = require('../models');
 const Pilot = db.PilotsCurrent; 
 const { Op } = require('sequelize');
 
+// 1. Lista
 exports.index = async (req, res) => {
     try {
         const where = {};
@@ -16,7 +17,7 @@ exports.index = async (req, res) => {
 
         const pilots = await Pilot.findAll({ 
             where,
-            order: [['pilot_id', 'ASC']] // <--- JAVÍTVA: id helyett pilot_id
+            order: [['pilot_id', 'ASC']] // ID szerinti rendezés
         });
 
         res.render('pilots/index', { pilots, nationalities, query: req.query || {} });
@@ -26,33 +27,66 @@ exports.index = async (req, res) => {
     }
 };
 
-exports.create = (req, res) => res.render('pilots/create');
+// 2. Létrehozás űrlap
+exports.create = (req, res) => {
+    res.render('pilots/create');
+};
 
+// 3. Mentés
 exports.store = async (req, res) => {
-    await Pilot.create(req.body);
-    res.redirect('/pilots');
+    try {
+        await Pilot.create(req.body);
+        
+        res.redirect(req.baseUrl + '/pilots');
+    } catch (e) {
+        res.status(500).send("Hiba a mentéskor: " + e.message);
+    }
 };
 
-// show, edit, update, destroy -> MINDENHOL 'pilot_id' kell 'id' helyett a where-ben!
-
+// 4. Megtekintés (Info)
 exports.show = async (req, res) => {
-    const pilot = await Pilot.findByPk(req.params.id);
-    res.render('pilots/show', { pilot });
+    try {
+        const pilot = await Pilot.findByPk(req.params.id);
+        if (!pilot) return res.status(404).send('Nincs ilyen pilóta');
+        res.render('pilots/show', { pilot });
+    } catch (e) {
+        res.status(500).send(e.message);
+    }
 };
 
+// 5. Szerkesztés űrlap
 exports.edit = async (req, res) => {
-    const pilot = await Pilot.findByPk(req.params.id);
-    res.render('pilots/edit', { pilot });
+    try {
+        const pilot = await Pilot.findByPk(req.params.id);
+        if (!pilot) return res.status(404).send('Nincs ilyen pilóta');
+        res.render('pilots/edit', { pilot });
+    } catch (e) {
+        res.status(500).send(e.message);
+    }
 };
 
+// 6. Frissítés
 exports.update = async (req, res) => {
-    // JAVÍTVA: where: { pilot_id: ... }
-    await Pilot.update(req.body, { where: { pilot_id: req.params.id } });
-    res.redirect('/pilots');
+    try {
+      
+        await Pilot.update(req.body, { where: { pilot_id: req.params.id } });
+        
+       
+        res.redirect(req.baseUrl + '/pilots');
+    } catch (e) {
+        res.status(500).send("Hiba a frissítéskor: " + e.message);
+    }
 };
 
+// 7. Törlés
 exports.destroy = async (req, res) => {
-    // JAVÍTVA: where: { pilot_id: ... }
-    await Pilot.destroy({ where: { pilot_id: req.params.id } });
-    res.redirect('/pilots');
+    try {
+      
+        await Pilot.destroy({ where: { pilot_id: req.params.id } });
+        
+       
+        res.redirect(req.baseUrl + '/pilots');
+    } catch (e) {
+        res.status(500).send("Hiba a törléskor: " + e.message);
+    }
 };

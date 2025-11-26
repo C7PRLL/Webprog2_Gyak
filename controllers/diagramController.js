@@ -20,32 +20,34 @@ exports.index = async (req, res) => {
             order: [['race_date', 'DESC']]
         });
 
-        // DNF Összesítés és Rendezés
+        // DNF Összesítés
         const teamCounts = {};
         dnfDetails.forEach(r => {
             teamCounts[r.team] = (teamCounts[r.team] || 0) + 1;
         });
 
-        // Rendezés: csökkenő sorrend (b - a)
+        // RENDEZÉS: Csökkenő sorrend
         const sortedDnf = Object.entries(teamCounts).sort((a, b) => b[1] - a[1]);
         
-        // --- 2. HELYSZÍN ADATOK (RENDEZVE!) ---
+        // JAVÍTÁS: Szétbontjuk tömbökre a DNF adatokat is (hogy a chart értse)
+        const dnfLabels = sortedDnf.map(item => item[0]); // Nevek
+        const dnfValues = sortedDnf.map(item => item[1]); // Számok
+
+        // --- 2. HELYSZÍN ADATOK ---
         const locations = await GrandPrix.findAll();
         const locCounts = {};
         
-        // Megszámoljuk, melyik helyszín hányszor szerepel
         locations.forEach(l => {
             locCounts[l.location] = (locCounts[l.location] || 0) + 1;
         });
 
-        // ITT A LÉNYEG: Rendezés gyakoriság szerint (Csökkenő)
+        // RENDEZÉS: Csökkenő sorrend
         const sortedLoc = Object.entries(locCounts).sort((a, b) => b[1] - a[1]);
         
-        // Szétbontjuk nevek és számok tömbjére (hogy a Chart.js értse)
-        const locLabels = sortedLoc.map(item => item[0]); // Pl. ['Monza', 'Monaco'...]
-        const locValues = sortedLoc.map(item => item[1]); // Pl. [70, 68...]
+        const locLabels = sortedLoc.map(item => item[0]);
+        const locValues = sortedLoc.map(item => item[1]);
 
-        // --- 3. DROPDOWN LISTÁK ---
+        // --- 3. SZŰRŐ LISTÁK ---
         const distinctTeams = await Result.findAll({
             attributes: [[sequelize.fn('DISTINCT', sequelize.col('team')), 'team']],
             order: [['team', 'ASC']]
@@ -62,13 +64,15 @@ exports.index = async (req, res) => {
             dnfData: {
                 detailedData: dnfDetails,
                 teamDNFCounts: teamCounts,
-                teams: sortedDnf.map(i => i[0]), // Rendezett nevek a chartnak
-                isFiltered: !!(team || year)
+                isFiltered: !!(team || year),
+                // JAVÍTÁS: Ezeket a kulcsokat várja a View scriptje!
+                labels: dnfLabels,
+                values: dnfValues
             },
-            // Helyszín Adatok (A te View kódodhoz igazítva)
+            // Helyszín Adatok
             locationData: {
-                locations: locLabels,   // Ez megy a chart labels-be
-                raceCounts: locValues   // Ez megy a chart data-ba
+                locations: locLabels,
+                raceCounts: locValues
             },
             // Szűrők
             teams: distinctTeams.map(t => t.team),

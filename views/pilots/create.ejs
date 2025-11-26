@@ -1,19 +1,51 @@
 <%- include('../partials/header', { title: 'Új Pilóta' }) %>
-<div class="content-section">
-    <div class="container">
-        <div class="hero-section"><h1 class="hero-title">Új Pilóta</h1></div>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card-f1">
-                    <form action="/pilots" method="POST">
-                        <div class="mb-3"><label>Név</label><input type="text" name="name" class="form-control" required></div>
-                        <div class="mb-3"><label>Csapat</label><input type="text" name="team" class="form-control"></div>
-                        <div class="mb-3"><label>Nemzetiség</label><input type="text" name="nationality" class="form-control"></div>
-                        <button class="btn btn-f1">Mentés</button>
-                    </form>
-                </div>
-            </div>
+
+<div id="main" class="wrapper style1">
+    <div class="container medium">
+        
+        <!-- Címsor -->
+        <div class="hero-section">
+            <h1 class="hero-title">Új Pilóta</h1>
+            <p style="color: #ccc;">Adatok felvétele a rendszerbe</p>
         </div>
+
+        <!-- Űrlap doboz -->
+        <div class="card-f1">
+            <form action="<%= baseUrl %>/pilots" method="POST">
+                <div class="row gtr-uniform">
+                    
+                    <div class="col-12">
+                        <label style="color: white;">Név</label>
+                        <input type="text" name="name" placeholder="Pl. Ayrton Senna" 
+                               style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required>
+                    </div>
+                    
+                    <div class="col-12">
+                        <label style="color: white;">Csapat</label>
+                        <input type="text" name="team" placeholder="Pl. McLaren" 
+                               style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;">
+                    </div>
+                    
+                    <div class="col-12">
+                        <label style="color: white;">Nemzetiség</label>
+                        <input type="text" name="nationality" placeholder="Pl. Brazil" 
+                               style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;">
+                    </div>
+
+                    <!-- Gombok -->
+                    <div class="col-12">
+                        <ul class="actions special">
+                            <li><button class="button primary">Mentés</button></li>
+                            <!-- JAVÍTVA: href="<%= baseUrl %>/pilots" -->
+                            <li><a href="<%= baseUrl %>/pilots" class="button">Mégse</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+
     </div>
 </div>
+
 <%- include('../partials/footer') %>

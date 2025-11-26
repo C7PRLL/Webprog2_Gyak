@@ -13,10 +13,10 @@
         <div class="row mb-4" style="margin-bottom: 20px;">
             <div class="col-12">
                 <div class="btn-group" role="group">
-                    <!-- AKTÍV GOMB -->
-                    <a href="/admin/messages" class="button primary">Beérkezett Üzenetek</a>
-                    <!-- INAKTÍV GOMB -->
-                    <a href="/admin/users" class="button alt">Felhasználók</a>
+                 
+                    <a href="<%= baseUrl %>/admin/messages" class="button primary">Beérkezett Üzenetek</a>
+                  
+                    <a href="<%= baseUrl %>/admin/users" class="button alt">Felhasználók</a>
                 </div>
             </div>
         </div>
@@ -46,12 +46,14 @@
                                     <td><%= new Date(m.created_at).toLocaleDateString('hu-HU') %></td>
                                     <td>
                                         <% if(!m.is_read) { %>
-                                            <form action="/admin/messages/mark-read/<%= m.id %>" method="POST" style="display:inline">
+                                            
+                                            <form action="<%= baseUrl %>/admin/messages/mark-read/<%= m.id %>" method="POST" style="display:inline">
                                                 <button class="button small primary icon solid fa-check">Olvas</button>
                                             </form>
                                         <% } %>
                                         
-                                        <form action="/admin/messages/delete/<%= m.id %>" method="POST" style="display:inline" onsubmit="return confirm('Törlöd?')">
+                                       
+                                        <form action="<%= baseUrl %>/admin/messages/delete/<%= m.id %>" method="POST" style="display:inline" onsubmit="return confirm('Törlöd?')">
                                             <button class="button small alt icon solid fa-trash">Töröl</button>
                                         </form>
                                     </td>

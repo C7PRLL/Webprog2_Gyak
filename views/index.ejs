@@ -15,6 +15,7 @@
 <!-- 2. SPOTLIGHT (Kép + Szöveg váltakozva) -->
 <section id="one" class="spotlight style1 bottom">
     <span class="image fit main">
+        <!-- Külső kép, ez maradhat így -->
         <img src="https://cparici.com/wp-content/uploads/2025/08/cparici-2025-08-01T205416.688.jpg" alt="F1 History" />
     </span>
     <div class="content">
@@ -40,6 +41,7 @@
 
 <section id="two" class="spotlight style2 right">
     <span class="image fit main">
+        <!-- Külső kép, ez maradhat így -->
         <img src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/content/dam/fom-website/manual/Misc/Verstappenbacktobacktitles/verstappen-hero.webp" alt="Verstappen" />
     </span>
     <div class="content">
@@ -49,7 +51,8 @@
         </header>
         <p>A hősöd Ayrton Senna, Michael Schumacher vagy Max Verstappen? Tanulj róluk nálunk – nézd meg, hogyan emelkedtek fel, hogyan győztek, és mi tette őket legendává. Csatlakozz az F1 Akadémiához!</p>
         <ul class="actions">
-            <li><a href="/register" class="button">Regisztráció</a></li>
+            <!-- JAVÍTVA: baseUrl -->
+            <li><a href="<%= baseUrl %>/register" class="button">Regisztráció</a></li>
         </ul>
     </div>
     <a href="#three" class="goto-next scrolly">Tovább</a>
@@ -70,7 +73,8 @@
                     <span class="icon solid alt major fa-users"></span>
                     <h3>Pilóták</h3>
                     <p>Részletes adatbázis a jelenlegi és múltbéli versenyzőkről.</p>
-                    <a href="/pilots" class="button small">Böngészés</a>
+                    <!-- JAVÍTVA: baseUrl -->
+                    <a href="<%= baseUrl %>/pilots" class="button small">Böngészés</a>
                 </div>
             </section>
             
@@ -80,7 +84,8 @@
                     <span class="icon solid alt major fa-chart-area"></span>
                     <h3>Diagramok</h3>
                     <p>Látványos grafikonok és DNF statisztikák.</p>
-                    <a href="/diagrams" class="button small">Megtekintés</a>
+                    <!-- JAVÍTVA: baseUrl -->
+                    <a href="<%= baseUrl %>/diagrams" class="button small">Megtekintés</a>
                 </div>
             </section>
             
@@ -90,7 +95,8 @@
                     <span class="icon solid alt major fa-database"></span>
                     <h3>CRUD Műveletek</h3>
                     <p>Adatok kezelése, új pilóták felvétele.</p>
-                    <a href="/pilots" class="button small">Kezelés</a>
+                    <!-- JAVÍTVA: baseUrl -->
+                    <a href="<%= baseUrl %>/pilots" class="button small">Kezelés</a>
                 </div>
             </section>
         </div>

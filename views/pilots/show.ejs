@@ -29,16 +29,19 @@
                     </div>
                 </div>
 
-                <!-- ID (Opcionális) -->
+                <!-- ID -->
                 <div class="col-12">
-                    <p style="color: #666;">Adatbázis ID: #<%= pilot.id %></p>
+               
+                    <p style="color: #666;">Adatbázis ID: #<%= pilot.pilot_id %></p>
                 </div>
 
                 <!-- Gombok -->
                 <div class="col-12">
                     <ul class="actions special">
-                        <li><a href="/pilots" class="button alt">Vissza a listához</a></li>
-                        <li><a href="/pilots/edit/<%= pilot.id %>" class="button primary">Szerkesztés</a></li>
+                        
+                        <li><a href="<%= baseUrl %>/pilots" class="button alt">Vissza a listához</a></li>
+                
+                        <li><a href="<%= baseUrl %>/pilots/edit/<%= pilot.pilot_id %>" class="button primary">Szerkesztés</a></li>
                     </ul>
                 </div>
 

@@ -18,7 +18,8 @@
                 </div>
             <% } %>
 
-            <form method="post" action="/login">
+
+            <form method="post" action="<%= baseUrl %>/login">
                 <div class="row gtr-uniform">
                     <div class="col-12">
                         <label style="color: white;">Email cím</label>
@@ -31,18 +32,13 @@
                     <div class="col-12">
                         <ul class="actions special">
                             <li><input type="submit" value="Belépés" class="button primary" /></li>
-                            <li><a href="/" class="button">Mégse</a></li>
+                     
+                            <li><a href="<%= baseUrl %>/" class="button">Mégse</a></li>
                         </ul>
                     </div>
                 </div>
             </form>
             
             <div style="text-align: center; margin-top: 20px;">
-                <p style="color: #ccc;">Nincs még fiókod? <a href="/register" style="color: #e10600;">Regisztrálj itt!</a></p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<%- include('../partials/footer') %>
+          
+                <p style="color: #ccc;">Nincs még fiókod? <a href="<%= baseUrl %>/register" style="color: #e10600;

@@ -10,6 +10,41 @@
                 <h1 class="hero-title">Diagramok a múltbeli nagydíjakról</h1>
             </div>
     
+            <!-- Szűrők (Form) -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card-f1">
+                        <form method="GET" action="<%= baseUrl %>/diagrams">
+                            <div class="row gtr-uniform">
+                                <div class="col-4 col-12-small">
+                                    <select name="team" style="background: rgba(0,0,0,0.3); border-color: #555; color: white; background-color: #333;">
+                                        <option value="">Összes csapat</option>
+                                        <% if(typeof teams !== 'undefined') { %>
+                                            <% teams.forEach(t => { %>
+                                                <option value="<%= t %>" <%= selectedTeam === t ? 'selected' : '' %>><%= t %></option>
+                                            <% }) %>
+                                        <% } %>
+                                    </select>
+                                </div>
+                                <div class="col-4 col-12-small">
+                                    <select name="year" style="background: rgba(0,0,0,0.3); border-color: #555; color: white; background-color: #333;">
+                                        <option value="">Összes év</option>
+                                        <% if(typeof years !== 'undefined') { %>
+                                            <% years.forEach(y => { %>
+                                                <option value="<%= y %>" <%= selectedYear == y ? 'selected' : '' %>><%= y %></option>
+                                            <% }) %>
+                                        <% } %>
+                                    </select>
+                                </div>
+                                <div class="col-4 col-12-small">
+                                    <button class="button primary fit small">Szűrés</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
             <!-- Gombok -->
             <div class="row mb-4">
                 <div class="col-md-8">
@@ -24,7 +59,7 @@
                 </div>
                 <div class="col-md-4 text-end">
                     <div class="badge bg-primary fs-6" style="padding: 10px;">
-                        <% if((typeof selectedTeam !== 'undefined' && selectedTeam) || (typeof selectedYear !== 'undefined' && selectedYear)) { %>
+                        <% if(selectedTeam || selectedYear) { %>
                             Szűrve: 
                             <%= selectedTeam ? selectedTeam : '' %>
                             <%= selectedYear ? selectedYear : '' %>
@@ -39,42 +74,45 @@
             <div id="dnfChart" class="chart-container">
                 <div class="card shadow-sm card-f1">
                     <div class="card-body">
-                        <h2 class="text-center mb-4" style="color: #333;">DNF Statisztikák</h2>
+                        <h2 class="text-center mb-4" style="color: #ff6b6b;">DNF Statisztikák</h2>
                         
                         <div class="row">
                             <div class="col-md-8">
-                                <canvas id="dnfBarChart" style="max-height: 400px;"></canvas>
+                                <canvas id="dnfBarChart" style="max-height: 600px;"></canvas> <!-- Magasabb canvas, hogy kiférjen -->
                             </div>
                             <div class="col-md-4">
-                                <h5 style="color: #333;">
+                                <h5 style="color: #fff;">
                                     <%= dnfData.isFiltered ? 'Szűrt Részletek' : 'Összesítés' %>
                                 </h5>
                                 <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
                                     <% if(dnfData.isFiltered) { %>
-                                        <table class="table table-sm table-striped" style="background: white; color: #333;">
-                                            <thead class="table-dark sticky-top">
+                                        <!-- Részletes lista szűréskor -->
+                                        <table class="table table-f1">
+                                            <thead>
                                                 <tr><th>Csapat</th><th>Dátum</th><th>Hiba</th></tr>
                                             </thead>
                                             <tbody>
                                                 <% dnfData.detailedData.forEach(function(dnf) { %>
                                                 <tr>
-                                                    <td class="fw-bold"><%= dnf.team %></td>
+                                                    <td><%= dnf.team %></td>
                                                     <td><small><%= new Date(dnf.race_date).toLocaleDateString('hu-HU') %></small></td>
-                                                    <td><span class="badge bg-warning text-dark"><%= dnf.issue || 'N/A' %></span></td>
+                                                    <td><span class="badge" style="background: #e10600; color: white;"><%= dnf.issue || 'N/A' %></span></td>
                                                 </tr>
                                                 <% }); %>
                                             </tbody>
                                         </table>
                                     <% } else { %>
-                                        <table class="table table-sm table-striped" style="background: white; color: #333;">
-                                            <thead class="table-dark sticky-top">
+                                        <!-- Összesített lista (Rendezve!) -->
+                                        <table class="table table-f1">
+                                            <thead>
                                                 <tr><th>Csapat</th><th>DNF szám</th></tr>
                                             </thead>
                                             <tbody>
-                                                <% Object.entries(dnfData.teamDNFCounts).forEach(function([team, count]) { %>
+                                                <!-- Itt trükközünk: a controller rendezett listáját használjuk -->
+                                                <% dnfData.labels.forEach((team, index) => { %>
                                                 <tr>
-                                                    <td class="fw-bold"><%= team %></td>
-                                                    <td><span class="badge bg-danger"><%= count %></span></td>
+                                                    <td><%= team %></td>
+                                                    <td><span class="badge" style="background: #e10600; color: white;"><%= dnfData.values[index] %></span></td>
                                                 </tr>
                                                 <% }); %>
                                             </tbody>
@@ -91,22 +129,22 @@
             <div id="barChart" class="chart-container" style="display: none;">
                 <div class="card shadow-sm card-f1">
                     <div class="card-body">
-                        <h2 class="text-center mb-4" style="color: #333;">Helyszínek statisztikája</h2>
+                        <h2 class="text-center mb-4" style="color: #ff6b6b;">Helyszínek statisztikája</h2>
                         <div class="row">
                             <div class="col-md-8">
-                                <canvas id="locationBarChart" style="max-height: 400px;"></canvas>
+                                <canvas id="locationBarChart" style="max-height: 600px;"></canvas>
                             </div>
                             <div class="col-md-4">
                                 <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
-                                    <table class="table table-sm table-striped" style="background: white; color: #333;">
-                                        <thead class="table-dark sticky-top">
+                                    <table class="table table-f1">
+                                        <thead>
                                             <tr><th>Helyszín</th><th>Versenyek</th></tr>
                                         </thead>
                                         <tbody>
                                             <% locationData.locations.forEach(function(loc, i) { %>
                                             <tr>
-                                                <td class="fw-bold"><%= loc %></td>
-                                                <td><span class="badge bg-primary"><%= locationData.raceCounts[i] %></span></td>
+                                                <td><%= loc %></td>
+                                                <td><span class="badge" style="background: #e10600; color: white;"><%= locationData.raceCounts[i] %></span></td>
                                             </tr>
                                             <% }); %>
                                         </tbody>
@@ -123,19 +161,19 @@
                 <div class="col-md-4">
                     <div class="card-f1 text-center">
                         <div class="chart-stat-number"><%= dnfData.teams.length %></div>
-                        <h3 style="color:#333">Csapatok</h3>
+                        <h3>Csapatok</h3>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-f1 text-center">
                         <div class="chart-stat-number"><%= dnfData.detailedData.length %></div>
-                        <h3 style="color:#333">Összes DNF</h3>
+                        <h3>Összes DNF</h3>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-f1 text-center">
                         <div class="chart-stat-number"><%= locationData.locations.length %></div>
-                        <h3 style="color:#333">Helyszínek</h3>
+                        <h3>Helyszínek</h3>
                     </div>
                 </div>
             </div>
@@ -148,9 +186,15 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
+    // ADATOK BEOLVASÁSA 
+      
+    // DNF
+    const dnfLabels = <%- JSON.stringify(dnfData.labels) %>;
+    const dnfValues = <%- JSON.stringify(dnfData.values) %>;
     
-    const dnfData = <%- JSON.stringify(dnfData) %>;
-    const locationData = <%- JSON.stringify(locationData) %>;
+    // Helyszín
+    const locLabels = <%- JSON.stringify(locationData.locations) %>;
+    const locValues = <%- JSON.stringify(locationData.raceCounts) %>;
     
     let dnfChart, barChart;
     
@@ -185,24 +229,29 @@
         const context = ctx.getContext('2d');
         if (dnfChart) dnfChart.destroy();
         
-        const teams = dnfData.teams || [];
-        const dnfCounts = teams.map(team => dnfData.teamDNFCounts[team] || 0);
-        
         dnfChart = new Chart(context, {
             type: 'bar',
             data: {
-                labels: teams,
+                labels: dnfLabels,
                 datasets: [{
                     label: 'DNF Szám',
-                    data: dnfCounts,
+                    data: dnfValues,
                     backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
                     borderWidth: 1
                 }]
             },
             options: {
+                indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
-                scales: { y: { beginAtZero: true } }
+                plugins: {
+                    legend: { labels: { color: 'white' } }
+                },
+                scales: { 
+                    x: { beginAtZero: true, ticks: { color: 'white' } },
+                    y: { ticks: { color: 'white' } }
+                }
             }
         });
     }
@@ -214,24 +263,29 @@
         const context = ctx.getContext('2d');
         if (barChart) barChart.destroy();
         
-        const locations = locationData.locations || [];
-        const raceCounts = locationData.raceCounts || [];
-        
         barChart = new Chart(context, {
             type: 'bar',
             data: {
-                labels: locations,
+                labels: locLabels,
                 datasets: [{
                     label: 'Grand Prix Szám',
-                    data: raceCounts,
+                    data: locValues,
                     backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
                     borderWidth: 1
                 }]
             },
             options: {
+                indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
-                scales: { y: { beginAtZero: true } }
+                plugins: {
+                    legend: { labels: { color: 'white' } }
+                },
+                scales: { 
+                    x: { beginAtZero: true, ticks: { color: 'white' } },
+                    y: { ticks: { color: 'white' } }
+                }
             }
         });
     }

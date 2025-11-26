@@ -4,13 +4,13 @@ const bcrypt = require('bcrypt');
 
 // Profil oldal
 exports.profile = (req, res) => {
-    if (!req.session.user) return res.redirect('/login');
+    if (!req.session.user) return res.redirect(req.baseUrl +'/login');
     res.render('settings/profile', { user: req.session.user });
 };
 
 // Profil frissítése
 exports.updateProfile = async (req, res) => {
-    if (!req.session.user) return res.redirect('/login');
+    if (!req.session.user) return res.redirect(req.baseUrl +'/login');
     
     try {
         await User.update(
@@ -22,7 +22,7 @@ exports.updateProfile = async (req, res) => {
         req.session.user.name = req.body.name;
         req.session.user.email = req.body.email;
         
-        res.redirect('/settings/profile');
+        res.res.redirect(req.baseUrl +'/settings/profile');
     } catch (e) {
         res.status(500).send('Hiba a frissítéskor');
     }

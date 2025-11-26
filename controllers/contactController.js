@@ -17,15 +17,19 @@ exports.sendMessage = async (req, res) => {
             name: req.body.name,
             email: req.body.email,
             message: req.body.message,
-            newsletter: req.body.newsletter === 'on' // Checkbox kezelés
+            // A HTML checkbox 'on' értéket küld, ha be van pipálva, egyébként undefined
+            newsletter: req.body.newsletter === 'on' 
         });
         
+        // Sikeres mentés után visszajelzés
         res.render('contact', { 
             success: 'Köszönjük! Üzenetét megkaptuk.', 
             errors: {}, 
             oldInput: {} 
         });
     } catch (e) {
+        console.error("Kapcsolat hiba:", e); // Ez fontos a szerver logokhoz!
+        
         res.render('contact', { 
             success: null, 
             errors: { general: 'Hiba történt a küldéskor.' }, 

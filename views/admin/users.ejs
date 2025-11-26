@@ -13,10 +13,11 @@
         <div class="row mb-4" style="margin-bottom: 20px;">
             <div class="col-12">
                 <div class="btn-group" role="group">
-                    <!-- INAKTÍV GOMB -->
-                    <a href="/admin/messages" class="button alt">Beérkezett Üzenetek</a>
-                    <!-- AKTÍV GOMB -->
-                    <a href="/admin/users" class="button primary">Felhasználók</a>
+                <!---Aktív gomb--->
+                    <a href="<%= baseUrl %>/admin/messages" class="button alt">Beérkezett Üzenetek</a>
+                    
+                <!---inaktív gomb--->
+                    <a href="<%= baseUrl %>/admin/users" class="button primary">Felhasználók</a>
                 </div>
             </div>
         </div>
@@ -49,19 +50,3 @@
                                             <span class="button small primary" style="pointer-events: none; cursor: default;">ADMIN</span>
                                         <% } else { %>
                                             <span class="button small alt" style="pointer-events: none; opacity: 0.6; cursor: default;">User</span>
-                                        <% } %>
-                                    </td>
-                                </tr>
-                            <% }) %>
-                        <% } else { %>
-                            <tr><td colspan="5" class="text-center">Nincsenek felhasználók.</td></tr>
-                        <% } %>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<%- include('../partials/footer') %>

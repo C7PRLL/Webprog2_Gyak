@@ -17,7 +17,8 @@
                 </div>
             <% } %>
 
-            <form method="post" action="/contact">
+            <!-- JAVÍTVA: action="<%= baseUrl %>/contact" -->
+            <form method="post" action="<%= baseUrl %>/contact">
                 <div class="row gtr-uniform">
                     <div class="col-6 col-12-xsmall">
                         <input type="text" name="name" id="name" value="" placeholder="Név" style="background: rgba(0,0,0,0.3); border: 1px solid #555; color: white;" required />

@@ -10,13 +10,13 @@
         </div>
 
         <div class="text-end mb-3">
-            <a href="/pilots/create" class="button primary small">Új Pilóta +</a>
+            <a href="<%= baseUrl %>/pilots/create" class="button primary small">Új Pilóta +</a>
         </div>
 
         <!-- 2. Tartalom doboz (Sötét üveg) -->
         <div class="card-f1">
             <!-- Kereső és Szűrő -->
-            <form class="d-flex gap-2 mb-3" method="GET" style="margin: 0;">
+            <form class="d-flex gap-2 mb-3" method="GET" action="<%= baseUrl %>/pilots" style="margin: 0;">
                 <div class="row gtr-uniform" style="width: 100%;">
                     <div class="col-4 col-12-small">
                         <input name="search" class="form-control" placeholder="Keresés..." value="<%= (typeof query !== 'undefined' && query.search) ? query.search : '' %>" style="background: rgba(0,0,0,0.3); border-color: #555; color: white;">
@@ -53,25 +53,26 @@
                     <tbody>
                         <% if(pilots.length > 0) { %>
                            <% pilots.forEach(p => { %>
-    <tr>
-        <!-- ID helyett pilot_id -->
-        <td><strong><%= p.name %></strong> (ID: <%= p.pilot_id %>)</td> 
-        <td>
-            <span class="badge" style="background: #e10600; color: white;"><%= p.team || '-' %></span>
-        </td>
-        <td><%= p.nationality %></td>
-        <td style="text-align: center;">
-            <!-- A linkekben is pilot_id kell! -->
-            <a href="/pilots/<%= p.pilot_id %>" class="button small">Info</a>
-            
-            <a href="/pilots/edit/<%= p.pilot_id %>" class="button small">Szerk</a>
-            
-            <form action="/pilots/delete/<%= p.pilot_id %>" method="POST" style="display:inline" ...>
-                <button class="button small alt">Töröl</button>
-            </form>
-        </td>
-    </tr>
-<% }) %>
+                            <tr>
+                          
+                                <td><strong><%= p.name %></strong> <span style="font-size: 0.8em; color: #888;">(#<%= p.pilot_id %>)</span></td> 
+                                <td>
+                                    <span class="badge" style="background: #e10600; color: white;"><%= p.team || '-' %></span>
+                                </td>
+                                <td><%= p.nationality %></td>
+                                <td style="text-align: center;">
+                               
+                                    
+                                    <a href="<%= baseUrl %>/pilots/<%= p.pilot_id %>" class="button small">Info</a>
+                                    
+                                    <a href="<%= baseUrl %>/pilots/edit/<%= p.pilot_id %>" class="button small">Szerk</a>
+                                    
+                                    <form action="<%= baseUrl %>/pilots/delete/<%= p.pilot_id %>" method="POST" style="display:inline" onsubmit="return confirm('Biztosan törlöd <%= p.name %>-t?')">
+                                        <button class="button small alt">Töröl</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <% }) %>
                         <% } else { %>
                             <tr>
                                 <td colspan="4" class="text-center">Nincs találat.</td>
