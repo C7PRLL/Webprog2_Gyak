@@ -1,15 +1,9 @@
 const db = require('../models');
-// HIBAKEZELÉS: Ha véletlenül undefined lenne, fallbackelünk a sima Pilot-ra, de logoljuk a hibát
-const Pilot = db.PilotsCurrent || db.Pilot; 
+const Pilot = db.PilotsCurrent; 
 const { Op } = require('sequelize');
 
 exports.index = async (req, res) => {
     try {
-        // Debug: Ellenőrizzük, hogy megvan-e a modell
-        if (!Pilot) {
-            throw new Error("A 'PilotCurrent' modell nem található a db objektumban!");
-        }
-
         const where = {};
         if (req.query.search) where.name = { [Op.like]: `%${req.query.search}%` };
         if (req.query.nationality) where.nationality = req.query.nationality;
@@ -22,12 +16,12 @@ exports.index = async (req, res) => {
 
         const pilots = await Pilot.findAll({ 
             where,
-            order: [['id', 'ASC']]
+            order: [['pilot_id', 'ASC']] // <--- JAVÍTVA: id helyett pilot_id
         });
 
         res.render('pilots/index', { pilots, nationalities, query: req.query || {} });
     } catch (e) {
-        console.error("CONTROLLER HIBA:", e); // Látni fogod a konzolon a pontos hibát
+        console.error(e);
         res.status(500).send("Hiba: " + e.message);
     }
 };
@@ -38,6 +32,8 @@ exports.store = async (req, res) => {
     await Pilot.create(req.body);
     res.redirect('/pilots');
 };
+
+// show, edit, update, destroy -> MINDENHOL 'pilot_id' kell 'id' helyett a where-ben!
 
 exports.show = async (req, res) => {
     const pilot = await Pilot.findByPk(req.params.id);
@@ -50,11 +46,13 @@ exports.edit = async (req, res) => {
 };
 
 exports.update = async (req, res) => {
-    await Pilot.update(req.body, { where: { id: req.params.id } });
+    // JAVÍTVA: where: { pilot_id: ... }
+    await Pilot.update(req.body, { where: { pilot_id: req.params.id } });
     res.redirect('/pilots');
 };
 
 exports.destroy = async (req, res) => {
-    await Pilot.destroy({ where: { id: req.params.id } });
+    // JAVÍTVA: where: { pilot_id: ... }
+    await Pilot.destroy({ where: { pilot_id: req.params.id } });
     res.redirect('/pilots');
 };

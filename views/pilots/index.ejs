@@ -52,25 +52,26 @@
                     </thead>
                     <tbody>
                         <% if(pilots.length > 0) { %>
-                            <% pilots.forEach(p => { %>
-                                <tr>
-                                    <td><strong><%= p.name %></strong></td>
-                                    <td>
-                                        <span class="badge" style="background: #e10600; color: white;"><%= p.team || '-' %></span>
-                                    </td>
-                                    <td><%= p.nationality %></td>
-                                    <td style="text-align: center;">
-                                        <!-- ITT A VISSZAKERÜLT INFO GOMB: -->
-                                        <a href="/pilots/<%= p.id %>" class="button small">Info</a>
-                                        
-                                        <a href="/pilots/edit/<%= p.id %>" class="button small">Szerk</a>
-                                        
-                                        <form action="/pilots/delete/<%= p.id %>" method="POST" style="display:inline" onsubmit="return confirm('Biztosan törlöd <%= p.name %>-t?')">
-                                            <button class="button small alt">Töröl</button>
-                                        </form>
-                                    </td>
-                                </tr>
-                            <% }) %>
+                           <% pilots.forEach(p => { %>
+    <tr>
+        <!-- ID helyett pilot_id -->
+        <td><strong><%= p.name %></strong> (ID: <%= p.pilot_id %>)</td> 
+        <td>
+            <span class="badge" style="background: #e10600; color: white;"><%= p.team || '-' %></span>
+        </td>
+        <td><%= p.nationality %></td>
+        <td style="text-align: center;">
+            <!-- A linkekben is pilot_id kell! -->
+            <a href="/pilots/<%= p.pilot_id %>" class="button small">Info</a>
+            
+            <a href="/pilots/edit/<%= p.pilot_id %>" class="button small">Szerk</a>
+            
+            <form action="/pilots/delete/<%= p.pilot_id %>" method="POST" style="display:inline" ...>
+                <button class="button small alt">Töröl</button>
+            </form>
+        </td>
+    </tr>
+<% }) %>
                         <% } else { %>
                             <tr>
                                 <td colspan="4" class="text-center">Nincs találat.</td>
