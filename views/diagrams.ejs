@@ -10,41 +10,6 @@
                 <h1 class="hero-title">Diagramok a múltbeli nagydíjakról</h1>
             </div>
     
-            <!-- Szűrők (Form) -->
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <div class="card-f1">
-                        <form method="GET" action="<%= baseUrl %>/diagrams">
-                            <div class="row gtr-uniform">
-                                <div class="col-4 col-12-small">
-                                    <select name="team" style="background: rgba(0,0,0,0.3); border-color: #555; color: white; background-color: #333;">
-                                        <option value="">Összes csapat</option>
-                                        <% if(typeof teams !== 'undefined') { %>
-                                            <% teams.forEach(t => { %>
-                                                <option value="<%= t %>" <%= selectedTeam === t ? 'selected' : '' %>><%= t %></option>
-                                            <% }) %>
-                                        <% } %>
-                                    </select>
-                                </div>
-                                <div class="col-4 col-12-small">
-                                    <select name="year" style="background: rgba(0,0,0,0.3); border-color: #555; color: white; background-color: #333;">
-                                        <option value="">Összes év</option>
-                                        <% if(typeof years !== 'undefined') { %>
-                                            <% years.forEach(y => { %>
-                                                <option value="<%= y %>" <%= selectedYear == y ? 'selected' : '' %>><%= y %></option>
-                                            <% }) %>
-                                        <% } %>
-                                    </select>
-                                </div>
-                                <div class="col-4 col-12-small">
-                                    <button class="button primary fit small">Szűrés</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
             <!-- Gombok -->
             <div class="row mb-4">
                 <div class="col-md-8">
@@ -78,7 +43,7 @@
                         
                         <div class="row">
                             <div class="col-md-8">
-                                <canvas id="dnfBarChart" style="max-height: 600px;"></canvas> <!-- Magasabb canvas, hogy kiférjen -->
+                                <canvas id="dnfBarChart" style="max-height: 600px;"></canvas> 
                             </div>
                             <div class="col-md-4">
                                 <h5 style="color: #fff;">
@@ -102,13 +67,13 @@
                                             </tbody>
                                         </table>
                                     <% } else { %>
-                                        <!-- Összesített lista (Rendezve!) -->
+                                        <!-- Összesített lista -->
                                         <table class="table table-f1">
                                             <thead>
                                                 <tr><th>Csapat</th><th>DNF szám</th></tr>
                                             </thead>
                                             <tbody>
-                                                <!-- Itt trükközünk: a controller rendezett listáját használjuk -->
+                                               
                                                 <% dnfData.labels.forEach((team, index) => { %>
                                                 <tr>
                                                     <td><%= team %></td>
